@@ -1,13 +1,50 @@
-function showContent(topic) {
-    // Hide all content sections
-    const contentSections = document.querySelectorAll('.topic-content');
-    contentSections.forEach((section) => {
-      section.style.display = 'none';
-    });
+// add hovered class to selected list item
+let list = document.querySelectorAll(".navigation li");
 
-    // Show the selected content section
-    const selectedContent = document.getElementById(topic);
-    if (selectedContent) {
-      selectedContent.style.display = 'block';
-    }
-  }
+function activeLink() {
+  list.forEach((item) => {
+    item.classList.remove("hovered");
+  });
+  this.classList.add("hovered");
+}
+
+list.forEach((item) => item.addEventListener("mouseover", activeLink));
+
+// Menu Toggle
+let toggle = document.querySelector(".toggle");
+let navigation = document.querySelector(".navigation");
+let main = document.querySelector(".main");
+
+toggle.onclick = function () {
+  navigation.classList.toggle("active");
+  main.classList.toggle("active");
+};
+
+// Get the sidebar items
+const sidebarItems = document.querySelectorAll(".sidebar-container li");
+
+// Get the content area
+const contentArea = document.querySelector(".content");
+
+// Define the content for each attribute (you can replace this with your actual content)
+const attributeContent = {
+    Attributes: "This is the content for Attributes.",
+    Headings: "This is the content for Headings.",
+    Paragraph: "This is the content for Paragraph.",
+    // Add content for other attributes here
+};
+
+// Add click event listeners to sidebar items
+sidebarItems.forEach((item) => {
+    item.addEventListener("click", (event) => {
+        // Prevent the default link behavior
+        event.preventDefault();
+
+        // Get the text of the clicked item
+        const itemText = item.textContent.trim();
+
+        // Update the content area with the corresponding content
+        contentArea.textContent = attributeContent[itemText];
+    });
+});
+
