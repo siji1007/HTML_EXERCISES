@@ -1,0 +1,70 @@
+body {
+    background-color: #1B4577;
+    margin: 0; /* Remove body margin */
+  }
+
+  .title-container {
+    background-color: white;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100px; /* Set the desired height */
+  }
+  
+  .title {
+    font-size: 20px;
+    color: black;
+  }
+  
+  .sidebar {
+    width: 250px;
+    height: 70%;
+    background-color: 1B4577;
+    color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    margin: 55px;
+    margin-top: 150px;
+    border-top-left-radius: 10px; /* Round top-left corner */
+    border-bottom-left-radius: 10px;
+    
+  }
+  
+  /* Style for the sidebar links */
+  .sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    display: block;
+    background-color: white;
+  }
+  
+  /* Style for the sidebar links on hover */
+  .sidebar a:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    width: 1230px; /* Same width as the sidebar */
+    padding: 30px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 15px;
+    margin-top: 150px;
+    height: 64%;
+    overflow-y: auto; /* Add scrollbar for content if needed */
+    border-radius: 10px;
+  }
+  
+  .submit-button {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+  }
+  
