@@ -28,11 +28,16 @@ const contentArea = document.querySelector(".content");
 
 // Define the content for each attribute (you can replace this with your actual content)
 const attributeContent = {
-    Attributes: "This is the content for Attributes.",
-    Headings: "This is the content for Headings.",
-    Paragraph: "This is the content for Paragraph.",
-    // Add content for other attributes here
+    Attributes: document.getElementById("Attributes-exercises").innerHTML,
+    Headings: document.getElementById("Headings-exercises").innerHTML,
+    Paragraph: document.getElementById("Paragraph-exercises").innerHTML,
+    Styles : document.getElementById("Styles-exercises").innerHTML
+
+  
 };
+
+// Initially hide the content for Attributes
+contentArea.innerHTML = "";
 
 // Add click event listeners to sidebar items
 sidebarItems.forEach((item) => {
@@ -44,7 +49,9 @@ sidebarItems.forEach((item) => {
         const itemText = item.textContent.trim();
 
         // Update the content area with the corresponding content
-        contentArea.textContent = attributeContent[itemText];
+        contentArea.innerHTML = attributeContent[itemText];
     });
 });
+
+
 
