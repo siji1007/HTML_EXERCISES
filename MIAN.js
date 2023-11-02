@@ -33,6 +33,9 @@ const attributeContent = {
     Paragraph: document.getElementById("Paragraph-exercises").innerHTML,
     Styles : document.getElementById("Styles-exercises").innerHTML
 
+  //dito nyo e tuloy yung mga nilagay nyo dun sa navigation div, which is e lilink natin yung content depende kung saan sya nag equal, that's why we have getElementbyId
+
+
   
 };
 
