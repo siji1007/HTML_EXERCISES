@@ -185,11 +185,15 @@ navigation ul li.hovered a::after {
 }
 
 .main .content .buttons {
-  background-color: transparent
+  background-color: gray;
+  display: flex; /* Set the display to flex */
+  flex-direction: row; /* Set the flex direction to row (horizontal) */
+  justify-content: flex-end; /* Align the buttons to the bottom */
 }
 
 .main .content .spacer {
-  margin: 300px;
+  margin: 20% auto 0;
+  
 }
 
 .main .content .buttons Button {
@@ -256,6 +260,18 @@ navigation ul li.hovered a::after {
   font-size: 2.5rem;
   cursor: pointer;
 }
+
+.main .content .exercises-content{
+  margin: 10% auto 0;
+  background-color: gray;
+  height: 100px;
+  border-radius: 20px;
+}
+
+
+
+
+
 
 /* Responsive Design */
 @media (max-width: 991px) {
