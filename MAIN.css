@@ -38,6 +38,7 @@ body {
   border-left: 10px solid var(--blue);
   transition: 0.5s;
   overflow: hidden;
+  left:0;
 }
 
 .navigation.active {
