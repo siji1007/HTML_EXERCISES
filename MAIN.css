@@ -271,8 +271,8 @@ navigation ul li.hovered a::after {
     position: absolute;
     width: 10cm;
     height: 10cm;
-    top: 80%; 
-    left: 30%;
+    top: 110%; 
+    left: 100;
     display: none; 
     background-color: #fff;
     border: 1px solid #ccc;
