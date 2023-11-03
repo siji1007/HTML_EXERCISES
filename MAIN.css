@@ -28,6 +28,7 @@ body {
   
 }
 
+
 /* =============== Navigation ================ */
 .navigation {
   position: fixed;
@@ -38,6 +39,11 @@ body {
   transition: 0.5s;
   overflow: hidden;
 }
+
+.navigation::-webkit-scrollbar {
+  display: none;
+}
+
 .navigation.active {
   width: 80px;
 }
