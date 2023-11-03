@@ -31,7 +31,10 @@ const attributeContent = {
     Attributes: document.getElementById("Attributes-exercises").innerHTML,
     Headings: document.getElementById("Headings-exercises").innerHTML,
     Paragraph: document.getElementById("Paragraph-exercises").innerHTML,
-    Styles : document.getElementById("Styles-exercises").innerHTML
+    Styles : document.getElementById("Styles-exercises").innerHTML,
+    Formatting :  document.getElementById("Formatting-exercises").innerHTML,
+    Quotations :  document.getElementById("Quotations-exercises").innerHTML
+
 
   //dito nyo e tuloy yung mga nilagay nyo dun sa navigation div, which is e lilink natin yung content depende kung saan sya nag equal, that's why we have getElementbyId
 
@@ -50,6 +53,9 @@ sidebarItems.forEach((item) => {
 
         // Get the text of the clicked item
         const itemText = item.textContent.trim();
+
+        navigation.classList.remove("active");
+        main.classList.remove("active");
 
         // Update the content area with the corresponding content
         contentArea.innerHTML = attributeContent[itemText];
