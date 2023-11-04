@@ -186,7 +186,7 @@ navigation ul li.hovered a::after {
 }
 
 .main .content .buttons {
-  background-color: gray;
+  background-color: transparent;
   display: flex; /* Set the display to flex */
   flex-direction: row; /* Set the flex direction to row (horizontal) */
   justify-content: flex-end; /* Align the buttons to the bottom */
