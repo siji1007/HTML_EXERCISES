@@ -1,73 +1,80 @@
-// add hovered class to selected list item
-let list = document.querySelectorAll(".navigation li");
 
-function activeLink() {
-  list.forEach((item) => {
-    item.classList.remove("hovered");
-  });
-  this.classList.add("hovered");
+const exerciseContent = {
+  'AttributesExercise1': document.getElementById("AttributesExercise1").innerHTML,
+  'AttributesExercise2': document.getElementById("AttributesExercise2").innerHTML,
+  'AttributesExercise3': document.getElementById("AttributesExercise3").innerHTML,
+  // Add more content for other exercises here
+};
+
+function Test(exercise) {
+  const ExerciseArea = document.querySelector(".exercises-content");
+  console.log(exercise);
+
+  if (exerciseContent.hasOwnProperty(exercise)) {
+      ExerciseArea.innerHTML = exerciseContent[exercise];
+  } else {
+      ExerciseArea.innerHTML = 'Exercise not found';
+  }
 }
 
-list.forEach((item) => item.addEventListener("mouseover", activeLink));
 
-// Menu Toggle
-let toggle = document.querySelector(".toggle");
-let navigation = document.querySelector(".navigation");
-let main = document.querySelector(".main");
+document.addEventListener("DOMContentLoaded", function () {
+  // add hovered class to the selected list item
+  let list = document.querySelectorAll(".navigation li");
 
-toggle.onclick = function () {
-  navigation.classList.toggle("active");
-  main.classList.toggle("active");
-};
+  function activeLink() {
+    list.forEach((item) => {
+      item.classList.remove("hovered");
+    });
+    this.classList.add("hovered");
+  }
 
-// Get the sidebar items
-const sidebarItems = document.querySelectorAll(".sidebar-container li");
+  list.forEach((item) => item.addEventListener("mouseover", activeLink));
 
-// Get the content area
-const contentArea = document.querySelector(".content");
+  // Menu Toggle
+  let toggle = document.querySelector(".toggle");
+  let navigation = document.querySelector(".navigation");
+  let main = document.querySelector(".main");
 
-// Define the content for each attribute (you can replace this with your actual content)
-const attributeContent = {
+  toggle.onclick = function () {
+    navigation.classList.toggle("active");
+    main.classList.toggle("active");
+  };
+
+  // Get the sidebar items
+  const sidebarItems = document.querySelectorAll(".sidebar-container li");
+
+  // Get the content area
+  const contentArea = document.querySelector(".content");
+
+  const ExerciseArea = document.querySelector(".exercises-content");
+  ExerciseArea.innerHTML = " ";
+
+  // Define the content for each attribute (you can replace this with your actual content)
+  const attributeContent = {
     Attributes: document.getElementById("Attributes-exercises").innerHTML,
     Headings: document.getElementById("Headings-exercises").innerHTML,
-    Paragraph: document.getElementById("Paragraph-exercises").innerHTML,
-    Styles : document.getElementById("Styles-exercises").innerHTML,
-    Formatting :  document.getElementById("Formatting-exercises").innerHTML,
-    Quotations :  document.getElementById("Quotations-exercises").innerHTML
-
-
-  //dito nyo e tuloy yung mga nilagay nyo dun sa navigation div, which is e lilink natin yung content depende kung saan sya nag equal, that's why we have getElementbyId
-
-
-  
-};
-
-// Initially hide the content for Attributes
-contentArea.innerHTML = "";
-
-// Add click event listeners to sidebar items
-sidebarItems.forEach((item) => {
+    // Add more content for other sections here
+    
+  };
+ 
+  contentArea.innerHTML = " ";
+  sidebarItems.forEach((item) => {
     item.addEventListener("click", (event) => {
-        // Prevent the default link behavior
-        event.preventDefault();
+      event.preventDefault();
+      const itemText = item.textContent.trim();
+      navigation.classList.remove("active");
+      main.classList.remove("active");
 
-        // Get the text of the clicked item
-        const itemText = item.textContent.trim();
-
-        navigation.classList.remove("active");
-        main.classList.remove("active");
-
-        // Update the content area with the corresponding content
-        contentArea.innerHTML = attributeContent[itemText];
+      contentArea.innerHTML = attributeContent[itemText];
     });
+
+  }); 
 });
 
 
-function toggleDropdown(dropdownId) {
-    var dropdown = document.getElementById(dropdownId);
-    if (dropdown.style.display === 'none' || dropdown.style.display === '') {
-        dropdown.style.display = 'block';
-    } else {
-        dropdown.style.display = 'none';
-    }
-}
+
+
+
+
+ 
