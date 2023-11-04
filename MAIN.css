@@ -20,8 +20,6 @@
 body {
   min-height: 100vh;
   overflow-x: hidden;
-  
-  background-image: url('bg1\ -\ Copy.jpeg');
 }
 
 .container {
@@ -38,7 +36,7 @@ body {
   border-left: 10px solid var(--blue);
   transition: 0.5s;
   overflow: hidden;
-  left:0;
+  left: 0;
 }
 
 .navigation.active {
@@ -150,7 +148,7 @@ navigation ul li.hovered a::after {
   left: 300px;
   height: 100%;
   min-height: 100vh;
-  background-image: url('bg1\ -\ Copy.jpeg');
+  background: var(--white);
   transition: 0.5s;
   display: flex;
 }
@@ -167,11 +165,8 @@ navigation ul li.hovered a::after {
   align-items: center;
   margin: auto;
   border-radius: 50px;
-  background-color: aliceblue;
-  margin-top: 50px;
-  margin-right: 10px;
+  background-color: transparent;
 }
-
 
 .main .content h1 {
   display: flex;
@@ -180,34 +175,33 @@ navigation ul li.hovered a::after {
   align-items: center;
   margin: 10% auto 0;
   border-radius: 50px;
-  font-family: 'Arbutus', sans-serif;
 }
 
 .main .content p {
-  font-family: 'Istok Web', sans-serif;
-  background-color: white;
-  text-align: justify;
-  font-size: 15px;
-  margin: 30px;
-  padding: 40px;
-  border-radius: 10px; 
-  
+  font-family: Monospace;
+  background-color: transparent;
+  text-align: left;
+  margin: 0;
+  padding: 10px;
 }
 
 .main .content .buttons {
-  background-color: transparent
+  background-color: gray;
+  display: flex; /* Set the display to flex */
+  flex-direction: row; /* Set the flex direction to row (horizontal) */
+  justify-content: flex-end; /* Align the buttons to the bottom */
 }
 
 .main .content .spacer {
-  margin: 100px;
+  margin: 5% auto 0;
+  
 }
 
 .main .content .buttons Button {
-    display: inline-block;
-  margin: 10px;
-  --border: 5px;   
-  --slant: 0.7em;  
-  --color: black; 
+  margin: 5px;
+  --border: 5px;    /* the border width */
+  --slant: 0.7em;   /* control the slanted corners */
+  --color: black; /* the color */
   
   font-size: 17px;
   padding: 0.4em 1.2em;
@@ -259,28 +253,87 @@ navigation ul li.hovered a::after {
 
 .toggle {
   position: relative;
-  width: 60px;
+  width: 50px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
   cursor: pointer;
+  position: absolute; /* Add this line to position it absolutely */
+  left: 0; /* Add this line to position it on the left */
 }
 
-.exercise-dropdown {
-    position: absolute;
-    width: 10cm;
-    height: 10cm;
-    top: 110%; 
-    left: 100;
-    display: none; 
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    z-index: 1; 
-    border-radius: 5rem;
+
+.main .content .exercises-content{
+  margin: 5% auto 10% 10%;
+  background-color: transparent;
+  height: 100px;
+  border-radius: 20px;
 }
+
+.submit {
+  --color: #00A97F;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .2s;
+  font-weight: 400;
+  font-size: 12px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+}
+
+
+
+.submit::before, .button::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+ }
+ 
+ .submit::before {
+  top: -1em;
+  left: -1em;
+ }
+ 
+ .submit::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+ }
+ 
+ .submit:hover::before, .button:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ 
+ .submit:hover {
+  color: rgb(10, 25, 30);
+ }
+ 
+ .submit:active {
+  filter: brightness(.8);
+ }
+ 
+
+
+
+
+
 
 /* Responsive Design */
 @media (max-width: 991px) {
