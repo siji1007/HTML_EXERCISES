@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML EXERCISES</title>
     <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="MAIN.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arbutus&display=swap">
 
-
-
+</head>
+   
 <body>
     <!-- =============== Navigation ================ -->
     <div class="container">
@@ -233,50 +233,71 @@
                 <div class="content">
                     <div class="ATTRIBUTES" id="Attributes-exercises">
                         <h1>ATTRIBUTES</h1>
+                        
                         <p>
-                            HTML attributes are additional pieces of information that you can include within HTML tags
-                            to modify the behavior or appearance of HTML elements. Attributes provide metadata about the elements and help define how those elements should be displayed or interact with other elements or scripts. HTML attributes are always specified in the start tag and are typically presented as name-value pairs.
-                        </p>
-                        <div class="spacer">
-                            <div class="buttons">
-                                <button onclick="toggleDropdown('exercise1Dropdown')">Exercise 1</button>
-                                <div class="exercise-dropdown" id="exercise1Dropdown">
-                                    <p>The URL of the page the link goes to?</p>
-                                    <input type="radio" name="exercise1" value="a" id="exercise1OptionA">
-                                    <label for="exercise1OptionA">a) Option A</label>
-                                    <br>
-                                    <input type="radio" name="exercise1" value="b" id="exercise1OptionB">
-                                    <label for="exercise1OptionB">b) Option B</label>
-                                    <br>
-                                    <input type="radio" name="exercise1" value="c" id="exercise1OptionC">
-                                    <label for="exercise1OptionC">c) Option C</label>
-                                </div>
-    
-                                <button onclick="toggleDropdown('exercise2Dropdown')">Exercise 2</button>
-                                <div class="exercise-dropdown" id="exercise2Dropdown">
-                                    <p>The URL of the page the link goes to?</p>
-                                    <input type="radio" name="exercise1" value="a" id="exercise1OptionA">
-                                    <label for="exercise1OptionA">a) option para sa 2 bastah </label>
-                                    <br>
-                                    <input type="radio" name="exercise1" value="b" id="exercise1OptionB">
-                                    <label for="exercise1OptionB">b) option para sa 2 bastah </label>
-                                    <br>
-                                    <input type="radio" name="exercise1" value="c" id="exercise1OptionC">
-                                    <label for="exercise1OptionC">c) option para sa 2 bastah  </label>
-                                </div>
-                                <button>Exercise 3</button>
-                                <button>Exercise 4</button>
-                                <button>Exercise 5</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                
+                            HTML attributes are additional pieces of information that you can include within HTML tags 
+                            to modify the behavior or appearance of HTML elements. Attributes provide metadata about the elements and help define how those elements should be displayed or interact with other elements or scripts. HTML attributes are always specified in the start tag and are typically presented as name-value pairs.</p>
 
+                            <div class="spacer">
+                                <div class="buttons">
+                                    <ul id="buttonList">
+                                        <Button onclick="Test('AttributesExercise1')">exercise1</Button></li>
+                                        <Button onclick="Test('AttributesExercise2')">exercise2</Button></li>
+                                        <Button onclick="Test('AttributesExercise3')">exercise3</Button></li>
+                                        <Button>exercise4</Button></li>
+                                        <Button>exercise5</Button></li>
+                                    </ul>
+                                </div>
+                                
+
+                     
+                                </div>
+
+                                <div class="exercises-content">
+                                    <div class="ATTRIBUTES-EXERCISES1" id="AttributesExercise1">
+                                        <h1>Exercises 1</h1>
+                                        <p id="question">Question: HTML attributes provide additional <input type="text" name="attribute_info" size="10"> about an element and are defined within the element's opening tag.</p>
+                                        <Button class="submit" onclick="showAnswer()">ShowAnswer</Button>
+        
+                                    </div>
+                                    
+                                    <div class="ATTRIBUTES-EXERCISES2" id="AttributesExercise2">
+                                        <h1>Exercises 2</h1>
+                                    </div>
+
+                                    <div class="ATTRIBUTES-EXERCISES3" id="AttributesExercise3">
+                                        <h1>Exercises 3</h1>
+                                    </div>
+
+
+                            </div>
+                    </div>
+
+            
                     <div class="HEADINGS" id="Headings-exercises">
                         <h1>HEADINGS</h1>
+                        <p>
+                            
+In HTML, "headings" refer to the heading elements that are used to define the structure and hierarchy of a web page's content. Headings are typically used to create section titles and subtitles, and they help organize content into a logical and hierarchical structure.
+                            <div class="spacer">
+                            <div class="buttons">
+                                <ul>
+                                    <div class="buttons">
+                                        <ul>
+                                            <li><Button>exercise1</Button></li>
+                                            <li><Button>exercise2</Button></li>
+                                            <li><Button>exercise3</Button></li>
+                                            <li><Button>exercise4</Button></li>
+                                            <li><Button>exercise5</Button></li>
+                                        </ul>
+                                    </div>
+                                </ul>
+
+                            </div>
+
+                
+                            </div>
+
                     </div>
 
                     <div class="PARAGRAPH" id="Paragraph-exercises">
@@ -299,6 +320,8 @@
                            <!-- Please continue this div for navigation button, dito natin lalagay sa each div yung mga exercises nila. connected to sa js/javascript may
                     may comment din ako dun kung ano lalagay nyo.-->
 
+                
+
                 </div>
             </div>
         </div>
@@ -310,6 +333,18 @@
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+   function showAnswer() {
+  // Get the input element
+  var inputElement = document.querySelector('input[name="attribute_info"]');
+  
+  // Set the value of the input element to the correct answer
+  inputElement.value = "metadata";
+  
+  // Disable the input to prevent further editing
+  inputElement.setAttribute('disabled', 'true');
+}
+        </script>
+ 
 </body>
-
 </html>
