@@ -386,7 +386,7 @@ In HTML, "headings" refer to the heading elements that are used to define the st
     }
 }
 
-    function submit(exercise) {
+   function submit(exercise) {
         const answer = AttributesexerciseAnswers[exercise];
         const userInput = document.getElementById("UserAnswer");
 
@@ -394,8 +394,11 @@ In HTML, "headings" refer to the heading elements that are used to define the st
             if(answer === userInput.value.toLowerCase()){
                 alert(answer +' is correct!');
             }
+            else if (userInput.value === ''){
+                alert("Please fill the black before you submit.")
+            }
             else{
-                alert(userInput + ' is wrong.');
+                alert(userInput.value + ' is wrong.');
             }
         }
 
@@ -403,8 +406,11 @@ In HTML, "headings" refer to the heading elements that are used to define the st
             if (answer === userInput.value.toLowerCase()){
                 alert(answer +' is correct!');
             }
+            else if (userInput.value === ''){
+                alert("Please fill the black before you submit.")
+            }
             else{
-                alert( userInput+ ' is wrong.');
+                alert( userInput.value+ ' is wrong.');
             }
         }
 
@@ -412,8 +418,11 @@ In HTML, "headings" refer to the heading elements that are used to define the st
             if (answer === userInput.value.toLowerCase()){
                 alert(answer +' is correct!');
             }
+            else if (userInput.value === ''){
+                alert("Please fill the black before you submit.")
+            }
             else{
-                alert(userInput + ' is wrong.');
+                alert(userInput.value + ' is wrong.');
             }
         }
 
@@ -421,8 +430,11 @@ In HTML, "headings" refer to the heading elements that are used to define the st
             if (answer === userInput.value.toLowerCase()){
                 alert(answer +' is correct!');
             }
+            else if (userInput.value === ''){
+                alert("Please fill the black before you submit.")
+            }
             else{
-                alert(userInput + ' is wrong.');
+                alert(userInput.value+ ' is wrong.');
             }
         }
 
@@ -430,8 +442,11 @@ In HTML, "headings" refer to the heading elements that are used to define the st
             if (answer === userInput.value.toLowerCase()){
                 alert(answer +' is correct!');
             }
+            else if (userInput.value === ''){
+                alert("Please fill the black before you submit.")
+            }
             else{
-                alert(userInput + ' is wrong.');
+                alert(userInput.value + ' is wrong.');
             }
         }
 
