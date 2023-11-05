@@ -332,6 +332,7 @@ body {
   z-index: -1;
   background-color: var(--color);
   transition: 1s ease;
+  
  }
  
  .showanswer::before {
@@ -350,7 +351,7 @@ body {
  }
  
  .showanswer:hover {
-  color: rgb(10, 25, 30);
+  color: white;
  }
  
  .showanswer:active {
@@ -412,7 +413,7 @@ body {
  }
  
  .submit:hover {
-  color: rgb(10, 25, 30);
+  color: white;
  }
  
  .submit:active {
