@@ -231,9 +231,10 @@
                 </div>
 
                 <div class="content">
-                    <div class="ATTRIBUTES" id="Attributes-exercises">
+
+                     <!------THIS IS ATTRIBUTES DIV THAT CONTAINS THE DATA OF ATTRIBUTES-->
+                     <div class="ATTRIBUTES" id="Attributes-exercises">
                         <h1>ATTRIBUTES</h1>
-                        
                         <p>
                             HTML attributes are additional pieces of information that you can include within HTML tags 
                             to modify the behavior or appearance of HTML elements. Attributes provide metadata about the elements and help define how those elements should be displayed or interact with other elements or scripts. HTML attributes are always specified in the start tag and are typically presented as name-value pairs.</p>
@@ -241,37 +242,58 @@
                             <div class="spacer">
                                 <div class="buttons">
                                     <ul id="buttonList">
-                                        <Button onclick="Test('AttributesExercise1')">exercise1</Button></li>
-                                        <Button onclick="Test('AttributesExercise2')">exercise2</Button></li>
-                                        <Button onclick="Test('AttributesExercise3')">exercise3</Button></li>
-                                        <Button>exercise4</Button></li>
-                                        <Button>exercise5</Button></li>
+                                        <Button onclick="Test('AttributesExercise1')">EXERCISE 1</Button></li>
+                                        <Button onclick="Test('AttributesExercise2')">EXERCISE 2</Button></li>
+                                        <Button onclick="Test('AttributesExercise3')">EXERCISE 3</Button></li>
+                                        <Button onclick="Test('AttributesExercise4')">EXERCISE 4</Button></li>
+                                        <Button onclick="Test('AttributesExercise5')">EXERCISE 5</Button></li>
                                     </ul>
-                                </div>
-                                
-
-                     
                                 </div>
 
                                 <div class="exercises-content">
                                     <div class="ATTRIBUTES-EXERCISES1" id="AttributesExercise1">
                                         <h1>Exercises 1</h1>
-                                        <p id="question">Question: HTML attributes provide additional <input type="text" name="attribute_info" size="10"> about an element and are defined within the element's opening tag.</p>
-                                        <Button class="submit" onclick="showAnswer()">ShowAnswer</Button>
-        
+                                        <p id="question">Question: HTML attributes provide additional <input type="text" name="attribute_info" size="10" id="UserAnswer"> about an element and are defined within the element's opening tag.</p>
+                                        <Button class="showanswer" onclick="toggleAnswer('AttributesExercise1')">Show Answer</Button>
+                                        <Button class="submit" onclick="submit('AttributesExercise1')">Submit</Button>
+
                                     </div>
                                     
                                     <div class="ATTRIBUTES-EXERCISES2" id="AttributesExercise2">
                                         <h1>Exercises 2</h1>
+                                        <p id="question">The alt attribute is used with the img element to provide <input type="text" name="attribute_info" size="10" id="UserAnswer"> text for an image, which is displayed if the image cannot be loaded.</p>
+                                        <Button class="showanswer" onclick="toggleAnswer('AttributesExercise2')">Show Answer</Button>
+                                        <Button class="submit" onclick="submit('AttributesExercise2')">Submit</Button>
+
                                     </div>
 
                                     <div class="ATTRIBUTES-EXERCISES3" id="AttributesExercise3">
                                         <h1>Exercises 3</h1>
+                                        <p id="question">HTML forms allow users to input data. The <input type="text" name="attribute_info" size="10" id="UserAnswer"> attribute is used in form elements to define the type of input, such as text, password, or email.</p>
+                                        <Button class="showanswer" onclick="toggleAnswer('AttributesExercise3')">Show Answer</Button>
+                                        <Button class="submit" onclick="submit('AttributesExercise3')">Submit</Button>
+
                                     </div>
 
+                                    <div class="ATTRIBUTES-EXERCISES4" id="AttributesExercise4">
+                                        <h1>Exercises 4</h1>
+                                        <p id="question">The table element in HTML is used to create tables. To define the number of rows in a table, you can use the <input type="text" name="attribute_info" size="10" id="UserAnswer"> attribute in the table tag. what is the answer</p>
+                                        <Button class="showanswer" onclick="toggleAnswer('AttributesExercise4')">Show Answer</Button>
+                                        <Button class="submit" onclick="submit('AttributesExercise4')">Submit</Button>
 
+                                    </div>
+
+                                    <div class="ATTRIBUTES-EXERCISES5" id="AttributesExercise5">
+                                        <h1>Exercises 5</h1>
+                                        <p id="question">To specify the source URL of an image in HTML, you use the img element with the src attribute. Fill in the blank: img src="<input type="text" name="attribute_info" size="10" id="UserAnswer">".</p>
+                                        <Button class="showanswer" onclick="toggleAnswer('AttributesExercise5')">Show Answer</Button>
+                                        <Button class="submit" onclick="submit('AttributesExercise5')">Submit</Button>
+
+                                    </div>
+                                </div>
                             </div>
                     </div>
+                    <!--END OF ATTRIBUTES DIV-->
 
             
                     <div class="HEADINGS" id="Headings-exercises">
@@ -284,11 +306,11 @@ In HTML, "headings" refer to the heading elements that are used to define the st
                                 <ul>
                                     <div class="buttons">
                                         <ul>
-                                            <li><Button>exercise1</Button></li>
-                                            <li><Button>exercise2</Button></li>
-                                            <li><Button>exercise3</Button></li>
-                                            <li><Button>exercise4</Button></li>
-                                            <li><Button>exercise5</Button></li>
+                                            <Button>exercise1</Button>
+                                            <Button>exercise2</Button>
+                                            <Button>exercise3</Button>
+                                            <Button>exercise4</Button>
+                                            <Button>exercise5</Button>
                                         </ul>
                                     </div>
                                 </ul>
@@ -334,17 +356,89 @@ In HTML, "headings" refer to the heading elements that are used to define the st
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
-   function showAnswer() {
-  // Get the input element
-  var inputElement = document.querySelector('input[name="attribute_info"]');
-  
-  // Set the value of the input element to the correct answer
-  inputElement.value = "metadata";
-  
-  // Disable the input to prevent further editing
-  inputElement.setAttribute('disabled', 'true');
+
+        const AttributesexerciseAnswers = {
+          'AttributesExercise1': 'metadata',
+          'AttributesExercise2': 'alt',
+          'AttributesExercise3': 'attribute',
+          'AttributesExercise4': 'rows',
+          'AttributesExercise5': 'URL'
+        };
+
+        function toggleAnswer(exercise) {
+    const answer = AttributesexerciseAnswers[exercise];
+    if (answer) {
+        // Get the input element with the id "UserAnswer"
+        const inputElement = document.getElementById('UserAnswer');
+
+        if (inputElement) {
+            if (inputElement.value === '') {
+                inputElement.value = answer;
+                
+            } else {
+                inputElement.value = '';
+             
+            }
+        }
+    }
 }
-        </script>
- 
+
+    function submit(exercise) {
+        const answer = AttributesexerciseAnswers[exercise];
+        const userInput = document.getElementById("UserAnswer");
+
+        if(answer === 'metadata'){
+            if(answer === userInput.value.toLowerCase()){
+                alert(answer +' is correct!');
+            }
+            else{
+                console.log(answer + ' is wrong.');
+            }
+        }
+
+        else if(answer === 'alt'){
+            if (answer === userInput.value.toLowerCase()){
+                alert(answer +' is correct!');
+            }
+            else{
+                console.log(answer + ' is wrong.');
+            }
+        }
+
+        else if(answer === 'attribute'){
+            if (answer === userInput.value.toLowerCase()){
+                alert(answer +' is correct!');
+            }
+            else{
+                console.log(answer + ' is wrong.');
+            }
+        }
+
+        else if(answer === 'rows'){
+            if (answer === userInput.value.toLowerCase()){
+                alert(answer +' is correct!');
+            }
+            else{
+                console.log(answer + ' is wrong.');
+            }
+        }
+
+        else if(answer === 'url'){
+            if (answer === userInput.value.toLowerCase()){
+                alert(answer +' is correct!');
+            }
+            else{
+                console.log(answer + ' is wrong.');
+            }
+        }
+
+
+}
+
+
+
+
+
+    </script>
 </body>
 </html>
