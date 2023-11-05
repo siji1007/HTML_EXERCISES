@@ -56,15 +56,20 @@ body {
   list-style: none;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
+  background-color: transparent;
 
 }
 
 .navigation:hover ul li:hover,
 .navigation ul li.hovered {
   background-color: var(--white);
+
 }
 
-
+.navigation:not(:hover) ul li,
+.navigation:not(:hover) ul li.hovered {
+  background-color: none;
+}
 .navigation ul li:nth-child(1) {
   margin-bottom: 40px;
   pointer-events: none;
@@ -79,10 +84,13 @@ body {
   color: var(--white);
 }
 
+
 .navigation ul li:hover a,
 .navigation ul li.hovered a {
   color: var(--blue);
 }
+
+
 
 .navigation ul li a .icon {
   position: relative;
@@ -121,8 +129,8 @@ body {
   pointer-events: none;
 }
 
-navigation ul li:hover a::after,
-navigation ul li.hovered a::after {
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after {
   content: "";
   position: absolute;
   right: 0;
@@ -186,15 +194,26 @@ navigation ul li.hovered a::after {
 }
 
 .main .content .buttons {
+  text-align: center;
   background-color: transparent;
   display: flex; /* Set the display to flex */
   flex-direction: row; /* Set the flex direction to row (horizontal) */
-  justify-content: flex-end; /* Align the buttons to the bottom */
+  justify-content: center;
+ /* Align the buttons to the bottom */
 }
 
 .main .content .spacer {
   margin: 5% auto 0;
-  
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main .content .buttons ul{
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
 
 .main .content .buttons Button {
@@ -202,7 +221,6 @@ navigation ul li.hovered a::after {
   --border: 5px;    /* the border width */
   --slant: 0.7em;   /* control the slanted corners */
   --color: black; /* the color */
-  
   font-size: 17px;
   padding: 0.4em 1.2em;
   border: none;
@@ -222,6 +240,8 @@ navigation ul li.hovered a::after {
               100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
              );
   transition: color var(--t,0.3s), background-size 0.3s;
+  justify-content: center;
+  align-items: center;
 }
 
 .main .content .buttons Button:focus-visible {
@@ -260,25 +280,27 @@ navigation ul li.hovered a::after {
   align-items: center;
   font-size: 2.5rem;
   cursor: pointer;
-  position: absolute; /* Add this line to position it absolutely */
-  left: 0; /* Add this line to position it on the left */
+  position: absolute; 
+  left: 0; 
 }
 
 
 .main .content .exercises-content{
   margin: 5% auto 10% 10%;
-  background-color: transparent;
   height: 100px;
   border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.submit {
+.showanswer {
   --color: #00A97F;
   padding: 0.8em 1.7em;
   background-color: transparent;
   border-radius: .3em;
   position: absolute;
-  right: 0;
+  left: 0;
   overflow: hidden;
   cursor: pointer;
   transition: .2s;
@@ -289,6 +311,70 @@ navigation ul li.hovered a::after {
   text-transform: uppercase;
   color: var(--color);
   z-index: 1;
+  margin-left: 5%;
+    margin-top: 5%;
+}
+
+
+
+.showanswer::before, .button::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+ }
+ 
+ .showanswer::before {
+  top: -1em;
+  left: -1em;
+ }
+ 
+ .showanswer::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+ }
+ 
+ .showanswer:hover::before, .button:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ 
+ .showanswer:hover {
+  color: rgb(10, 25, 30);
+ }
+ 
+ .showanswer:active {
+  filter: brightness(.8);
+ }
+
+
+
+ 
+ .submit {
+  --color: #00A97F;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: absolute;
+  right:0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .2s;
+  font-weight: 400;
+  font-size: 13px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+  margin-right: 5%;
+  margin-top: 5%;
 }
 
 
@@ -329,16 +415,10 @@ navigation ul li.hovered a::after {
   filter: brightness(.8);
  }
  
-
-
-
-
-
-
 /* Responsive Design */
 @media (max-width: 991px) {
   .navigation {
-    left: -300px;
+    left: 0;
   }
 
   .navigation.active {
@@ -349,9 +429,37 @@ navigation ul li.hovered a::after {
   .main {
     width: 100%;
     left: 0;
+    background: var(--white);
   }
 
   .main.active {
     left: 300px;
   }
+
+  .main .content .buttons {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .main .content .buttons button {
+    width: 100%; 
+    margin: 5px 0; 
+  }
+
+  .showanswer {
+    padding: 0.6em 1.2em; 
+    font-size: 14px;
+  }
+  
+  .main .content .spacer{
+    background-color: white;
+  }
+
+  .submit {
+    padding: 0.6em 1.2em; 
+    font-size: 14px;
+  }
+  
 }
