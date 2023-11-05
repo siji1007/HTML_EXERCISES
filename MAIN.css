@@ -418,6 +418,8 @@ body {
  .submit:active {
   filter: brightness(.8);
  }
+
+
  
 /* Responsive Design */
 @media (max-width: 991px) {
@@ -430,22 +432,28 @@ body {
     left: 0;
   }
 
-  .main {
-    width: 100%;
-    left: 0;
-    background: url(bg.jpg);
-    background-size: cover;
-  }
+.main {
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  background: url(bg.jpg);
+  background-size: cover;
+  margin:0;
+}
 
   .main.active {
     left: 300px;
+    height: auto;
+    margin: 0;
   }
+
 
   .main .content .buttons {
     background-color: transparent;
     display: flex;
     flex-direction: column; 
     align-items: center; 
+    height: auto;
   }
 
   .main .content .buttons button {
@@ -459,7 +467,13 @@ body {
   }
   
   .main .content .spacer{
-    background-color: white;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background: url(bg.jpg);
+    background-size: cover;
+
+
   }
 
   .submit {
