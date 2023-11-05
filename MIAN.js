@@ -12,26 +12,25 @@ const exerciseContent = {
   'HeadingExercise3' : document.getElementById("HeadingExercise3").innerHTML,
   'HeadingExercise4' : document.getElementById("HeadingExercise4").innerHTML,
   'HeadingExercise5' : document.getElementById("HeadingExercise5").innerHTML,
+
+
+  'ParagraphExercise1' : document.getElementById("ParagraphExercise1").innerHTML,
   
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-
-
-  var computerCode = document.getElementById("CC-exercises").innerHTML;
-  console.log(computerCode);
-
-
-
-
-
   var ExerciseArea = document.querySelector(".exercises-content");  
   ExerciseArea.innerHTML = "";
 
   var HeadingExercise_contents = document.querySelector(".HeadingExercise_contents");
   HeadingExercise_contents.innerHTML = "";
 
-  // add hovered class to the selected list item
+  var ParagraphExercise_contents = document.querySelector(".ParagraphExercise_contents");
+
+  console.log(ParagraphExercise_contents);
+  ParagraphExercise_contents.innerHTML = "";
+
+
   let list = document.querySelectorAll(".navigation li");
 
   function activeLink() {
@@ -45,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
   item.addEventListener("click", activeLink));
 
 
-  // Menu Toggle
   let toggle = document.querySelector(".toggle");
   let navigation = document.querySelector(".navigation");
 
@@ -104,12 +102,15 @@ document.addEventListener("DOMContentLoaded", function () {
 function Test(exercise) {
   var ExerciseArea = document.querySelector(".exercises-content");
   var HeadingExercise_contents = document.querySelector(".HeadingExercise_contents");
+  var ParagraphExercise_contents = document.querySelector(".ParagraphExercise_contents");
 
   if (exerciseContent.hasOwnProperty(exercise)) {
     if (ExerciseArea) {
       ExerciseArea.innerHTML = exerciseContent[exercise];
     } else if (HeadingExercise_contents) {
       HeadingExercise_contents.innerHTML = exerciseContent[exercise];
+    }else if (ParagraphExercise_contents){
+      ParagraphExercise_contents.innerHTML = exerciseContent[exercise];
     }
 
 
@@ -120,12 +121,11 @@ function Test(exercise) {
     if (HeadingExercise_contents) {
       HeadingExercise_contents.innerHTML = '';
     }
+    if(ParagraphExercise_contents){
+      ParagraphExercise_contents.innerHTML='';
+    }
   }
 }
-
-
-
-
 
 const AttributesexerciseAnswers = {
   'AttributesExercise1': 'metadata',
@@ -163,8 +163,10 @@ const answer = AttributesexerciseAnswers[exercise];
 const userInput = document.getElementById("UserAnswer");
 
 if(answer === 'metadata'){
+     var ExerciseArea = document.querySelector(".exercises-content");
     if(answer === userInput.value.toLowerCase()){
         alert(answer +' is correct!');
+        ExerciseArea.innerHTML = exerciseContent['AttributesExercise2']
         if (!(exercisesId_array.includes(questionId))){
         progress(questionId);
         }
