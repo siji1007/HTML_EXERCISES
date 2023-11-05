@@ -127,3 +127,122 @@ function Test(exercise) {
 
 
 
+const AttributesexerciseAnswers = {
+  'AttributesExercise1': 'metadata',
+  'AttributesExercise2': 'alt',
+  'AttributesExercise3': 'attribute',
+  'AttributesExercise4': 'rows',
+  'AttributesExercise5': 'url'
+};
+
+
+const exercisesId_array = [];
+function toggleAnswer(exercise) {
+const answer = AttributesexerciseAnswers[exercise];
+const submitButton = document.querySelector(`.submit`);
+if (answer) {
+// Get the input element with the id "UserAnswer"
+const inputElement = document.getElementById('UserAnswer');
+
+if (inputElement) {
+    if (inputElement.value === '') {
+        inputElement.value = answer;
+        submitButton.disabled = true;
+        
+    } else {
+        inputElement.value = '';
+        submitButton.disabled = false;
+     
+    }
+}
+}
+}
+
+function submit(exercise, questionId) {
+const answer = AttributesexerciseAnswers[exercise];
+const userInput = document.getElementById("UserAnswer");
+
+if(answer === 'metadata'){
+    if(answer === userInput.value.toLowerCase()){
+        alert(answer +' is correct!');
+        if (!(exercisesId_array.includes(questionId))){
+        progress(questionId);
+        }
+    }
+    else if (userInput.value === ''){
+        alert("Please fill the black before you submit.")
+    }
+    else{
+        alert(userInput.value + ' is wrong.');
+    }
+}
+
+else if(answer === 'alt'){
+    if (answer === userInput.value.toLowerCase()){
+        alert(answer +' is correct!');
+        if (!(exercisesId_array.includes(questionId))){
+          progress(questionId);
+          }
+    }
+    else if (userInput.value === ''){
+        alert("Please fill the black before you submit.")
+    }
+    else{
+        alert( userInput.value+ ' is wrong.');
+    }
+}
+
+else if(answer === 'attribute'){
+    if (answer === userInput.value.toLowerCase()){
+        alert(answer +' is correct!');
+        if (!(exercisesId_array.includes(questionId))){
+          progress(questionId);
+          }
+    }
+    else if (userInput.value === ''){
+        alert("Please fill the black before you submit.")
+    }
+    else{
+        alert(userInput.value + ' is wrong.');
+    }
+}
+
+else if(answer === 'rows'){
+    if (answer === userInput.value.toLowerCase()){
+        alert(answer +' is correct!');
+        if (!(exercisesId_array.includes(questionId))){
+          progress(questionId);
+          }
+    }
+    else if (userInput.value === ''){
+        alert("Please fill the black before you submit.")
+    }
+    else{
+        alert(userInput.value+ ' is wrong.');
+    }
+}
+
+else if(answer === 'url'){
+    if (answer === userInput.value.toLowerCase()){
+        alert(answer +' is correct!');
+        if (!(exercisesId_array.includes(questionId))){
+          progress(questionId);
+          }
+    }
+    else if (userInput.value === ''){
+        alert("Please fill the black before you submit.")
+    }
+    else{
+        alert(userInput.value + ' is wrong.');
+    }
+}
+
+}
+
+var done_exercises = 0;
+function progress(exercisesId){
+  progressBar = document.getElementById("progressId");
+  done_exercises++;
+  progressBar.textContent = "Finished exercises: " + done_exercises.toString() + "/110";
+  exercisesId_array.push(exercisesId);
+}
