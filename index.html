@@ -16,7 +16,7 @@
 <body>
     <!-- =============== Navigation ================ -->
     <div class="container">
-        <div class="navigation">
+        <nav class="navigation">
             <div class="sidebar-container"> <!-- Add this container for scrolling -->
                 <ul>
                     <li>
@@ -227,10 +227,10 @@
                 </ul>
                 </div>
             </div>
-        </div>
+        </nav>
 
         <!-- ========================= Main ==================== -->
-        <div class="main">
+        <main class="main">
             <div class="topbar">
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
@@ -354,6 +354,27 @@
 
                     <div class="PARAGRAPH" id="Paragraph-exercises">
                         <h1>PARAGRAPH</h1>
+                        <p>lkashdkjhaskjdhkasjhd</p>
+
+                        <div class="spacer">
+                            <div class="buttons">
+                                <ul id="buttonList">
+                                    <Button onclick="Test('ParagraphExercise1')">EXERCISE 1</Button></li>
+                                    <Button onclick="Test('AttributesExercise2')">EXERCISE 2</Button></li>
+                                    <Button onclick="Test('AttributesExercise3')">EXERCISE 3</Button></li>
+                                    <Button onclick="Test('AttributesExercise4')">EXERCISE 4</Button></li>
+                                    <Button onclick="Test('AttributesExercise5')">EXERCISE 5</Button></li>
+                                </ul>
+                            </div>
+
+                            <div class="ParagraphExercise_contents">
+                                <div class="Paragraph" id="ParagraphExercise1">
+                                    <h1>Exercises 1</h1>
+                                    <p id="headingQuestions1">Question: HTML attributes provide additional <input type="text" name="attribute_info" size="10" id="UserAnswer"> about an element and are defined within the element's opening tag.</p>
+                                </div>
+                            </div>    
+
+                        </div>    
                     </div>
 
                     <div class="STYLES" id="Styles-exercises">
@@ -428,11 +449,10 @@
                     may comment din ako dun kung ano lalagay nyo.-->
 
                 
-
+                    
                 </div>
             </div>
-        </div>
-    </div>
+        </main>
 
     <!-- =========== Scripts =========  -->
     <script src="MIAN.js"></script>
