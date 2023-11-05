@@ -3,7 +3,8 @@ const exerciseContent = {
   'AttributesExercise1': document.getElementById("AttributesExercise1").innerHTML,
   'AttributesExercise2': document.getElementById("AttributesExercise2").innerHTML,
   'AttributesExercise3': document.getElementById("AttributesExercise3").innerHTML,
-  // Add more content for other exercises here
+  'AttributesExercise4': document.getElementById("AttributesExercise4").innerHTML,
+  'AttributesExercise5': document.getElementById("AttributesExercise5").innerHTML,
 };
 
 function Test(exercise) {
@@ -16,8 +17,7 @@ function Test(exercise) {
       ExerciseArea.innerHTML = 'Exercise not found';
   }
 }
-
-
+ 
 document.addEventListener("DOMContentLoaded", function () {
   // add hovered class to the selected list item
   let list = document.querySelectorAll(".navigation li");
@@ -29,11 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
     this.classList.add("hovered");
   }
 
-  list.forEach((item) => item.addEventListener("mouseover", activeLink));
+  list.forEach((item) => 
+  item.addEventListener("click", activeLink));
+
 
   // Menu Toggle
   let toggle = document.querySelector(".toggle");
   let navigation = document.querySelector(".navigation");
+
   let main = document.querySelector(".main");
 
   toggle.onclick = function () {
@@ -41,10 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
     main.classList.toggle("active");
   };
 
-  // Get the sidebar items
+
   const sidebarItems = document.querySelectorAll(".sidebar-container li");
 
-  // Get the content area
+
   const contentArea = document.querySelector(".content");
 
   const ExerciseArea = document.querySelector(".exercises-content");
@@ -73,8 +76,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-
-
-
- 
