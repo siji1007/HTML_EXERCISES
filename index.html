@@ -367,6 +367,7 @@ In HTML, "headings" refer to the heading elements that are used to define the st
 
         function toggleAnswer(exercise) {
     const answer = AttributesexerciseAnswers[exercise];
+    const submitButton = document.querySelector(`.submit`);
     if (answer) {
         // Get the input element with the id "UserAnswer"
         const inputElement = document.getElementById('UserAnswer');
@@ -374,9 +375,11 @@ In HTML, "headings" refer to the heading elements that are used to define the st
         if (inputElement) {
             if (inputElement.value === '') {
                 inputElement.value = answer;
+                submitButton.disabled = true;
                 
             } else {
                 inputElement.value = '';
+                submitButton.disabled = false;
              
             }
         }
@@ -392,7 +395,7 @@ In HTML, "headings" refer to the heading elements that are used to define the st
                 alert(answer +' is correct!');
             }
             else{
-                console.log(answer + ' is wrong.');
+                alert(answer + ' is wrong.');
             }
         }
 
@@ -401,7 +404,7 @@ In HTML, "headings" refer to the heading elements that are used to define the st
                 alert(answer +' is correct!');
             }
             else{
-                console.log(answer + ' is wrong.');
+                alert(answer + ' is wrong.');
             }
         }
 
@@ -410,7 +413,7 @@ In HTML, "headings" refer to the heading elements that are used to define the st
                 alert(answer +' is correct!');
             }
             else{
-                console.log(answer + ' is wrong.');
+                alert(answer + ' is wrong.');
             }
         }
 
@@ -419,7 +422,7 @@ In HTML, "headings" refer to the heading elements that are used to define the st
                 alert(answer +' is correct!');
             }
             else{
-                console.log(answer + ' is wrong.');
+                alert(answer + ' is wrong.');
             }
         }
 
@@ -428,16 +431,11 @@ In HTML, "headings" refer to the heading elements that are used to define the st
                 alert(answer +' is correct!');
             }
             else{
-                console.log(answer + ' is wrong.');
+                alert(answer + ' is wrong.');
             }
         }
 
-
 }
-
-
-
-
 
     </script>
 </body>
