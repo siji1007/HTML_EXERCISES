@@ -4,6 +4,7 @@
 /* Globals */
 * {
   font-family: "Ubuntu", sans-serif;
+  font-weight: 200px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -159,11 +160,14 @@ body {
   background: var(--white);
   transition: 0.5s;
   display: flex;
+  background: url(bg.jpg);
+  background-size: cover;
 }
 
 .main.active {
   width: calc(100% - 80px);
   left: 80px;
+  
 }
 
 .main .content {
@@ -295,7 +299,7 @@ body {
 }
 
 .showanswer {
-  --color: #00A97F;
+  --color: black;
   padding: 0.8em 1.7em;
   background-color: transparent;
   border-radius: .3em;
@@ -357,7 +361,7 @@ body {
 
  
  .submit {
-  --color: #00A97F;
+  --color: black;
   padding: 0.8em 1.7em;
   background-color: transparent;
   border-radius: .3em;
@@ -429,7 +433,8 @@ body {
   .main {
     width: 100%;
     left: 0;
-    background: var(--white);
+    background: url(bg.jpg);
+    background-size: cover;
   }
 
   .main.active {
