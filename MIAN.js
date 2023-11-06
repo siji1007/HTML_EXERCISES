@@ -16,6 +16,24 @@ const exerciseContent = {
 
   'ParagraphExercise1' : document.getElementById("ParagraphExercise1").innerHTML,
 
+  'StylesExercise1' : document.getElementById("StylesExercise1").innerHTML,
+  'StylesExercise2' : document.getElementById("StylesExercise2").innerHTML,
+  'StylesExercise3' : document.getElementById("StylesExercise3").innerHTML,
+  'StylesExercise4' : document.getElementById("StylesExercise4").innerHTML,
+  'StylesExercise5' : document.getElementById("StylesExercise5").innerHTML,
+  
+  'ClassesExercise1' : document.getElementById("ClassesExercise1").innerHTML,
+  'ClassesExercise2' : document.getElementById("ClassesExercise2").innerHTML,
+  'ClassesExercise3' : document.getElementById("ClassesExercise3").innerHTML,
+  'ClassesExercise4' : document.getElementById("ClassesExercise4").innerHTML,
+  'ClassesExercise5' : document.getElementById("ClassesExercise5").innerHTML,
+  
+  'FormsElemetsExercise1' : document.getElementById("FormsElemetsExercise1").innerHTML,
+  'FormsElemetsExercise2' : document.getElementById("FormsElemetsExercise2").innerHTML,
+  'FormsElemetsExercise3' : document.getElementById("FormsElemetsExercise3").innerHTML,
+  'FormsElemetsExercise4' : document.getElementById("FormsElemetsExercise4").innerHTML,
+  'FormsElemetsExercise5' : document.getElementById("FormsElemetsExercise5").innerHTML,
+
 
   'LinksExercise1' : document.getElementById("LinksExercise1").innerHTML,
   'LinksExercise2' : document.getElementById("LinksExercise2").innerHTML,
