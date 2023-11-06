@@ -15,6 +15,27 @@ const exerciseContent = {
 
 
   'ParagraphExercise1' : document.getElementById("ParagraphExercise1").innerHTML,
+
+
+  'LinksExercise1' : document.getElementById("LinksExercise1").innerHTML,
+  'LinksExercise2' : document.getElementById("LinksExercise2").innerHTML,
+  'LinksExercise3' : document.getElementById("LinksExercise3").innerHTML,
+  'LinksExercise4' : document.getElementById("LinksExercise4").innerHTML,
+  'LinksExercise5' : document.getElementById("LinksExercise5").innerHTML,
+
+  
+  'ImagesExercise1' : document.getElementById("ImagesExercise1").innerHTML,
+  'ImagesExercise2' : document.getElementById("ImagesExercise2").innerHTML,
+  'ImagesExercise3' : document.getElementById("ImagesExercise3").innerHTML,
+  'ImagesExercise4' : document.getElementById("ImagesExercise4").innerHTML,
+  'ImagesExercise5' : document.getElementById("ImagesExercise5").innerHTML,
+
+  
+  'IFframeExercise1' : document.getElementById("IFframeExercise1").innerHTML,
+  'IFframeExercise2' : document.getElementById("IFframeExercise2").innerHTML,
+  'IFframeExercise3' : document.getElementById("IFframeExercise3").innerHTML,
+  'IFframeExercise4' : document.getElementById("IFframeExercise4").innerHTML,
+  'IFframeExercise5' : document.getElementById("IFframeExercise5").innerHTML,
   
 };
 
