@@ -15,45 +15,21 @@ const exerciseContent = {
 
 
   'ParagraphExercise1' : document.getElementById("ParagraphExercise1").innerHTML,
+ 
 
   'StylesExercise1' : document.getElementById("StylesExercise1").innerHTML,
   'StylesExercise2' : document.getElementById("StylesExercise2").innerHTML,
   'StylesExercise3' : document.getElementById("StylesExercise3").innerHTML,
   'StylesExercise4' : document.getElementById("StylesExercise4").innerHTML,
   'StylesExercise5' : document.getElementById("StylesExercise5").innerHTML,
-  
+
   'ClassesExercise1' : document.getElementById("ClassesExercise1").innerHTML,
   'ClassesExercise2' : document.getElementById("ClassesExercise2").innerHTML,
   'ClassesExercise3' : document.getElementById("ClassesExercise3").innerHTML,
   'ClassesExercise4' : document.getElementById("ClassesExercise4").innerHTML,
   'ClassesExercise5' : document.getElementById("ClassesExercise5").innerHTML,
-  
-  'FormsElemetsExercise1' : document.getElementById("FormsElemetsExercise1").innerHTML,
-  'FormsElemetsExercise2' : document.getElementById("FormsElemetsExercise2").innerHTML,
-  'FormsElemetsExercise3' : document.getElementById("FormsElemetsExercise3").innerHTML,
-  'FormsElemetsExercise4' : document.getElementById("FormsElemetsExercise4").innerHTML,
-  'FormsElemetsExercise5' : document.getElementById("FormsElemetsExercise5").innerHTML,
 
 
-  'LinksExercise1' : document.getElementById("LinksExercise1").innerHTML,
-  'LinksExercise2' : document.getElementById("LinksExercise2").innerHTML,
-  'LinksExercise3' : document.getElementById("LinksExercise3").innerHTML,
-  'LinksExercise4' : document.getElementById("LinksExercise4").innerHTML,
-  'LinksExercise5' : document.getElementById("LinksExercise5").innerHTML,
-
-  
-  'ImagesExercise1' : document.getElementById("ImagesExercise1").innerHTML,
-  'ImagesExercise2' : document.getElementById("ImagesExercise2").innerHTML,
-  'ImagesExercise3' : document.getElementById("ImagesExercise3").innerHTML,
-  'ImagesExercise4' : document.getElementById("ImagesExercise4").innerHTML,
-  'ImagesExercise5' : document.getElementById("ImagesExercise5").innerHTML,
-
-  
-  'IFframeExercise1' : document.getElementById("IFframeExercise1").innerHTML,
-  'IFframeExercise2' : document.getElementById("IFframeExercise2").innerHTML,
-  'IFframeExercise3' : document.getElementById("IFframeExercise3").innerHTML,
-  'IFframeExercise4' : document.getElementById("IFframeExercise4").innerHTML,
-  'IFframeExercise5' : document.getElementById("IFframeExercise5").innerHTML,
   
 };
 
@@ -65,9 +41,19 @@ document.addEventListener("DOMContentLoaded", function () {
   HeadingExercise_contents.innerHTML = "";
 
   var ParagraphExercise_contents = document.querySelector(".ParagraphExercise_contents");
-
-  console.log(ParagraphExercise_contents);
   ParagraphExercise_contents.innerHTML = "";
+
+  var Styles_exercises_content = document.querySelector(".Styles-exercises-content");
+  Styles_exercises_content.innerHTML ="";
+
+  var Classes_exercises_content=document.querySelector(".Classes-exercises-content");
+  Classes_exercises_content.innerHTML ="";
+
+  var LinksExercise_content = document.querySelector(".LinksExercise_content");
+  LinksExercise_content.innerHTML=""
+
+  var ImagesExercise_content = document.querySelector(".ImagesExercise_content");
+  ImagesExercise_content.innerHTML =""
 
 
   let list = document.querySelectorAll(".navigation li");
@@ -94,7 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   const sidebarItems = document.querySelectorAll(".sidebar-container li");
   const contentArea = document.querySelector(".content");
-
 
   const attributeContent = {
     Attributes: document.getElementById("Attributes-exercises").innerHTML,
@@ -124,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   contentArea.innerHTML = " ";
+ 
   sidebarItems.forEach((item) => {
     item.addEventListener("click", (event) => {
       event.preventDefault();
@@ -131,10 +117,9 @@ document.addEventListener("DOMContentLoaded", function () {
       navigation.classList.remove("active");
       main.classList.remove("active");
       contentArea.innerHTML = attributeContent[itemText];
-      
-    });
-  }); 
 
+    });
+  });
 });
 
 
@@ -142,6 +127,10 @@ function Test(exercise) {
   var ExerciseArea = document.querySelector(".exercises-content");
   var HeadingExercise_contents = document.querySelector(".HeadingExercise_contents");
   var ParagraphExercise_contents = document.querySelector(".ParagraphExercise_contents");
+  var Styles_exercises_content = document.querySelector(".Styles-exercises-content");
+  var Classes_exercises_content=document.querySelector(".Classes-exercises-content");
+  var LinksExercise_content = document.querySelector(".LinksExercise_content")
+
 
   if (exerciseContent.hasOwnProperty(exercise)) {
     if (ExerciseArea) {
@@ -150,7 +139,15 @@ function Test(exercise) {
       HeadingExercise_contents.innerHTML = exerciseContent[exercise];
     }else if (ParagraphExercise_contents){
       ParagraphExercise_contents.innerHTML = exerciseContent[exercise];
+    }else if(Styles_exercises_content){
+      Styles_exercises_content.innerHTML = exerciseContent[exercise];
+    }else if(Classes_exercises_content){
+      Classes_exercises_content.innerHTML = exerciseContent[exercise];
+    }else if (LinksExercise_content){
+      LinksExercise_content.innerHTML = exerciseContent[exercise];
     }
+
+
 
 
   } else {
@@ -198,12 +195,14 @@ if (inputElement) {
 }
 
 function submit(exercise, questionId) {
+var button = document.getElementById(exercise);
+
 const answer = AttributesexerciseAnswers[exercise];
 const userInput = document.getElementById("UserAnswer");
-
+var ExerciseArea = document.querySelector(".exercises-content");
 if(answer === 'metadata'){
-     var ExerciseArea = document.querySelector(".exercises-content");
     if(answer === userInput.value.toLowerCase()){
+        document.getElementById("AttributesExerciseDOne1").style.backgroundColor = 'green'; 
         alert(answer +' is correct!');
         ExerciseArea.innerHTML = exerciseContent['AttributesExercise2']
         if (!(exercisesId_array.includes(questionId))){
@@ -220,7 +219,9 @@ if(answer === 'metadata'){
 
 else if(answer === 'alt'){
     if (answer === userInput.value.toLowerCase()){
+        document.getElementById("AttributesExerciseDOne2").style.backgroundColor = 'green'; 
         alert(answer +' is correct!');
+        ExerciseArea.innerHTML = exerciseContent['AttributesExercise3']
         if (!(exercisesId_array.includes(questionId))){
           progress(questionId);
           }
@@ -236,6 +237,8 @@ else if(answer === 'alt'){
 else if(answer === 'attribute'){
     if (answer === userInput.value.toLowerCase()){
         alert(answer +' is correct!');
+        document.getElementById("AttributesExerciseDOne3").style.backgroundColor = 'green'; 
+        ExerciseArea.innerHTML = exerciseContent['AttributesExercise4']
         if (!(exercisesId_array.includes(questionId))){
           progress(questionId);
           }
@@ -245,12 +248,15 @@ else if(answer === 'attribute'){
     }
     else{
         alert(userInput.value + ' is wrong.');
+        
     }
 }
 
 else if(answer === 'rows'){
     if (answer === userInput.value.toLowerCase()){
         alert(answer +' is correct!');
+        document.getElementById("AttributesExerciseDOne4").style.backgroundColor = 'green'; 
+        ExerciseArea.innerHTML = exerciseContent['AttributesExercise5']
         if (!(exercisesId_array.includes(questionId))){
           progress(questionId);
           }
@@ -260,12 +266,15 @@ else if(answer === 'rows'){
     }
     else{
         alert(userInput.value+ ' is wrong.');
+ 
     }
 }
 
 else if(answer === 'url'){
     if (answer === userInput.value.toLowerCase()){
         alert(answer +' is correct!');
+        document.getElementById("AttributesExerciseDOne5").style.backgroundColor = 'green'; 
+        HeadingExercise_contents.innerHTML = exerciseContent[exercise];
         if (!(exercisesId_array.includes(questionId))){
           progress(questionId);
           }
@@ -287,3 +296,6 @@ function progress(exercisesId){
   progressBar.textContent = "Finished exercises: " + done_exercises.toString() + "/110";
   exercisesId_array.push(exercisesId);
 }
+
+
+
