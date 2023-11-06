@@ -55,6 +55,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var ImagesExercise_content = document.querySelector(".ImagesExercise_content");
   ImagesExercise_content.innerHTML =""
 
+  var FormsElemets_exercises = document.querySelector(".Forms_exercises-content");
+  FormsElemets_exercises.innerHTML =""
+
+  var IFframeExercise_content = document.querySelector(".IFframeExercise_content");
+  IFframeExercise_content.innerHTML =""
+
 
   let list = document.querySelectorAll(".navigation li");
 
