@@ -170,6 +170,7 @@ body {
   display: flex;
   background: url(bg.jpg);
   background-size: cover;
+  overflow-y: auto; 
   
 }
 
@@ -340,6 +341,15 @@ body {
   align-items: center;
 
 }
+
+.main .content img{
+  max-width: 50%; /* Set a maximum width for the image itself */
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  
+}
+
 
 .showanswer {
   padding: 0.8em 1.7em;
