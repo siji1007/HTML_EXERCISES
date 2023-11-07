@@ -802,8 +802,69 @@
                     <div class="TABLES" id="Tables-exercises">
                         <h1>TABLES</h1>
                     </div>
+                    
                     <div class="LIST" id="List-exercises">
                         <h1>LIST</h1>
+                        <p> 
+                            HTML Lists are essential for organizing and structuring content on web pages. Ordered lists ( < ol > ) are ideal for representing items in a specific order or sequence, 
+                            typically numbered. Unordered lists ( < ul > ) are useful for displaying items without a specific order, typically using bullet points. 
+                            Additionally, definition lists ( < dl > ) are perfect for creating pairs of terms and their corresponding definitions or descriptions. 
+                            These list types enable web designers to present information in a clear and readable format, making them a fundamental part of HTML for enhancing
+                             content organization and user experience on the web. </p>
+                             
+                        <div class="spacer">
+                            <div class="buttons">
+                                <ul>
+                                    <div class="buttons">
+                                        <ul>
+                                            <Button onclick="Test('ListExercise1')">exercise1</Button>
+                                            <Button onclick="Test('ListExercise2')">exercise2</Button>
+                                            <Button onclick="Test('ListExercise3')">exercise3</Button>
+                                            <Button onclick="Test('ListExercise4')">exercise4</Button>
+                                            <Button onclick="Test('ListExercise5')">exercise5</Button>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+
+                            <div class="List-exercise_content">
+                                <div class="List" id="ListExercise1">
+                                    <h1>Exercises 1</h1>
+                                    <p id="ListQuestions1" style="text-align: center;">Question: In HTML, an ordered list is created using the <input type="text" name="list_info" size="10" id="UserAnswer"> element.</p>
+                                    <Button class="showanswer" onclick="toggleAnswer('ListExercise1')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('ListExercise1', 'listQuestion1')">Submit</Button>
+                                </div>
+
+                                <div class="List" id="ListExercise2">
+                                    <h1>Exercises 2</h1>
+                                    <p id="ListQuestions2" style="text-align: center;">Question: The <input type="text" name="list_info" size="10" id="UserAnswer"> attribute in the <ol> element is used to specify the type of numbering for ordered lists. </p>
+                                    <Button class="showanswer" onclick="toggleAnswer('ListExercise2')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('ListExercise2', 'listQuestion2')">Submit</Button>
+                                </div>
+
+                                <div class="List" id="ListExercise3">
+                                    <h1>Exercises 3</h1>
+                                    <p id="ListQuestions3" style="text-align: center;">Question: You can use the <input type="text" name="list_info" size="10" id="UserAnswer">  attribute in <ul> to change the type of bullet points for an unordered list. </p>
+                                    <Button class="showanswer" onclick="toggleAnswer('ListExercise3')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('ListExercise3', 'listQuestion3')">Submit</Button>
+                                </div>
+
+                                <div class="List" id="ListExercise4">
+                                    <h1>Exercises 4</h1>
+                                    <p id="ListQuestions4" style="text-align: center;">Question: The "compact" attribute in HTML lists is used to reduce the <input type="text" name="list_info" size="10" id="UserAnswer">  between list items. </p>
+                                    <Button class="showanswer" onclick="toggleAnswer('ListExercise4')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('ListExercise4', 'listQuestion4')">Submit</Button>
+                                </div>
+
+                                <div class="List" id="ListExercise5">
+                                    <h1>Exercises 5</h1>
+                                    <p id="ListQuestions5" style="text-align: center;">Question: In HTML, an ordered list can have its numbering style changed using the "type" attribute, which accepts values like "1," "A," "a," "I," and "i" to specify the  <input type="text" name="list_info" size="10" id="UserAnswer"> . </p>
+                                    <Button class="showanswer" onclick="toggleAnswer('ListExercise5')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('ListExercise5', 'listQuestion5')">Submit</Button>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
                     
