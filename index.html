@@ -374,9 +374,9 @@
                             </div>
 
                             <div class="ParagraphExercise_contents">
-                                <div class="PARAGRAPH-EXERCISE1" id="ParagraphExercise1">
+                                <div class="PARAGRAPH_EXERCISE1" id="ParagraphExercise1">
                                     <h1>EXERCISE 1</h1>
-                                    <p id="paragraphQuestion1" ansValue="paragraph">
+                                    <p id="paragraphQuestion1" ansValue="&#60;p&#62;Merry Christmas!&#60;/p&#62;">
                                         Input the correct HTML tag to create a paragraph with the text "Merry Christmas!".
                                         <pre>
                                             &#60;html&#62;
@@ -386,6 +386,18 @@
                                             &#60;/html&#62;
                                         </pre>
                                     </p>
+                                    <Button class="showanswer" id="paragraphExer1_ToggleAnswer" onclick="toggleAnswer('paragraphQuestion1', 'paragraphExer1_ToggleAnswer', 'paragraphExer1_submitAnswer')">Show Answer</Button>
+                                    <Button class="submit" id="paragraphExer1_submitAnswer" onclick="checkAnswer('paragraphQuestion1', 'paragraphExer1_UserAnswer')">Submit</Button>
+                                </div>
+
+                                <div class="PARAGRAPH_EXERCISE2" id="ParagraphExercise2">
+                                    <h1>EXERCISE 2</h1>
+                                    <p id="paragraphQuestion2" ansValue="&#60;br&#62;">
+                                        Insert a line break tag in the middle of the paragraph 
+                                        <br><br>&#60;p&#62;Wishing you a Merry Christmas, <input type="text" name="attribute_info" size="10" id="paragraphExer2_UserAnswer"> and a Happy New Year!&#60;/p&#62;
+                                    </p>
+                                    <Button class="showanswer" id="paragraphExer2_ToggleAnswer" onclick="toggleAnswer('paragraphQuestion2', 'paragraphExer2_ToggleAnswer', 'paragraphExer2_submitAnswer')">Show Answer</Button>
+                                    <Button class="submit" id="paragraphExer2_submitAnswer" onclick="checkAnswer('paragraphQuestion2', 'paragraphExer2_UserAnswer')">Submit</Button>
                                 </div>
                             </div>
                         </div>
