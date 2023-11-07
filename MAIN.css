@@ -342,12 +342,16 @@ body {
 
 }
 
-.main .content img{
-  max-width: 50%; /* Set a maximum width for the image itself */
+.main .content img {
+  max-width: 50%;
   height: auto;
-  align-items: center;
-  justify-content: center;
-  
+  margin-top: 5%;
+  margin-bottom: 4%;
+  left: 0; /* This line isn't necessary for horizontal alignment */
+  align-items: row; /* Align the image to the top within the container */
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  animation: slideDownToUpFadeIn 1s ease;
 }
 
 
