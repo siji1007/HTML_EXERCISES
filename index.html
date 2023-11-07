@@ -375,7 +375,15 @@
                             <div class="ParagraphExercise_contents">
                                 <div class="Paragraph_exercise1" id="ParagraphExercise1">
                                     <h1>Exercises 1</h1>
-                                    <p id="paragraphQuestions1">Question: To create an HTML paragraph, you use the '<input type="text" name="attribute_info" size="10" id="UserAnswer">' element.</p>
+                                    <p id="paragraphQuestions1">Input the correct HTML tag to create a paragraph with the text "Merry Christmas!"
+                                        <pre>
+                                        &#60;html&#62;
+                                            &#60;body&#62;
+                                                <input type="text" name="paragraph_info" size="20" id="paraExer1_UserAnswer">
+                                            &#60;/body&#62;
+                                        &#60;/html&#62;
+                                        </pre>
+                                    </p>
                                     <Button class="showanswer" onclick="toggleAnswer('ParagraphExercise1')">Show Answer</Button>
                                     <Button class="submit" onclick="submit('ParagraphExercise1', 'paragraphQuestions1')">Submit</Button>
                                 </div>
@@ -478,18 +486,18 @@
                         <p>
                             HTML formatting involves the use of HTML tags and attributes to structure and style the content of a web page. It helps define the layout, appearance, and organization of text and other elements. Here are some basic concepts of HTML formatting:
                             <br><br><b>HTML tags</b> are used to define elements in a web page. Tags are enclosed in angle brackets, and they often come in pairs: an opening tag and a closing tag. For example, the '&#60;p&#62;' tag is used to create paragraphs, and it has an opening '&#60;p&#62;' tag and a closing '&#60;/p&#62;' tag.
-                            <br><br><b>Text Formatting Tags:</b> allows you to change the appearance and style of text within your content.
-                                <br><span class="tab"></span><b>'&#60;b&#62;'</b> for bold text
-                                <br><span class="tab"></span><b>'&#60;i&#62;'</b> for italic text
-                                <br><span class="tab"></span><b>'&#60;u&#62;'</b> for underlined text
-                                <br><span class="tab"></span><b>'&#60;strong&#62;'</b> for strong emphasis
-                                <br><span class="tab"></span><b>'&#60;em&#62;'</b> for emphasized text
-                                <br><span class="tab"></span><b>'&#60;sub&#62;'</b> for subscript text
-                                <br><span class="tab"></span><b>'&#60;sup&#62;'</b> for superscript text
-                                <br><span class="tab"></span><b>'&#60;mark&#62;'</b> for marked text
-                                <br><span class="tab"></span><b>'&#60;small&#62;'</b> for smaller text
-                                <br><span class="tab"></span><b>'&#60;del&#62;'</b> for deleted text
-                                <br><span class="tab"></span><b>'&#60;ins&#62;'</b> for inserted text
+                            <br><br><b>Text Formatting Tags</b> allows you to change the appearance and style of text within your content.
+                                <br><b>'&#60;b&#62;'</b> for bold text
+                                <br><b>'&#60;i&#62;'</b> for italic text
+                                <br><b>'&#60;u&#62;'</b> for underlined text
+                                <br><b>'&#60;strong&#62;'</b> for strong emphasis
+                                <br><b>'&#60;em&#62;'</b> for emphasized text
+                                <br><b>'&#60;sub&#62;'</b> for subscript text
+                                <br><b>'&#60;sup&#62;'</b> for superscript text
+                                <br><b>'&#60;mark&#62;'</b> for marked text
+                                <br><b>'&#60;small&#62;'</b> for smaller text
+                                <br><b>'&#60;del&#62;'</b> for deleted text
+                                <br><b>'&#60;ins&#62;'</b> for inserted text
                             <br><br><b>Heading Tags</b> from '&#60;h1&#62;' to '&#60;h6&#62;', are used to define headings and subheadings in a document. They represent different levels of importance and are styled differently by browsers.
                             <br><br>HTML <b>Lists</b> allows you to create ordered lists (numbered) and unordered lists (bulleted) using the '&#60;ol&#62;' and '&#60;ul&#62;' elements, respectively. List items are defined with the '&#60;li&#62;' element.
                             <br><br><b>Links</b> are created using the '&#60;a&#62;' (anchor) element. You can specify the destination URL using the 'href' attribute.
@@ -498,7 +506,17 @@
                             <br><br><b>HTML Semantic:</b> Using semantic HTML elements like '&#60;header&#62;', '&#60;nav&#62;', '&#60;section&#62;', and '&#60;footer&#62;' can improve the structure and meaning of your content for both browsers and assistive technologies.
                             <br><br>HTML formatting is an essential skill for web developers and designers, as it helps create well-structured, visually appealing, and accessible web pages.
                         </p>
-                    </div>
+                            <div class="spacer">
+                                <div class="buttons">
+                                    <ul id="buttonList">
+                                        <Button onclick="Test('FormattingExercise1')">EXERCISE 1</Button></li>
+                                        <Button onclick="Test('FormattingExercise2')">EXERCISE 2</Button></li>
+                                        <Button onclick="Test('FormattingExercise3')">EXERCISE 3</Button></li>
+                                        <Button onclick="Test('FormattingExercise4')">EXERCISE 4</Button></li>
+                                        <Button onclick="Test('FormattingExercise5')">EXERCISE 5</Button></li>
+                                    </ul>
+                                </div>
+                            </div>
 
                     <div class="QUOTATIONS" id="Quotations-exercises">
                         <h1>QUOTATIONS</h1>
