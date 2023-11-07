@@ -65,6 +65,15 @@ document.addEventListener("DOMContentLoaded", function () {
   var IFframeExercise_content = document.querySelector(".IFframeExercise_content");
   IFframeExercise_content.innerHTML =""
 
+  var quotationExercise_content = document.querySelector(".quotationExercise_content");
+  quotationExercise_content.innerHTML="";
+
+  var idExercise_content = document.querySelector(".idExercise_content");
+  idExercise_content.innerHTML="";
+
+  var scriptsExercise_content = document.querySelector(".scriptsExercise_content")
+  scriptsExercise_content.innerHTML="";
+
 
   let list = document.querySelectorAll(".navigation li");
 
