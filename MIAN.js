@@ -13,25 +13,56 @@ const exerciseContent = {
   'HeadingExercise4' : document.getElementById("HeadingExercise4").innerHTML,
   'HeadingExercise5' : document.getElementById("HeadingExercise5").innerHTML,
 
+  'QuotationsExercise1' : document.getElementById("QuotationsExercise1").innerHTML,
+  'QuotationsExercise2' : document.getElementById("QuotationsExercise2").innerHTML,
+  'QuotationsExercise3' : document.getElementById("QuotationsExercise3").innerHTML,
+  'QuotationsExercise4' : document.getElementById("QuotationsExercise4").innerHTML,
+  'QuotationsExercise5' : document.getElementById("QuotationsExercise5").innerHTML,
 
-  'ParagraphExercise1' : document.getElementById("ParagraphExercise1").innerHTML,
-  'ParagraphExercise2' : document.getElementById("ParagraphExercise2").innerHTML,
-  'ParagraphExercise3' : document.getElementById("ParagraphExercise3").innerHTML,
-  'ParagraphExercise4' : document.getElementById("ParagraphExercise4").innerHTML,
-  'ParagraphExercise5' : document.getElementById("ParagraphExercise5").innerHTML,
 
 
-  'StylesExercise1' : document.getElementById("StylesExercise1").innerHTML,
-  'StylesExercise2' : document.getElementById("StylesExercise2").innerHTML,
-  'StylesExercise3' : document.getElementById("StylesExercise3").innerHTML,
-  'StylesExercise4' : document.getElementById("StylesExercise4").innerHTML,
-  'StylesExercise5' : document.getElementById("StylesExercise5").innerHTML,
+  'CommentsExercise1' : document.getElementById("CommentsExercise1").innerHTML,
+  'CommentsExercise2' : document.getElementById("CommentsExercise2").innerHTML,
+  'CommentsExercise3' : document.getElementById("CommentsExercise3").innerHTML,
+  'CommentsExercise4' : document.getElementById("CommentsExercise4").innerHTML,
+  'CommentsExercise5' : document.getElementById("CommentsExercise5").innerHTML,
+  
+  'InputTypesExercise1' : document.getElementById("InputTypesExercise1").innerHTML,
+  'InputTypesExercise2' : document.getElementById("InputTypesExercise2").innerHTML,
+  'InputTypesExercise3' : document.getElementById("InputTypesExercise3").innerHTML,
+  'InputTypesExercise4' : document.getElementById("InputTypesExercise4").innerHTML,
+  'InputTypesExercise5' : document.getElementById("InputTypesExercise5").innerHTML,
 
-  'ClassesExercise1' : document.getElementById("ClassesExercise1").innerHTML,
-  'ClassesExercise2' : document.getElementById("ClassesExercise2").innerHTML,
-  'ClassesExercise3' : document.getElementById("ClassesExercise3").innerHTML,
-  'ClassesExercise4' : document.getElementById("ClassesExercise4").innerHTML,
-  'ClassesExercise5' : document.getElementById("ClassesExercise5").innerHTML,
+   
+  'CssExercise1' : document.getElementById("CssExercise1").innerHTML,
+  'CssExercise2' : document.getElementById("CssExercise2").innerHTML,
+  'CssExercise3' : document.getElementById("CssExercise3").innerHTML,
+  'CssExercise4' : document.getElementById("CssExercise4").innerHTML,
+  'CssExercise5' : document.getElementById("CssExercise5").innerHTML,
+
+  
+  
+  'FormsExercise1' : document.getElementById("FormsExercise1").innerHTML,
+  'FormsExercise2' : document.getElementById("FormsExercise2").innerHTML,
+  'FormsExercise3' : document.getElementById("FormsExercise3").innerHTML,
+  'FormsExercise4' : document.getElementById("FormsExercise4").innerHTML,
+  'FormsExercise5' : document.getElementById("FormsExercise5").innerHTML,
+
+  'FormsAttriExercise1' : document.getElementById("FormsAttriExercise1").innerHTML,
+  'FormsAttriExercise2' : document.getElementById("FormsAttriExercise2").innerHTML,
+  'FormsAttriExercise3' : document.getElementById("FormsAttriExercise3").innerHTML,
+  'FormsAttriExercise4' : document.getElementById("FormsAttriExercise4").innerHTML,
+  'FormsAttriExercise5' : document.getElementById("FormsAttriExercise5").innerHTML,
+
+  
+  
+  'InputAttriExercise1' : document.getElementById("InputAttriExercise1").innerHTML,
+  'InputAttriExercise2' : document.getElementById("InputAttriExercise2").innerHTML,
+  'InputAttriExercise3' : document.getElementById("InputAttriExercise3").innerHTML,
+  'InputAttriExercise4' : document.getElementById("InputAttriExercise4").innerHTML,
+  'InputAttriExercise5' : document.getElementById("InputAttriExercise5").innerHTML,
+
+
 
 
   
@@ -43,37 +74,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var HeadingExercise_contents = document.querySelector(".HeadingExercise_contents");
   HeadingExercise_contents.innerHTML = "";
+  
+  var CommentsExercise_contents = document.querySelector(".CommentsExercise_contents");
+  CommentsExercise_contents.innerHTML = "";
 
   var ParagraphExercise_contents = document.querySelector(".ParagraphExercise_contents");
   ParagraphExercise_contents.innerHTML = "";
 
   var Styles_exercises_content = document.querySelector(".Styles-exercises-content");
-  Styles_exercises_content.innerHTML ="";
+  Styles_exercises_content.innerHTML = " "
+  var InputTypesExercise_contents = document.querySelector(".InputTypesExercise_contents");
+  InputTypesExercise_contents.innerHTML = "";
 
-  var Classes_exercises_content=document.querySelector(".Classes-exercises-content");
-  Classes_exercises_content.innerHTML ="";
-
-  var LinksExercise_content = document.querySelector(".LinksExercise_content");
-  LinksExercise_content.innerHTML=""
+  var CssExercise_content = document.querySelector(".CssExercise_content");
+  CssExercise_content.innerHTML = "";
 
   var ImagesExercise_content = document.querySelector(".ImagesExercise_content");
-  ImagesExercise_content.innerHTML =""
-
-  var FormsElemets_exercises = document.querySelector(".Forms_exercises-content");
-  FormsElemets_exercises.innerHTML =""
+  ImagesExercise_content.innerHTML ="";
 
   var IFframeExercise_content = document.querySelector(".IFframeExercise_content");
-  IFframeExercise_content.innerHTML =""
+  IFframeExercise_content.innerHTML ="";
 
-  var quotationExercise_content = document.querySelector(".quotationExercise_content");
-  quotationExercise_content.innerHTML="";
+  var LinksExercise_content = document.querySelector(".LinksExercise_content");
+  LinksExercise_content.innerHTML ='';
 
-  var idExercise_content = document.querySelector(".idExercise_content");
-  idExercise_content.innerHTML="";
+  var Classes_exercises_content = document.querySelector(".Classes-exercises-content");
+  Classes_exercises_content.innerHTML = "";
 
-  var scriptsExercise_content = document.querySelector(".scriptsExercise_content")
+  var InputAttri_content = document.querySelector(".InputAttri_content");
+  InputAttri_content.innerHTML = "";
+
+  var quotationExercise_content = document.querySelector(".quotationExercise-content");
+  quotationExercise_content.innerHTML=""
+
+  var FormsExercises_content = document.querySelector(".FormsExercises_content");
+  FormsExercises_content.innerHTML = "";
+
+  var FormsAttriExercises_content = document.querySelector(".FormsAttriExercises_content");
+  FormsAttriExercises_content.innerHTML = "";
+
+  var Forms_exercises_content = document.querySelector(".Forms_exercises-content");
+  Forms_exercises_content.innerHTML = "";
+
+  var idExercise_content = document.querySelector(".idExercise-content");
+  idExercise_content.innerHTML ="";
+
+  var scriptsExercise_content = document.querySelector(".scriptsExercise-content");
   scriptsExercise_content.innerHTML="";
-
 
   let list = document.querySelectorAll(".navigation li");
 
@@ -99,6 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   const sidebarItems = document.querySelectorAll(".sidebar-container li");
   const contentArea = document.querySelector(".content");
+
 
   const attributeContent = {
     Attributes: document.getElementById("Attributes-exercises").innerHTML,
@@ -128,7 +176,6 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   contentArea.innerHTML = " ";
- 
   sidebarItems.forEach((item) => {
     item.addEventListener("click", (event) => {
       event.preventDefault();
@@ -136,19 +183,24 @@ document.addEventListener("DOMContentLoaded", function () {
       navigation.classList.remove("active");
       main.classList.remove("active");
       contentArea.innerHTML = attributeContent[itemText];
-
+      
     });
-  });
+  }); 
+
 });
 
 
 function Test(exercise) {
   var ExerciseArea = document.querySelector(".exercises-content");
   var HeadingExercise_contents = document.querySelector(".HeadingExercise_contents");
-  var ParagraphExercise_contents = document.querySelector(".ParagraphExercise_contents");
-  var Styles_exercises_content = document.querySelector(".Styles-exercises-content");
-  var Classes_exercises_content=document.querySelector(".Classes-exercises-content");
-  var LinksExercise_content = document.querySelector(".LinksExercise_content")
+  var CommentsExercise_contents = document.querySelector(".CommentsExercise_contents");
+  var InputTypesExercise_contents = document.querySelector(".InputTypesExercise_contents");
+  var CssExercise_content = document.querySelector(".CssExercise_content");
+  var FormsExercises_content = document.querySelector(".FormsExercises_content");
+  var InputAttri_content = document.querySelector(".InputAttri_content");
+  var FormsAttriExercises_content = document.querySelector(".FormsAttriExercises_content");
+  var quotationExercise_content = document.querySelector(".quotationExercise-content");
+
 
 
   if (exerciseContent.hasOwnProperty(exercise)) {
@@ -156,16 +208,21 @@ function Test(exercise) {
       ExerciseArea.innerHTML = exerciseContent[exercise];
     } else if (HeadingExercise_contents) {
       HeadingExercise_contents.innerHTML = exerciseContent[exercise];
-    }else if (ParagraphExercise_contents){
-      ParagraphExercise_contents.innerHTML = exerciseContent[exercise];
-    }else if(Styles_exercises_content){
-      Styles_exercises_content.innerHTML = exerciseContent[exercise];
-    }else if(Classes_exercises_content){
-      Classes_exercises_content.innerHTML = exerciseContent[exercise];
-    }else if (LinksExercise_content){
-      LinksExercise_content.innerHTML = exerciseContent[exercise];
+    } else if (CommentsExercise_contents) {
+      CommentsExercise_contents.innerHTML = exerciseContent[exercise];
+    } else if (InputTypesExercise_contents) {
+      InputTypesExercise_contents.innerHTML = exerciseContent[exercise];
+    } else if (CssExercise_content){
+     CssExercise_content.innerHTML = exerciseContent[exercise];
+    } else if (FormsExercises_content) {
+     FormsExercises_content.innerHTML = exerciseContent[exercise];
+    }else if (InputAttri_content){
+      InputAttri_content.innerHTML = exerciseContent[exercise];
+    } else if (FormsAttriExercises_content) {
+      FormsAttriExercises_content.innerHTML = exerciseContent[exercise];
+    }else if (quotationExercise_content){
+      quotationExercise_content.innerHTML = exerciseContent[exercise]
     }
-
 
 
 
@@ -176,136 +233,94 @@ function Test(exercise) {
     if (HeadingExercise_contents) {
       HeadingExercise_contents.innerHTML = '';
     }
-    if(ParagraphExercise_contents){
-      ParagraphExercise_contents.innerHTML='';
+    if (CommentsExercise_contents) {
+      CommentsExercise_contents.innerHTML = '';
     }
+    if (InputTypesExercise_contents) {
+      InputTypesExercise_contents = '';
+    }
+    if (CssExercise_content){
+      CssExercise_content.innerHTML = '';
+    }
+    if (FormsExercises_content) {
+      FormsExercises_content.innerHTML = '';
+    }
+    if (InputAttri_content){
+      InputAttri_content.innerHTML = '';
+    }
+    if (FormsAttriExercises_content) {
+      FormsAttriExercises_content.innerHTML = '';
+    }
+    
   }
 }
 
-const AttributesexerciseAnswers = {
-  'AttributesExercise1': 'metadata',
-  'AttributesExercise2': 'alt',
-  'AttributesExercise3': 'attribute',
-  'AttributesExercise4': 'rows',
-  'AttributesExercise5': 'url'
-};
+var isHidden = true;
+function toggleAnswer(questionId, hideShowButtonId, submitButtonId) {
+  // Get specific button element by ID
+  var hideShowButton = document.getElementById(hideShowButtonId);
 
+  // Get specific question by ID
+  var thisQuestionId = document.getElementById(questionId);
+  
+  // Get answer value of the specific question
+  var ans = thisQuestionId.getAttribute("ansValue");
+  
+  // Get the input element
+  if (isHidden === true){
+    // Configure button text to show answer
+    hideShowButton.textContent = 'Hide Answer';
+    
+    var inputElement = document.querySelector('input[name="attribute_info"]');
+
+    // Set the value of the input element to the correct answer
+    inputElement.value = ans;
+    
+    // Disable the input to prevent further editing
+    inputElement.setAttribute('disabled', 'true');
+
+    // Disable submit button to prevent submitting answer from show answer
+    document.getElementById(submitButtonId).disabled = true;
+    isHidden = false;
+  } else {
+    // Configure button text to show answer
+    hideShowButton.textContent = 'Show Answer';
+    var inputElement = document.querySelector('input[name="attribute_info"]');
+    // Set the value of the input element to the correct answer
+    inputElement.value = '';
+    
+    // Disable the input to prevent further editing
+    inputElement.removeAttribute('disabled');
+    
+    //Enable submit button to allow user submit their own answer
+    document.getElementById(submitButtonId).disabled = false;
+    isHidden = true;
+  }     
+}
 
 const exercisesId_array = [];
-function toggleAnswer(exercise) {
-const answer = AttributesexerciseAnswers[exercise];
-const submitButton = document.querySelector(`.submit`);
-if (answer) {
-// Get the input element with the id "UserAnswer"
-const inputElement = document.getElementById('UserAnswer');
+function checkAnswer(id,questionId, inputId){
+  var element = document.getElementById(id); // Get the element by ID
 
-if (inputElement) {
-    if (inputElement.value === '') {
-        inputElement.value = answer;
-        submitButton.disabled = true;
-        
-    } else {
-        inputElement.value = '';
-        submitButton.disabled = false;
-     
-    }
-}
-}
-}
-
-function submit(exercise, questionId) {
-var button = document.getElementById(exercise);
-
-const answer = AttributesexerciseAnswers[exercise];
-const userInput = document.getElementById("UserAnswer");
-var ExerciseArea = document.querySelector(".exercises-content");
-if(answer === 'metadata'){
-    if(answer === userInput.value.toLowerCase()){
-        document.getElementById("AttributesExerciseDOne1").style.backgroundColor = 'green'; 
-        alert(answer +' is correct!');
-        ExerciseArea.innerHTML = exerciseContent['AttributesExercise2']
+  var thisQuestionId = document.getElementById(questionId);
+  var ans = thisQuestionId.getAttribute("ansValue");
+  var userAsnwer = document.getElementById(inputId).value;
+ 
+  
+  // Checks if user input is not null or empty string
+  if (userAsnwer === '' || userAsnwer === 'null'){
+      alert("You cannot submit an empty answer. Try again.");
+  } else{
+    // Checks if user input is same with set correct answer
+    if (!(ans === userAsnwer)){
+      element.style.backgroundColor = 'red'; 
+    } else { 
+      element.style.backgroundColor = 'green';    
         if (!(exercisesId_array.includes(questionId))){
         progress(questionId);
-        }
+      }
     }
-    else if (userInput.value === ''){
-        alert("Please fill the black before you submit.")
-    }
-    else{
-        alert(userInput.value + ' is wrong.');
-    }
-}
-
-else if(answer === 'alt'){
-    if (answer === userInput.value.toLowerCase()){
-        document.getElementById("AttributesExerciseDOne2").style.backgroundColor = 'green'; 
-        alert(answer +' is correct!');
-        ExerciseArea.innerHTML = exerciseContent['AttributesExercise3']
-        if (!(exercisesId_array.includes(questionId))){
-          progress(questionId);
-          }
-    }
-    else if (userInput.value === ''){
-        alert("Please fill the black before you submit.")
-    }
-    else{
-        alert( userInput.value+ ' is wrong.');
-    }
-}
-
-else if(answer === 'attribute'){
-    if (answer === userInput.value.toLowerCase()){
-        alert(answer +' is correct!');
-        document.getElementById("AttributesExerciseDOne3").style.backgroundColor = 'green'; 
-        ExerciseArea.innerHTML = exerciseContent['AttributesExercise4']
-        if (!(exercisesId_array.includes(questionId))){
-          progress(questionId);
-          }
-    }
-    else if (userInput.value === ''){
-        alert("Please fill the black before you submit.")
-    }
-    else{
-        alert(userInput.value + ' is wrong.');
-        
-    }
-}
-
-else if(answer === 'rows'){
-    if (answer === userInput.value.toLowerCase()){
-        alert(answer +' is correct!');
-        document.getElementById("AttributesExerciseDOne4").style.backgroundColor = 'green'; 
-        ExerciseArea.innerHTML = exerciseContent['AttributesExercise5']
-        if (!(exercisesId_array.includes(questionId))){
-          progress(questionId);
-          }
-    }
-    else if (userInput.value === ''){
-        alert("Please fill the black before you submit.")
-    }
-    else{
-        alert(userInput.value+ ' is wrong.');
- 
-    }
-}
-
-else if(answer === 'url'){
-    if (answer === userInput.value.toLowerCase()){
-        alert(answer +' is correct!');
-        document.getElementById("AttributesExerciseDOne5").style.backgroundColor = 'green'; 
-        HeadingExercise_contents.innerHTML = exerciseContent[exercise];
-        if (!(exercisesId_array.includes(questionId))){
-          progress(questionId);
-          }
-    }
-    else if (userInput.value === ''){
-        alert("Please fill the black before you submit.")
-    }
-    else{
-        alert(userInput.value + ' is wrong.');
-    }
-}
-
+  }
 }
 
 var done_exercises = 0;
@@ -315,6 +330,3 @@ function progress(exercisesId){
   progressBar.textContent = "Finished exercises: " + done_exercises.toString() + "/110";
   exercisesId_array.push(exercisesId);
 }
-
-
-
