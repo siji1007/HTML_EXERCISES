@@ -19,6 +19,12 @@ const exerciseContent = {
   'ParagraphExercise4' : document.getElementById("ParagraphExercise4").innerHTML,
   'ParagraphExercise5' : document.getElementById("ParagraphExercise5").innerHTML,
 
+  'StylesExercise1' : document.getElementById("StylesExercise1").innerHTML,
+  'StylesExercise2' : document.getElementById("StylesExercise2").innerHTML,
+  'StylesExercise3' : document.getElementById("StylesExercise3").innerHTML,
+  'StylesExercise4' : document.getElementById("StylesExercise4").innerHTML,
+  'StylesExercise5' : document.getElementById("StylesExercise5").innerHTML,
+
   'QuotationsExercise1' : document.getElementById("QuotationsExercise1").innerHTML,
   'QuotationsExercise2' : document.getElementById("QuotationsExercise2").innerHTML,
   'QuotationsExercise3' : document.getElementById("QuotationsExercise3").innerHTML,
@@ -46,7 +52,11 @@ const exerciseContent = {
   'CssExercise4' : document.getElementById("CssExercise4").innerHTML,
   'CssExercise5' : document.getElementById("CssExercise5").innerHTML,
 
-  
+  'ClassesExercise1' : document.getElementById("ClassesExercise1").innerHTML,
+  'ClassesExercise2' : document.getElementById("ClassesExercise2").innerHTML,
+  'ClassesExercise3' : document.getElementById("ClassesExercise3").innerHTML,
+  'ClassesExercise4' : document.getElementById("ClassesExercise4").innerHTML,
+  'ClassesExercise5' : document.getElementById("ClassesExercise5").innerHTML,
   
   'FormsExercise1' : document.getElementById("FormsExercise1").innerHTML,
   'FormsExercise2' : document.getElementById("FormsExercise2").innerHTML,
@@ -60,7 +70,11 @@ const exerciseContent = {
   'FormsAttriExercise4' : document.getElementById("FormsAttriExercise4").innerHTML,
   'FormsAttriExercise5' : document.getElementById("FormsAttriExercise5").innerHTML,
 
-  
+  'FormsElemetsExercise1' : document.getElementById("FormsElemetsExercise1").innerHTML,
+  'FormsElemetsExercise2' : document.getElementById("FormsElemetsExercise2").innerHTML,
+  'FormsElemetsExercise3' : document.getElementById("FormsElemetsExercise3").innerHTML,
+  'FormsElemetsExercise4' : document.getElementById("FormsElemetsExercise4").innerHTML,
+  'FormsElemetsExercise5' : document.getElementById("FormsElemetsExercise5").innerHTML,
   
   'InputAttriExercise1' : document.getElementById("InputAttriExercise1").innerHTML,
   'InputAttriExercise2' : document.getElementById("InputAttriExercise2").innerHTML,
@@ -87,8 +101,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var ParagraphExercise_contents = document.querySelector(".ParagraphExercise_contents");
   ParagraphExercise_contents.innerHTML = "";
 
-  var Styles_exercises_content = document.querySelector(".Styles-exercises-content");
-  Styles_exercises_content.innerHTML = " "
+  var Styles_exercises_content = document.querySelector(".Styles_exercises_content");
+  Styles_exercises_content.innerHTML = "";
+  
   var InputTypesExercise_contents = document.querySelector(".InputTypesExercise_contents");
   InputTypesExercise_contents.innerHTML = "";
 
@@ -104,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var LinksExercise_content = document.querySelector(".LinksExercise_content");
   LinksExercise_content.innerHTML ='';
 
-  var Classes_exercises_content = document.querySelector(".Classes-exercises-content");
+  var Classes_exercises_content = document.querySelector(".Classes_exercises_content");
   Classes_exercises_content.innerHTML = "";
 
   var InputAttri_content = document.querySelector(".InputAttri_content");
@@ -119,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var FormsAttriExercises_content = document.querySelector(".FormsAttriExercises_content");
   FormsAttriExercises_content.innerHTML = "";
 
-  var Forms_exercises_content = document.querySelector(".Forms_exercises-content");
+  var Forms_exercises_content = document.querySelector(".Forms_exercises_content");
   Forms_exercises_content.innerHTML = "";
 
   var idExercise_content = document.querySelector(".idExercise-content");
@@ -199,12 +214,15 @@ document.addEventListener("DOMContentLoaded", function () {
 function Test(exercise) {
   var ExerciseArea = document.querySelector(".exercises-content");
   var HeadingExercise_contents = document.querySelector(".HeadingExercise_contents");
+  var Styles_exercises_content = document.querySelector(".Styles_exercises_content");
   var CommentsExercise_contents = document.querySelector(".CommentsExercise_contents");
   var InputTypesExercise_contents = document.querySelector(".InputTypesExercise_contents");
   var CssExercise_content = document.querySelector(".CssExercise_content");
+  var Classes_exercises_content = document.querySelector(".Classes_exercises_content");
   var FormsExercises_content = document.querySelector(".FormsExercises_content");
   var InputAttri_content = document.querySelector(".InputAttri_content");
   var FormsAttriExercises_content = document.querySelector(".FormsAttriExercises_content");
+  var Forms_exercises_content = document.querySelector(".Forms_exercises_content");
   var quotationExercise_content = document.querySelector(".quotationExercise-content");
 
 
@@ -214,18 +232,24 @@ function Test(exercise) {
       ExerciseArea.innerHTML = exerciseContent[exercise];
     } else if (HeadingExercise_contents) {
       HeadingExercise_contents.innerHTML = exerciseContent[exercise];
+    } else if (Styles_exercises_content) {
+      Styles_exercises_content.innerHTML = exerciseContent[exercise];
     } else if (CommentsExercise_contents) {
       CommentsExercise_contents.innerHTML = exerciseContent[exercise];
     } else if (InputTypesExercise_contents) {
       InputTypesExercise_contents.innerHTML = exerciseContent[exercise];
     } else if (CssExercise_content){
      CssExercise_content.innerHTML = exerciseContent[exercise];
+    } else if (Classes_exercises_content){
+      Classes_exercises_content.innerHTML = exerciseContent[exercise];
     } else if (FormsExercises_content) {
      FormsExercises_content.innerHTML = exerciseContent[exercise];
     }else if (InputAttri_content){
       InputAttri_content.innerHTML = exerciseContent[exercise];
     } else if (FormsAttriExercises_content) {
       FormsAttriExercises_content.innerHTML = exerciseContent[exercise];
+    } else if (Forms_exercises_content) {
+      Forms_exercises_content.innerHTML = exerciseContent[exercise];
     }else if (quotationExercise_content){
       quotationExercise_content.innerHTML = exerciseContent[exercise]
     }
@@ -239,6 +263,9 @@ function Test(exercise) {
     if (HeadingExercise_contents) {
       HeadingExercise_contents.innerHTML = '';
     }
+    if (Styles_exercises_content) {
+      Styles_exercises_content.innerHTML = '';
+    }
     if (CommentsExercise_contents) {
       CommentsExercise_contents.innerHTML = '';
     }
@@ -248,6 +275,9 @@ function Test(exercise) {
     if (CssExercise_content){
       CssExercise_content.innerHTML = '';
     }
+    if (Classes_exercises_content){
+      Classes_exercises_content.innerHTML = '';
+    }
     if (FormsExercises_content) {
       FormsExercises_content.innerHTML = '';
     }
@@ -256,6 +286,9 @@ function Test(exercise) {
     }
     if (FormsAttriExercises_content) {
       FormsAttriExercises_content.innerHTML = '';
+    }
+    if (Forms_exercises_content){
+      Forms_exercises_content.innerHTML = '';
     }
     
   }
