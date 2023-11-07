@@ -15,10 +15,10 @@ const exerciseContent = {
 
 
   'ParagraphExercise1' : document.getElementById("ParagraphExercise1").innerHTML,
-  'ParagraphExercise2' : document.getElementById("ParagraphExercise1").innerHTML,
-  'ParagraphExercise3' : document.getElementById("ParagraphExercise1").innerHTML,
-  'ParagraphExercise4' : document.getElementById("ParagraphExercise1").innerHTML,
-  'ParagraphExercise5' : document.getElementById("ParagraphExercise1").innerHTML,
+  'ParagraphExercise2' : document.getElementById("ParagraphExercise2").innerHTML,
+  'ParagraphExercise3' : document.getElementById("ParagraphExercise3").innerHTML,
+  'ParagraphExercise4' : document.getElementById("ParagraphExercise4").innerHTML,
+  'ParagraphExercise5' : document.getElementById("ParagraphExercise5").innerHTML,
 
 
   'StylesExercise1' : document.getElementById("StylesExercise1").innerHTML,
