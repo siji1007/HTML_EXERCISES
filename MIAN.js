@@ -31,6 +31,18 @@ const exerciseContent = {
   'QuotationsExercise4' : document.getElementById("QuotationsExercise4").innerHTML,
   'QuotationsExercise5' : document.getElementById("QuotationsExercise5").innerHTML,
 
+  'IdExercise1':document.getElementById("IdExercise1").innerHTML,
+  'IdExercise2':document.getElementById("IdExercise2").innerHTML,
+  'IdExercise3':document.getElementById("IdExercise3").innerHTML,
+  'IdExercise4':document.getElementById("IdExercise4").innerHTML,
+  'IdExercise5':document.getElementById("IdExercise5").innerHTML,
+
+  'ScriptsExercise1':document.getElementById("ScriptsExercise1").innerHTML,
+  'ScriptsExercise2':document.getElementById("ScriptsExercise2").innerHTML,
+  'ScriptsExercise3':document.getElementById("ScriptsExercise3").innerHTML,
+  'ScriptsExercise4':document.getElementById("ScriptsExercise4").innerHTML,
+  'ScriptsExercise5':document.getElementById("ScriptsExercise5").innerHTML,
+
 
 
   'CommentsExercise1' : document.getElementById("CommentsExercise1").innerHTML,
@@ -128,6 +140,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var quotationExercise_content = document.querySelector(".quotationExercise-content");
   quotationExercise_content.innerHTML=""
 
+  var idExercise_content = document.querySelector(".idExercise_content");
+  idExercise_content.innerHTML="";
+
+  var scriptsExercise_content = document.querySelector(".scriptsExercise_content")
+  scriptsExercise_content.innerHTML="";
+
   var FormsExercises_content = document.querySelector(".FormsExercises_content");
   FormsExercises_content.innerHTML = "";
 
@@ -224,7 +242,10 @@ function Test(exercise) {
   var FormsAttriExercises_content = document.querySelector(".FormsAttriExercises_content");
   var Forms_exercises_content = document.querySelector(".Forms_exercises_content");
   var quotationExercise_content = document.querySelector(".quotationExercise-content");
-
+  
+  var idExercise_content = document.querySelector(".idExercise_content");
+  var scriptsExercise_content = document.querySelector(".scriptsExercise_content")
+ 
 
 
   if (exerciseContent.hasOwnProperty(exercise)) {
@@ -252,6 +273,12 @@ function Test(exercise) {
       Forms_exercises_content.innerHTML = exerciseContent[exercise];
     }else if (quotationExercise_content){
       quotationExercise_content.innerHTML = exerciseContent[exercise]
+    }
+    else if (idExercise_content){
+      idExercise_content.innerHTML = exerciseContent[exercise];
+    }
+    else if (scriptsExercise_content){
+      scriptsExercise_content.innerHTML=exerciseContent[exercise];
     }
 
 
