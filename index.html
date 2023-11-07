@@ -291,7 +291,7 @@
 
                                     <div class="ATTRIBUTES-EXERCISES5" id="AttributesExercise5">
                                         <h1>Exercises 5</h1>
-                                        <p id="attributesQuestion5" ansValue="url">To specify the source URL of an image in HTML, you use the img element with the src attribute. Fill in the blank: img src="<input type="text" name="attribute_info" size="10" id="attrExer5_UserAnswer">".</p>
+                                        <p id="attributesQuestion5" ansValue="url" >To specify the source URL of an image in HTML, you use the img element with the src attribute. Fill in the blank: img src="<input type="text" name="attribute_info" size="10" id="attrExer5_UserAnswer">".</p>
                                         <Button class="showanswer" id="attrExer5_ToggleAnswer" onclick="toggleAnswer('attributesQuestion5', 'attrExer5_ToggleAnswer', 'attrExer5_submitAnswer')">Show Answer</Button>
                                         <Button class="submit" id="attrExer5_submitAnswer" onclick="checkAnswer('AttributesExercise5Done','attributesQuestion5', 'attrExer5_UserAnswer')">Submit</Button>
 
@@ -299,9 +299,10 @@
                                 </div>
                             </div>
                     </div>
-                    <!--END OF ATTRIBUTES DIV-->
+                    <!--END OF ATTRIBUTES DIV | TAPOS NA -->
 
             
+                    <!--START OF HEADINGS ATTRIBUTES-->
                     <div class="HEADINGS" id="Headings-exercises">
                         <h1>HEADINGS</h1>
                         <p>In HTML, "headings" refer to the heading elements that are used to define the structure and hierarchy of a web page's content. Headings are typically used to create section titles and subtitles, and they help organize content into a logical and hierarchical structure.
@@ -310,11 +311,11 @@
                                 <ul>
                                     <div class="buttons">
                                         <ul>
-                                            <Button id="HeadingExercise1Color" onclick="Test('HeadingExercise1')">exercise1</Button>
-                                            <Button onclick="Test('HeadingExercise2')">exercise1</Button>
-                                            <Button onclick="Test('HeadingExercise3')">exercise3</Button>
-                                            <Button onclick="Test('HeadingExercise4')">exercise4</Button>
-                                            <Button onclick="Test('HeadingExercise5')">exercise5</Button>
+                                            <Button id="HeadingExercise1Color" onclick="Test('HeadingExercise1')">EXERCISE 1</Button>
+                                            <Button id="HeadingExercise2Color" onclick="Test('HeadingExercise2')">EXERCISE 2</Button>
+                                            <Button id="HeadingExercise3Color" onclick="Test('HeadingExercise3')">EXERCISE 3</Button>
+                                            <Button id="HeadingExercise4Color" onclick="Test('HeadingExercise4')">EXERCISE 4</Button>
+                                            <Button id="HeadingExercise5Color" onclick="Test('HeadingExercise5')">EXERCISE5</Button>
                                         </ul>
                                     </div>
                                 </ul>
@@ -323,7 +324,8 @@
                             <div class="HeadingExercise_contents">
                                     <div class="Heading" id="HeadingExercise1">
                                         <h1>Exercises 1</h1>
-                                        <p id="headingQuestions1" ansValue = "bold">Question: HTML attributes provide additional <input type="text" name="attribute_info" size="10" id="HeadingExer1_UserAnswer"> about an element and are defined within the element's opening tag.</p>
+                                        <p id="headingQuestions1" ansValue = "h1">
+                                            Question: In HTML headings, the tag used to define the most important heading on a webpage is <input type="text" name="attribute_info" size="10" id="HeadingExer1_UserAnswer"> .</p>
                                         <Button class="showanswer" id="HeadingExer1_ToggleAnswer" onclick="toggleAnswer('headingQuestions1', 'HeadingExer1_ToggleAnswer', 'HeadingExer1_submitAnswer')">Show Answer</Button>
                                         <Button class="submit" id="HeadingExer1_submitAnswer" onclick="checkAnswer('HeadingExercise1Color','headingQuestions1', 'HeadingExer1_UserAnswer')">Submit</Button>
 
@@ -331,55 +333,97 @@
 
                                     <div class="Heading" id="HeadingExercise2">
                                         <h1>Exercises 2</h1>
-                                        <p id="headingQuestions2">Question: HTML attributes provide additional <input type="text" name="attribute_info" size="10" id="UserAnswer"> about an element and are defined within the element's opening tag.</p>
+                                        <p ansValue = "h6" id="headingQuestions2">Question: HTML headings are typically numbered from h1 to <input type="text" name="attribute_info" size="10" id="HeadingExer2_UserAnswer">, with h1 being the highest level of importance.</p>
+                                        <Button class="showanswer" id="HeadingExer2_ToggleAnswer" onclick="toggleAnswer('headingQuestions2', 'HeadingExer2_ToggleAnswer', 'HeadingExer2_submitAnswer')">Show Answer</Button>
+                                        <Button class="submit" id="HeadingExer2_submitAnswer" onclick="checkAnswer('HeadingExercise2Color','headingQuestions2', 'HeadingExer2_UserAnswer')">Submit</Button>
                                     </div>
                                     <div class="Heading" id="HeadingExercise3">
                                         <h1>Exercises 3</h1>
-                                        <p id="headingQuestions3">Question: HTML attributes provide additional <input type="text" name="attribute_info" size="10" id="UserAnswer"> about an element and are defined within the element's opening tag.</p>
+                                        <p ansValue = "Search Engine Optimization" id="headingQuestions3">Question: HTML headings are important for both the visual presentation of a webpage and for <input type="text" name="attribute_info" size="10" id="HeadingExer3_UserAnswer"> optimization.</p>
+                                        <Button class="showanswer" id="HeadingExer3_ToggleAnswer" onclick="toggleAnswer('headingQuestions3', 'HeadingExer3_ToggleAnswer', 'HeadingExer3_submitAnswer')">Show Answer</Button>
+                                        <Button class="submit" id="HeadingExer3_submitAnswer" onclick="checkAnswer('HeadingExercise3Color','headingQuestions3', 'HeadingExer3_UserAnswer')">Submit</Button>
                                     </div>
 
                                     <div class="Heading" id="HeadingExercise4">
-                                        <h1>EExercises 4</h1>
-                                        <p id="headingQuestions4">Question: HTML attributes provide additional <input type="text" name="attribute_info" size="10" id="UserAnswer"> about an element and are defined within the element's opening tag.</p>
+                                        <h1>Exercises 4</h1>
+                                        <p ansValue = "title attribute" id="headingQuestions4">Question: Which attribute can be used with HTML headings to provide a brief description or additional information about the heading's content? <input type="text" name="attribute_info" size="12" id="HeadingExer4_UserAnswer">
+                                        </p>
+                                        <Button class="showanswer" id="HeadingExer4_ToggleAnswer" onclick="toggleAnswer('headingQuestions4', 'HeadingExer4_ToggleAnswer', 'HeadingExer4_submitAnswer')">Show Answer</Button>
+                                        <Button class="submit" id="HeadingExer4_submitAnswer" onclick="checkAnswer('HeadingExercise4Color','headingQuestions4', 'HeadingExer4_UserAnswer')">Submit</Button>
                                     </div>
 
                                     <div class="Heading" id="HeadingExercise5">
                                         <h1>Exercises 5</h1>
-                                        <p id="headingQuestions5">Question: HTML attributes provide additional <input type="text" name="attribute_info" size="10" id="UserAnswer"> about an element and are defined within the element's opening tag.</p>
+                                        <p ansValue = "h6" id="headingQuestions5">Question: The purpose of specifying headings with different levels in HTML is to indicate the relative importance and structure of the content, with h1 being the most important and descending in importance to <input type="text" name="attribute_info" size="10" id="HeadingExer5_UserAnswer"></p>
+                                        <Button class="showanswer" id="HeadingExer5_ToggleAnswer" onclick="toggleAnswer('headingQuestions5', 'HeadingExer5_ToggleAnswer', 'HeadingExer5_submitAnswer')">Show Answer</Button>
+                                        <Button class="submit" id="HeadingExer5_submitAnswer" onclick="checkAnswer('HeadingExercise5Color','headingQuestions5', 'HeadingExer5_UserAnswer')">Submit</Button>
                                     </div>
                             </div>
-                
                         </div>
-
                     </div>
-
+                    <!--END OF HEADINGS ATTRIBUTES | TAPOS NA-->
                     
-
+                    <!--START OF PARAGRAPH ATTRIBUTES-->
                     <div class="PARAGRAPH" id="Paragraph-exercises">
                         <h1>PARAGRAPH</h1>
-                        <p>lkashdkjhaskjdhkasjhd</p>
-
+                        <p>
+                            HTML paragraphs are used to structure and display content as separate blocks on a web page. They provide a way to separate and organize textual information, making it more readable and visually appealing.
+                            <br><br>To create an HTML paragraph, you use the &#60;p&#62; element. It consists of an opening tag &#60;p&#62; and a closing tag &#60;/p&#62; to define the beginning and end of the paragraph.
+                            <br><br>Text enclosed within the &#60;p&#62; element is displayed as a separate paragraph. By default, there is some vertical space (margin) above and below the paragraph, visually separating it from surrounding content.
+                            <br><br>To insert line breaks within a paragraph without starting a new paragraph, you can use the &#60;br&#62; tag. It creates a new line within the same paragraph.
+                        </p>
                         <div class="spacer">
                             <div class="buttons">
                                 <ul id="buttonList">
                                     <Button onclick="Test('ParagraphExercise1')">EXERCISE 1</Button></li>
-                                    <Button onclick="Test('AttributesExercise2')">EXERCISE 2</Button></li>
-                                    <Button onclick="Test('AttributesExercise3')">EXERCISE 3</Button></li>
-                                    <Button onclick="Test('AttributesExercise4')">EXERCISE 4</Button></li>
-                                    <Button onclick="Test('AttributesExercise5')">EXERCISE 5</Button></li>
+                                    <Button onclick="Test('ParagraphExercise2')">EXERCISE 2</Button></li>
+                                    <Button onclick="Test('ParagraphExercise3')">EXERCISE 3</Button></li>
+                                    <Button onclick="Test('ParagraphExercise4')">EXERCISE 4</Button></li>
+                                    <Button onclick="Test('ParagraphExercise5')">EXERCISE 5</Button></li>
                                 </ul>
                             </div>
 
                             <div class="ParagraphExercise_contents">
-                                <div class="Paragraph" id="ParagraphExercise1">
-                                    <h1>Exercises 1</h1>
-                                    <p id="headingQuestions1">Question: HTML attributes provide additional <input type="text" name="attribute_info" size="10" id="UserAnswer"> about an element and are defined within the element's opening tag.</p>
+                                <div class="PARAGRAPH_EXERCISE1" id="ParagraphExercise1">
+                                    <h1>EXERCISE 1</h1>
+                                    <p id="paragraphQuestion1" ansValue="&#60;p&#62;Merry Christmas!&#60;/p&#62;">
+                                        Input the correct HTML tag to create a paragraph with the text "Merry Christmas!".</p>
+                                        <pre>
+                                            &#60;html&#62;
+                                                &#60;body&#62;
+                                                    <input type="text" name="attribute_info" size="30" id="paragraphExer1_UserAnswer">
+                                                &#60;/body&#62;
+                                            &#60;/html&#62;
+                                        </pre>
+                                    <Button class="showanswer" id="paragraphExer1_ToggleAnswer" onclick="toggleAnswer('paragraphQuestion1', 'paragraphExer1_ToggleAnswer', 'paragraphExer1_submitAnswer')">Show Answer</Button>
+                                    <Button class="submit" id="paragraphExer1_submitAnswer" onclick="checkAnswer('paragraphQuestion1', 'paragraphExer1_UserAnswer')">Submit</Button>
                                 </div>
-                            </div>    
 
-                        </div>    
-                    </div>
+                                <div class="PARAGRAPH_EXERCISE2" id="ParagraphExercise2">
+                                    <h1>EXERCISE 2</h1>
+                                    <p id="paragraphQuestion2" ansValue="&#60;br&#62;">
+                                        Insert a line break tag in the middle of the paragraph 
+                                        <br><br>&#60;p&#62;Wishing you a Merry Christmas, <input type="text" name="attribute_info" size="10" id="paragraphExer2_UserAnswer"> and a Happy New Year!&#60;/p&#62;
+                                    </p>
+                                    <Button class="showanswer" id="paragraphExer2_ToggleAnswer" onclick="toggleAnswer('paragraphQuestion2', 'paragraphExer2_ToggleAnswer', 'paragraphExer2_submitAnswer')">Show Answer</Button>
+                                    <Button class="submit" id="paragraphExer2_submitAnswer" onclick="checkAnswer('paragraphQuestion2', 'paragraphExer2_UserAnswer')">Submit</Button>
+                                </div>
+                                
+                                <div class="PARAGRAPH_EXERCISE3" id="ParagraphExercise3">
+                                    <h1>EXERCISE 3</h1>
+                                    <p id="paragraphQuestion3" ansValue="margin">
+                                        By default, there is some <input type="text" name="attribute_info" size="10" id="paragraphExer3_UserAnswer"> space above and below a paragraph for visual separation.</p>
+                                    </p>
+                                    <Button class="showanswer" id="paragraphExer3_ToggleAnswer" onclick="toggleAnswer('paragraphQuestion3', 'paragraphExer3_ToggleAnswer', 'paragraphExer3_submitAnswer')">Show Answer</Button>
+                                    <Button class="submit" id="paragraphExer3_submitAnswer" onclick="checkAnswer('paragraphQuestion3', 'paragraphExer3_UserAnswer')">Submit</Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                      <!--END OF PARAGRAPH ATTRIBUTES | HINDI PA TAPOS-->
 
+
+                    <!--START OF STYLES ATTRIBUTES-->  
                     <div class="STYLES" id="Styles-exercises">
                         <h1>STYLES</h1>
                         <p>
@@ -440,10 +484,68 @@
                                 </div>
                             </div>
                     </div>
+                    <!--END OF STYLES ATTRIBUTES  | D PA TAPOS-->
 
+                    <!--THIS IS THE START OF FORMATTING                                                  CJ -->
                     <div class="FORMATTING" id="Formatting-exercises">
                         <h1>FORMATTING</h1>
-                    </div>
+                        <p>HTML provides a variety of formatting elements and attributes that you can use to control the appearance of your web content. These formatting options help you control text styles, align elements, add lists, insert images, and more. By using HTML for formatting, you can ensure that your web pages are not only well-structured but also aesthetically pleasing.</p>
+                        <div class="spacer">
+                            <div class="buttons">
+                                <ul id="buttonList">
+                                    <Button onclick="Test('FormattingExercise1')">EXERCISE 1</Button></li>
+                                    <Button onclick="Test('FormattingExercise2')">EXERCISE 2</Button></li>
+                                    <Button onclick="Test('FormattingExercise3')">EXERCISE 3</Button></li>
+                                    <Button onclick="Test('FormattingExercise4')">EXERCISE 4</Button></li>
+                                    <Button onclick="Test('FormattingExercise5')">EXERCISE 5</Button></li>
+                                </ul>
+                            </div>
+
+                            <div class="Formatting-exercises-content">
+                                <div class="FORMATTING-EXERCISES1" id="FormattingExercise1">
+                                    <h1>Exercises 1</h1>
+                                    <p ansValue="Tags" id="question">Formatting is achieved with HTML <input text="type"></p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise1')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise1')">Submit</Button>
+
+                                </div>
+                                
+                                <div class="FORMATTING-EXERCISES2" id="FormattingExercise2">
+                                    <h1>Exercises 2</h1>
+                                    <p ansValue="strong" id="question">To make text bold in HTML, you can use the <<input type="text">> tag.</p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise2')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise2')">Submit</Button>
+
+                                </div>
+
+                                <div class="FORMATTING-EXERCISES3" id="FormattingExercise3">
+                                    <h1>Exercises 3</h1>
+                                    <p ansValue="ol" id="question">The <input type="text"> tag is used to create an ordered (numbered) list in HTML.</p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise3')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise3')">Submit</Button>
+
+                                </div>
+
+                                <div class="FORMATTING-EXERCISES4" id="FormattingExercise4">
+                                    <h1>Exercises 4</h1>
+                                    <p ansValue="br" id="question">Question: To create a line break in HTML text formatting, you can use the <input type="text"> tag.</p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise4')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise4')">Submit</Button>
+
+                                </div>
+
+                                <div class="FORMATTING-EXERCISES5" id="FormattingExercise5">
+                                    <h1>Exercises 5</h1>
+                                    <p ansValue="href" id="question">Question: In HTML, to create a hyperlink, you use the <a> tag and specify the link's destination using the <input type="text"> attribute.</p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise5')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise5')">Submit</Button>
+
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                    <!--END OF STRING FORMATTING | HINDI PA TAPOS (CJ CONTENT NEED TO SHOW THE ANSWER)-->
 
                     <div class="QUOTATIONS" id="Quotations-exercises">
                         <h1>QUOTATIONS</h1>
@@ -520,11 +622,11 @@
                             <div class="spacer">
                                 <div class="buttons">
                                     <ul id="buttonList">
-                                        <Button onclick="Test('CommentsExercise1')">exercise1</Button></li>
-                                        <Button onclick="Test('CommentsExercise2')">exercise2</Button></li>
-                                        <Button onclick="Test('CommentsExercise3')">exercise3</Button></li>
-                                        <Button onclick="Test('CommentsExercise4')">exercise4</Button></li>
-                                        <Button onclick="Test('CommentsExercise5')">exercise5</Button></li>
+                                        <Button onclick="Test('CommentsExercise1')">EXERCISE 1</Button></li>
+                                        <Button onclick="Test('CommentsExercise2')">EXERCISE 2</Button></li>
+                                        <Button onclick="Test('CommentsExercise3')">EXERCISE 3</Button></li>
+                                        <Button onclick="Test('CommentsExercise4')">EXERCISE 4</Button></li>
+                                        <Button onclick="Test('CommentsExercise5')">EXERCISE 5</Button></li>
                                     </ul>
                                 </div>
 
@@ -648,6 +750,7 @@
                         </div>
                     </div>
 
+                    <!--THIS IS THE LINKS DIV-->
                     <div class="LINKS" id="Links-exercises">
                         <h1>LINKS</h1>
                         <p> 
@@ -657,11 +760,11 @@
                                 <ul>
                                     <div class="buttons">
                                         <ul>
-                                            <Button onclick="Test('LinksExercise1')">exercise1</Button>
-                                            <Button onclick="Test('LinksExercise2')">exercise2</Button>
-                                            <Button onclick="Test('LinksExercise3')">exercise3</Button>
-                                            <Button onclick="Test('LinksExercise4')">exercise4</Button>
-                                            <Button onclick="Test('LinksExercise5')">exercise5</Button>
+                                            <Button id = "LinksExercise1Done"  onclick="Test('LinksExercise1')">EXERCISE 1</Button>
+                                            <Button id = "LinksExercise2Done"  onclick="Test('LinksExercise2')">EXERCISE 2</Button>
+                                            <Button id = "LinksExercise3Done" onclick="Test('LinksExercise3')">EXERCISE 3</Button>
+                                            <Button id = "LinksExercise4Done" onclick="Test('LinksExercise4')">EXERCISE 4</Button>
+                                            <Button id = "LinksExercise5Done" onclick="Test('LinksExercise5')">EXERCISE 5</Button>
                                         </ul>
                                     </div>
                                 </ul>
@@ -670,35 +773,35 @@
                             <div class="LinksExercise_content">
                                 <div class="Links" id="LinksExercise1">
                                     <h1>Exercises 1</h1>
-                                    <p id="LinksQuestions1" style="text-align: center;">Question: To create a hyperlink in HTML Links, you use the <input type="text" name="links_info" size="10" id="UserAnswer"> element.</p>
-                                    <Button class="showanswer" onclick="toggleAnswer('LinksExercise1')">Show Answer</Button>
-                                    <Button class="submit" onclick="submit('LinksExercise1', 'linksQuestion1')">Submit</Button>
+                                    <p ansValue = '<a>' id="LinksQuestions1" style="text-align: center;">Question: To create a hyperlink in HTML Links, you use the <input type="text" name="links_info" size="10" id="linksQuestion1"> element.</p>
+                                    <Button id="LinkExer1_ToggleAnswer1" class="showanswer" onclick="toggleAnswer('LinksQuestions1', 'LinkExer1_ToggleAnswer1', 'LinkExer1_submitAnswer')">Show Answer</Button>
+                                    <Button id="LinkExer1_submitAnswer" class="submit" onclick="submit('LinksExercise1Done','LinksQuestions1', 'linksQuestion1')">Submit</Button>
                                 </div>
 
                                 <div class="Links" id="LinksExercise2">
                                     <h1>Exercises 2</h1>
-                                    <p id="LinksQuestions2" style="text-align: center;">Question: The href attribute in the '< a >' element specifies the <input type="text" name="links_info" size="10" id="UserAnswer"> of the linked resource. </p>
+                                    <p ansValue = 'URL' id="LinksQuestions2" style="text-align: center;">Question: The href attribute in the '< a >' element specifies the <input type="text" name="links_info" size="10" id="UserAnswer"> of the linked resource. </p>
                                     <Button class="showanswer" onclick="toggleAnswer('LinksExercise2')">Show Answer</Button>
                                     <Button class="submit" onclick="submit('LinksExercise2', 'linksQuestion2')">Submit</Button>
                                 </div>
 
                                 <div class="Links" id="LinksExercise3">
                                     <h1>Exercises 3</h1>
-                                    <p id="LinksQuestions3" style="text-align: center;">Question: The HTML element used to define a section in an HTML document that contains navigation links is the <input type="text" name="links_info" size="10" id="UserAnswer"> element.</p>
+                                    <p ansValue = '<nav>' id="LinksQuestions3" style="text-align: center;">Question: The HTML element used to define a section in an HTML document that contains navigation links is the <input type="text" name="links_info" size="10" id="UserAnswer"> element.</p>
                                     <Button class="showanswer" onclick="toggleAnswer('LinksExercise3')">Show Answer</Button>
                                     <Button class="submit" onclick="submit('LinksExercise3', 'linksQuestion3')">Submit</Button>
                                 </div>
 
                                 <div class="Links" id="LinksExercise4">
                                     <h1>Exercises 4</h1>
-                                    <p id="LinksQuestions4" style="text-align: center;">Question: To link to an anchor within the same page, you can use the "#" symbol followed by the <input type="text" name="links_info" size="10" id="UserAnswer"> of the anchor.</p>
+                                    <p ansValue = '<id attribute>' id="LinksQuestions4" style="text-align: center;">Question: To link to an anchor within the same page, you can use the "#" symbol followed by the <input type="text" name="links_info" size="10" id="UserAnswer"> of the anchor.</p>
                                     <Button class="showanswer" onclick="toggleAnswer('LinksExercise4')">Show Answer</Button>
                                     <Button class="submit" onclick="submit('LinksExercise4', 'linksQuestion4')">Submit</Button>
                                 </div>
 
                                 <div class="Links" id="LinksExercise5">
                                     <h1>Exercises 5</h1>
-                                    <p id="LinksQuestions5" style="text-align: center;">Question: The HTML element that can be used to create a placeholder for an external resource that might not be available is <input type="text" name="links_info" size="10" id="UserAnswer"> .</p>
+                                    <p ansValue = ' <link>' id="LinksQuestions5" style="text-align: center;">Question: The HTML element that can be used to create a placeholder for an external resource that might not be available is <input type="text" name="links_info" size="10" id="UserAnswer"> .</p>
                                     <Button class="showanswer" onclick="toggleAnswer('LinksExercise5')">Show Answer</Button>
                                     <Button class="submit" onclick="submit('LinksExercise5', 'linksQuestion5')">Submit</Button>
                                 </div>
@@ -706,8 +809,9 @@
 
                         </div>
                     </div>
+                    <!--END OF LINKS DIV | HINDI PA TAPOS HINDI KO MAILABAS YUNG VALUE SA ANS HINDI KO ALAM KUNG BAKIT HAHAHHAHAHAH-->
 
-
+                    <!--THIS IS THE IMAGES DIV-->
                     <div class="IMAGES" id="Images-exercises">
                         <h1>IMAGES</h1>
                         <p> HTML images are displayed using the '⟨ img ⟩' element, which requires the 'src' attribute to specify the image file's path or URL. The 'alt' attribute provides alternative text for accessibility. You can also set the image's dimensions with the 'width' and 'height' attributes. Images enhance web content by displaying graphics or pictures.</p>
@@ -716,11 +820,11 @@
                                     <ul>
                                         <div class="buttons">
                                             <ul>
-                                                <Button onclick="Test('ImagesExercise1')">exercise1</Button>
-                                                <Button onclick="Test('ImagesExercise2')">exercise2</Button>
-                                                <Button onclick="Test('ImagesExercise3')">exercise3</Button>
-                                                <Button onclick="Test('ImagesExercise4')">exercise4</Button>
-                                                <Button onclick="Test('ImagesExercise5')">exercise5</Button>
+                                                <Button onclick="Test('ImagesExercise1')">EXERCISE 1</Button>
+                                                <Button onclick="Test('ImagesExercise2')">EXERCISE 2</Button>
+                                                <Button onclick="Test('ImagesExercise3')">EXERCISE 3</Button>
+                                                <Button onclick="Test('ImagesExercise4')">EXERCISE 4</Button>
+                                                <Button onclick="Test('ImagesExercise5')">EXERCISE 5</Button>
                                             </ul>
                                         </div>
                                     </ul>
@@ -765,16 +869,84 @@
 
                             </div>
                     </div>
+                    <!--END OF THE IMAGES DIV | HINDI PA TAPOS WALA ANSVALUE-->
 
-
+                    <!--THIS IS THE TABLES DIV-->
                     <div class="TABLES" id="Tables-exercises">
                         <h1>TABLES</h1>
                     </div>
+                    <!--END OF THE TABLES DIV | HINDI PA TAPOS WALA PANG CONTENT-->
+
+
+                    <!--THIS IS THE LIST DIV-->
                     <div class="LIST" id="List-exercises">
                         <h1>LIST</h1>
+                        <p> 
+                            HTML Lists are essential for organizing and structuring content on web pages. Ordered lists ( < ol > ) are ideal for representing items in a specific order or sequence, 
+                            typically numbered. Unordered lists ( < ul > ) are useful for displaying items without a specific order, typically using bullet points. 
+                            Additionally, definition lists ( < dl > ) are perfect for creating pairs of terms and their corresponding definitions or descriptions. 
+                            These list types enable web designers to present information in a clear and readable format, making them a fundamental part of HTML for enhancing
+                             content organization and user experience on the web. </p>
+                             
+                        <div class="spacer">
+                            <div class="buttons">
+                                <ul>
+                                    <div class="buttons">
+                                        <ul>
+                                            <Button onclick="Test('ListExercise1')">EXERCISE 1</Button>
+                                            <Button onclick="Test('ListExercise2')">EXERCISE 2</Button>
+                                            <Button onclick="Test('ListExercise3')">EXERCISE 3</Button>
+                                            <Button onclick="Test('ListExercise4')">EXERCISE 4</Button>
+                                            <Button onclick="Test('ListExercise5')">EXERCISE 5</Button>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+
+                            <div class="List-exercise_content">
+                                <div class="List" id="ListExercise1">
+                                    <h1>Exercises 1</h1>
+                                    <p id="ListQuestions1" style="text-align: center;">Question: In HTML, an ordered list is created using the <input type="text" name="list_info" size="10" id="UserAnswer"> element.</p>
+                                    <Button class="showanswer" onclick="toggleAnswer('ListExercise1')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('ListExercise1', 'listQuestion1')">Submit</Button>
+                                </div>
+
+                                <div class="List" id="ListExercise2">
+                                    <h1>Exercises 2</h1>
+                                    <p id="ListQuestions2" style="text-align: center;">Question: The <input type="text" name="list_info" size="10" id="UserAnswer"> attribute in the <ol> element is used to specify the type of numbering for ordered lists. </p>
+                                    <Button class="showanswer" onclick="toggleAnswer('ListExercise2')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('ListExercise2', 'listQuestion2')">Submit</Button>
+                                </div>
+
+                                <div class="List" id="ListExercise3">
+                                    <h1>Exercises 3</h1>
+                                    <p id="ListQuestions3" style="text-align: center;">Question: You can use the <input type="text" name="list_info" size="10" id="UserAnswer">  attribute in <ul> to change the type of bullet points for an unordered list. </p>
+                                    <Button class="showanswer" onclick="toggleAnswer('ListExercise3')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('ListExercise3', 'listQuestion3')">Submit</Button>
+                                </div>
+
+                                <div class="List" id="ListExercise4">
+                                    <h1>Exercises 4</h1>
+                                    <p id="ListQuestions4" style="text-align: center;">Question: The "compact" attribute in HTML lists is used to reduce the <input type="text" name="list_info" size="10" id="UserAnswer">  between list items. </p>
+                                    <Button class="showanswer" onclick="toggleAnswer('ListExercise4')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('ListExercise4', 'listQuestion4')">Submit</Button>
+                                </div>
+
+                                <div class="List" id="ListExercise5">
+                                    <h1>Exercises 5</h1>
+                                    <p id="ListQuestions5" style="text-align: center;">Question: In HTML, an ordered list can have its numbering style changed using the "type" attribute, which accepts values like "1," "A," "a," "I," and "i" to specify the  <input type="text" name="list_info" size="10" id="UserAnswer"> . </p>
+                                    <Button class="showanswer" onclick="toggleAnswer('ListExercise5')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('ListExercise5', 'listQuestion5')">Submit</Button>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
+                    <!--END OF THE LIST DIV | HINDI PA TAPOS WALA PANG AVSVALUE-->
 
                     
+
+                    <!--THIS IS THE CLASSES DIV-->
                     <div class="CLASSES" id="Classes-exercises">
                         <h1>CLASSES</h1>
                         <p>
@@ -835,7 +1007,10 @@
                                 </div>
                             </div>
                     </div>
+                    <!--END OF THE CLASSES DIV | HINDI PA TAPOS WALA PANG ANSVALUE-->
 
+
+                    <!--THIS IS THE ID'S DIV-->
                     <div class="ID" id="ID-exercises">
                         <h1>ID</h1>
                         <p>
@@ -898,7 +1073,9 @@
 
 
                     </div>
+                    <!--END OF THE ID DIV  | HINDI PA TAPOS WALA PANG ANSVALUE-->
                     
+                    <!--THIS IS THE IFFRAME DIV-->
                     <div class="IFFRAME" id="IFframe-exercises">
                         <h1>IFFRAME</h1>
                         <p> HTML iframes are used to embed content from another web page or source within the current web page. They create a rectangular area where external content, like maps or videos, can be displayed. The '< iframe >' element specifies the source URL and dimensions of the embedded content. </p>
@@ -907,11 +1084,11 @@
                                     <ul>
                                         <div class="buttons">
                                             <ul>
-                                                <Button onclick="Test('IFframeExercise1')">exercise1</Button>
-                                                <Button onclick="Test('IFframeExercise2')">exercise2</Button>
-                                                <Button onclick="Test('IFframeExercise3')">exercise3</Button>
-                                                <Button onclick="Test('IFframeExercise4')">exercise4</Button>
-                                                <Button onclick="Test('IFframeExercise5')">exercise5</Button>
+                                                <Button onclick="Test('IFframeExercise1')">EXERCISE 1</Button>
+                                                <Button onclick="Test('IFframeExercise2')">EXERCISE 2</Button>
+                                                <Button onclick="Test('IFframeExercise3')">EXERCISE 3</Button>
+                                                <Button onclick="Test('IFframeExercise4')">EXERCISE 4</Button>
+                                                <Button onclick="Test('IFframeExercise5')">EXERCISE 5</Button>
                                             </ul>
                                         </div>
                                     </ul>
@@ -956,8 +1133,9 @@
 
                             </div>
                     </div>
+                    <!--END OF THE IFFRAME DIV | HINDI PA TAPOS WALA PANG ANSVALUE-->
 
-
+                    <!------THIS IS SCRIPT DIV -->
                     <div class="SCRIPTS" id="Scripts-exercises">
                         <h1>SCRIPTS</h1>
                         <p>
@@ -975,7 +1153,7 @@
                                 </div>
 
                                 <div class="scriptsExercise-content">
-                                    <div class="SCRIPTS-EXERCISES1" id="IdExercise1">
+                                    <div class="SCRIPTS-EXERCISES1" id="ScriptsExercise1">
                                         <h1>Exercises 1</h1>
 
                                         <p id="qscriptsQuestion1">Use the HTML attribute to specify the script's source URL. This attribute is essential for linking external scripts to your web page.&lt;script src=" <input type="text" name="scripts_info" size="10" id="UserAnswer">"&gt;&lt;/script&gt;</p>
@@ -984,7 +1162,7 @@
 
                                     </div>
 
-                                    <div class="SCRIPTS-EXERCISES2" id="IdExercise2">
+                                    <div class="SCRIPTS-EXERCISES2" id="ScriptsExercise2">
                                         <h1>Exercises 2</h1>
                                         <p id="scriptsQuestion2">Use the HTML attribute to define the scripting language used within the script element.&lt;script<input type="text" name="scripts_info" size="10" id="UserAnswer">="javascript"&gt; alert('Hello, World!'); &lt;/script&gt;</p>
                                         <Button class="showanswer" onclick="toggleAnswer('ScriptsExercise2')">Show Answer</Button>
@@ -992,7 +1170,7 @@
 
                                     </div>
 
-                                    <div class="SCRIPTS-EXERCISES3" id="IdExercise3">
+                                    <div class="SCRIPTS-EXERCISES3" id="ScriptsExercise3">
                                         <h1>Exercises 3</h1>
                                         <p id="qscriptsQuestion3">Use the HTML attribute to indicate if the script should be executed asynchronously or defer its execution until after the document is parsed.<br>&lt;script <input type="text" name="scripts_info" size="10" id="UserAnswer">="async" src="myscript.js"&gt;&lt;/script&gt;</p>
                                         <Button class="showanswer" onclick="toggleAnswer('ScriptsExercise3')">Show Answer</Button>
@@ -1000,7 +1178,7 @@
 
                                     </div>
 
-                                    <div class="SCRIPTS-EXERCISES4" id="IdExercise4">
+                                    <div class="SCRIPTS-EXERCISES4" id="ScriptsExercise4">
                                         <h1>Exercises 4</h1>
                                         <p id="scriptsQuestion4">Use the HTML element to define an alternative script to be executed if the browser doesn't support the primary script or the script fails to load.<br>&lt; <input type="text" name="scripts_info" size="10" id="UserAnswer">src="fallback.js"&gt;alert('This is the fallback script.');&lt;/<input type="text" name="scripts_info" size="10" id="UserAnswer">&gt;</p>
                                         <Button class="showanswer" onclick="toggleAnswer('ScriptsExercise4')">Show Answer</Button>
@@ -1008,7 +1186,7 @@
 
                                     </div>
 
-                                    <div class="SCRIPTS-EXERCISES5" id="IdExercise5">
+                                    <div class="SCRIPTS-EXERCISES5" id="ScriptsExercise5">
                                         <h1>Exercises 5</h1>
                                         <p id="scriptsQuestion5">To include an external JavaScript file in your HTML document, use the HTML element that defines the source file using the 'src' attribute.<br> &lt;script`<input type="text" name="scripts_info" size="10" id="UserAnswer">="script.js"&gt;&lt;/script&gt;</p>
                                         <Button class="showanswer" onclick="toggleAnswer('ScriptsExercise5')">Show Answer</Button>
@@ -1018,10 +1196,70 @@
                                 </div>
                             </div>
                     </div>
+                    <!------END OF THE SCRIPT DIV | HINDI PA TAPOS WALA PANG ANSVALUE -->
 
+                    <!------THIS IS COMPUTER CODE DIV -->
                     <div class="COMPUTERCODE" id="CC-exercises">
                         <h1>COMPUTER CODE</h1>
+                        <p>HTML (Hypertext Markup Language) is the fundamental language used to create and structure web content on the World Wide Web. It consists of a set of markup tags and elements that define the structure and presentation of web documents. HTML documents are essentially text files that can be created and edited using any basic text editor, making them human-readable.</p>
+                        <div class="spacer">
+                            <div class="buttons">
+                                <ul id="buttonList">
+                                    <Button onclick="Test('ComputerCodeExercise1')">EXERCISE 1</Button></li>
+                                    <Button onclick="Test('ComputerCodeExercise2')">EXERCISE 2</Button></li>
+                                    <Button onclick="Test('ComputerCodeExercise3')">EXERCISE 3</Button></li>
+                                    <Button onclick="Test('ComputerCodeExercise4')">EXERCISE 4</Button></li>
+                                    <Button onclick="Test('ComputerCodeExercise5')">EXERCISE 5</Button></li>
+                                </ul>
+                            </div>
+
+                            <div class="ComputerCode-exercises-content">
+                                <div class="ComputerCode-EXERCISES1" id="ComputerCodeExercise1">
+                                    <h1>Exercises 1</h1>
+                                    <p ansValue="Tags" id="question">Formatting is achieved with HTML <input text="type"></p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise1')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise1')">Submit</Button>
+
+                                </div>
+                                
+                                <div class="ComputerCode-EXERCISES2" id="ComputerCodeExercise2">
+                                    <h1>Exercises 2</h1>
+                                    <p ansValue="strong" id="question">To make text bold in HTML, you can use the <<input type="text">> tag.</p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise2')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise2')">Submit</Button>
+
+                                </div>
+
+                                <div class="ComputerCode-EXERCISES3" id="ComputerCodeExercise3">
+                                    <h1>Exercises 3</h1>
+                                    <p ansValue="ol" id="question">The <input type="text"> tag is used to create an ordered (numbered) list in HTML.</p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise3')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise3')">Submit</Button>
+
+                                </div>
+
+                                <div class="ComputerCode-EXERCISES4" id="ComputerCodeExercise4">
+                                    <h1>Exercises 4</h1>
+                                    <p ansValue="br" id="question">Question: To create a line break in HTML text formatting, you can use the <input type="text"> tag.</p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise4')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise4')">Submit</Button>
+
+                                </div>
+
+                                <div class="FORMATTING-EXERCISES5" id="ComputerCodeExercise5">
+                                    <h1>Exercises 5</h1>
+                                    <p ansValue="href" id="question">Question: In HTML, to create a hyperlink, you use the <a> tag and specify the link's destination using the <input type="text"> attribute.</p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise5')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise5')">Submit</Button>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!--END OF THE COMPUTER CODE DIV | HINDI PA TAPOS WALA PA AKONG CONTENT HEHE-->
+
+
+                     <!------THIS IS FORM DIV -->
                     <div class="FORMS" id="Forms-exercises">
                         <h1>FORMS</h1>
                         <p> HTML Forms are required, when you want to collect some data from the site visitor. For example, during user registration you would like to collect information such as name, email address, credit card, etc.
@@ -1040,11 +1278,11 @@
                         <div class="spacer">
                             <div class="buttons">
                                 <ul id="buttonList">
-                                    <Button onclick="Test('FormsExercise1')">EXERCISE 1</Button></li>
-                                    <Button onclick="Test('FormsExercise2')">EXERCISE 2</Button></li>
-                                    <Button onclick="Test('FormsExercise3')">EXERCISE 3</Button></li>
-                                    <Button onclick="Test('FormsExercise4')">EXERCISE 4</Button></li>
-                                    <Button onclick="Test('FormsExercise5')">EXERCISE 5</Button></li>
+                                    <Button id = "FormExercise1Done" onclick="Test('FormsExercise1')">EXERCISE 1</Button></li>
+                                    <Button id = "FormExercise2Done" onclick="Test('FormsExercise2')">EXERCISE 2</Button></li>
+                                    <Button id = "FormExercise3Done" onclick="Test('FormsExercise3')">EXERCISE 3</Button></li>
+                                    <Button id = "FormExercise4Done" onclick="Test('FormsExercise4')">EXERCISE 4</Button></li>
+                                    <Button id = "FormExercise5Done" onclick="Test('FormsExercise5')">EXERCISE 5</Button></li>
                                 </ul>
                             </div>
 
@@ -1053,7 +1291,7 @@
                                     <h1>Exercises 1</h1>
                                     <p id="formsquestion1" ansValue="label">The &lt;<input type="text" name="attribute_info" size="10" id="formsexer1_UserAnswer">&gt; element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.</p>
                                     <Button class="showanswer" id="formsexer1_ToggleAnswer" onclick="toggleAnswer('formsquestion1', 'formsexer1_ToggleAnswer', 'formsexer1_submitAnswer')">Show Answer</Button>
-                                    <Button class="submit" id="formsexer1_submitAnswer" onclick="checkAnswer('formsquestion1', 'formsexer1_UserAnswer')">Submit</Button>
+                                    <Button class="submit" id="formsexer1_submitAnswer" onclick="checkAnswer('FormExercise1Done','formsquestion1', 'formsexer1_UserAnswer')">Submit</Button>
 
                                 </div>
                                 
@@ -1061,7 +1299,7 @@
                                     <h1>Exercises 2</h1>
                                     <p id="formsquestion2" ansValue="form">&lt;<input type="text" name="attribute_info" size="10" id="formsexer2_UserAnswer">&gt; HTML element represents a document section containing interactive controls for submitting information.</p>
                                     <Button class="showanswer" id="formsexer2_ToggleAnswer" onclick="toggleAnswer('formsquestion2', 'formsexer2_ToggleAnswer', 'formsexer2_submitAnswer')">Show Answer</Button>
-                                    <Button class="submit" id="formsexer2_submitAnswer" onclick="checkAnswer('formsquestion2', 'formsexer2_UserAnswer')">Submit</Button>
+                                    <Button class="submit" id="formsexer2_submitAnswer" onclick="checkAnswer('FormExercise2Done','formsquestion2', 'formsexer2_UserAnswer')">Submit</Button>
 
                                 </div>
 
@@ -1069,7 +1307,7 @@
                                     <h1>Exercises 3</h1>
                                     <p id="formsquestion3" ansValue="input">An &lt;<input type="text" name="attribute_info" size="10" id="formsexer3_UserAnswer">&gt; element can be displayed in many ways, depending on the type attribute.</p>
                                     <Button class="showanswer" id="formsexer3_ToggleAnswer" onclick="toggleAnswer('formsquestion3', 'formsexer3_ToggleAnswer', 'formsexer3_submitAnswer')">Show Answer</Button>
-                                    <Button class="submit" id="formsexer3_submitAnswer" onclick="checkAnswer('formsquestion3', 'formsexer3_UserAnswer')">Submit</Button>
+                                    <Button class="submit" id="formsexer3_submitAnswer" onclick="checkAnswer('FormExercise3Done','formsquestion3', 'formsexer3_UserAnswer')">Submit</Button>
 
                                 </div>
 
@@ -1077,7 +1315,7 @@
                                     <h1>Exercises 4</h1>
                                     <p id="formsquestion4" ansValue="form">An HTML <input type="text" name="attribute_info" size="10" id="formsexer4_UserAnswer"> is used to collect user input. The user input is most often sent to a server for processing</p>
                                     <Button class="showanswer" id="formsexer4_ToggleAnswer" onclick="toggleAnswer('formsquestion4', 'formsexer4_ToggleAnswer', 'formsexer4_submitAnswer')">Show Answer</Button>
-                                    <Button class="submit" id="formsexer4_submitAnswer" onclick="checkAnswer('formsquestion4', 'formsexer4_UserAnswer')">Submit</Button>
+                                    <Button class="submit" id="formsexer4_submitAnswer" onclick="checkAnswer('FormExercise4Done','formsquestion4', 'formsexer4_UserAnswer')">Submit</Button>
 
                                 </div>
 
@@ -1085,15 +1323,16 @@
                                     <h1>Exercises 5</h1>
                                     <p id="formsquestion5" ansValue="text"><input type="text" name="attribute_info" size="10" id="formsexer5_UserAnswer">is an input type used for a single-line text input field.</p>
                                     <Button class="showanswer" id="formsexer5_ToggleAnswer" onclick="toggleAnswer('formsquestion5', 'formsexer5_ToggleAnswer', 'formsexer5_submitAnswer')">Show Answer</Button>
-                                    <Button class="submit" id="formsexer5_submitAnswer" onclick="checkAnswer('formsquestion5', 'formsexer5_UserAnswer')">Submit</Button>
+                                    <Button class="submit" id="formsexer5_submitAnswer" onclick="checkAnswer('FormExercise5Done','formsquestion5', 'formsexer5_UserAnswer')">Submit</Button>
 
                                 </div>
                             </div>
                         </div>
 
                     </div>
+                      <!--END OF FORM | TAPOS NA-->
 
-
+                    <!------THIS IS FORM_ATTRIBUTE DIV-->
                     <div class="FORMSATTRIBUTES" id="FormsAttri-exercises">
                         <h1>FORMS ATTRIBUTES</h1>
                         <p> 
@@ -1105,11 +1344,11 @@
                             <div class="spacer">
                                 <div class="buttons">
                                     <ul id="buttonList">
-                                        <Button onclick="Test('FormsAttriExercise1')">EXERCISE 1</Button></li>
-                                        <Button onclick="Test('FormsAttriExercise2')">EXERCISE 2</Button></li>
-                                        <Button onclick="Test('FormsAttriExercise3')">EXERCISE 3</Button></li>
-                                        <Button onclick="Test('FormsAttriExercise4')">EXERCISE 4</Button></li>
-                                        <Button onclick="Test('FormsAttriExercise5')">EXERCISE 5</Button></li>
+                                        <Button id = "FormAttriExercise1Done" onclick="Test('FormsAttriExercise1')">EXERCISE 1</Button></li>
+                                        <Button id = "FormAttriExercise2Done" onclick="Test('FormsAttriExercise2')">EXERCISE 2</Button></li>
+                                        <Button id = "FormAttriExercise3Done" onclick="Test('FormsAttriExercise3')">EXERCISE 3</Button></li>
+                                        <Button id = "FormAttriExercise4Done" onclick="Test('FormsAttriExercise4')">EXERCISE 4</Button></li>
+                                        <Button id = "FormAttriExercise5Done" onclick="Test('FormsAttriExercise5')">EXERCISE 5</Button></li>
                                     </ul>
                                 </div>
     
@@ -1123,7 +1362,7 @@
                                           &lt;/form&gt; </p>
 
                                         <Button class="showanswer" id="formsattriexer1_ToggleAnswer" onclick="toggleAnswer('formsattriquestion1', 'formsattriexer1_ToggleAnswer', 'formsattriexer1_submitAnswer')">Show Answer</Button>
-                                        <Button class="submit" id="formsattriexer1_submitAnswer" onclick="checkAnswer('formsattriquestion1', 'formsattriexer1_UserAnswer')">Submit</Button>
+                                        <Button class="submit" id="formsattriexer1_submitAnswer" onclick="checkAnswer('FormAttriExercise1Done','formsattriquestion1', 'formsattriexer1_UserAnswer')">Submit</Button>
     
                                     </div>
 
@@ -1131,7 +1370,7 @@
                                             <h1>Exercises 2</h1>
                                             <p id="formsattriquestion2" ansValue="autocomplete">The <input type="text" name="attribute_info" size="10" id="formsattriexer2_UserAnswer">  attribute is a newly added attribute of HTML5 which enables an input field to complete automatically. </p>
                                             <Button class="showanswer" id="formsattriexer2_ToggleAnswer" onclick="toggleAnswer('formsattriquestion2', 'formsattriexer2_ToggleAnswer', 'formsattriexer2_submitAnswer')">Show Answer</Button>
-                                            <Button class="submit" id="formsattriexer2_submitAnswer" onclick="checkAnswer('formsattriquestion2', 'formsattriexer2_UserAnswer')">Submit</Button>
+                                            <Button class="submit" id="formsattriexer2_submitAnswer" onclick="checkAnswer('FormAttriExercise2Done','formsattriquestion2', 'formsattriexer2_UserAnswer')">Submit</Button>
         
                                         </div>
 
@@ -1139,7 +1378,7 @@
                                                 <h1>Exercises 3</h1>
                                                 <p id="formsattriquestion3" ansValue="method">The <input type="text" name="attribute_info" size="10" id="formsattriexer3_UserAnswer"> attribute specifies the HTTP method to be used when submitting the form data.</p>
                                                 <Button class="showanswer" id="formsattriexer3_ToggleAnswer" onclick="toggleAnswer('formsattriquestion3', 'formsattriexer3_ToggleAnswer', 'formsattriexer3_submitAnswer')">Show Answer</Button>
-                                                <Button class="submit" id="formsattriexer3_submitAnswer" onclick="checkAnswer('formsattriquestion3', 'formsattriexer3_UserAnswer')">Submit</Button>
+                                                <Button class="submit" id="formsattriexer3_submitAnswer" onclick="checkAnswer('FormAttriExercise3Done','formsattriquestion3', 'formsattriexer3_UserAnswer')">Submit</Button>
             
                                             </div>
 
@@ -1147,7 +1386,7 @@
                                                     <h1>Exercises 4</h1>
                                                     <p id="formsattriquestion4" ansValue="target">The <input type="text" name="attribute_info" size="10" id="formsattriexer4_UserAnswer"> attribute specifies where to display the response that is received after submitting the form.</p>
                                                     <Button class="showanswer" id="formsattriexer4_ToggleAnswer" onclick="toggleAnswer('formsattriquestion4', 'formsattriexer4_ToggleAnswer', 'formsattriexer4_submitAnswer')">Show Answer</Button>
-                                                    <Button class="submit" id="formsattriexer4_submitAnswer" onclick="checkAnswer('formsattriquestion4', 'formsattriexer4_UserAnswer')">Submit</Button>
+                                                    <Button class="submit" id="formsattriexer4_submitAnswer" onclick="checkAnswer('FormAttriExercise4Done','formsattriquestion4', 'formsattriexer4_UserAnswer')">Submit</Button>
                 
                                                 </div>
 
@@ -1155,14 +1394,17 @@
                                                         <h1>Exercises 5</h1>
                                                         <p id="formsattriquestion5" ansValue="action">The <input type="text" name="attribute_info" size="10" id="formsattriexer5_UserAnswer"> attribute defines the action to be performed when the form is submitted.</p>
                                                         <Button class="showanswer" id="formsattriexer5_ToggleAnswer" onclick="toggleAnswer('formsattriquestion5', 'formsattriexer5_ToggleAnswer', 'formsattriexer5_submitAnswer')">Show Answer</Button>
-                                                        <Button class="submit" id="formsattriexer5_submitAnswer" onclick="checkAnswer('formsattriquestion5', 'formsattriexer5_UserAnswer')">Submit</Button>
+                                                        <Button class="submit" id="formsattriexer5_submitAnswer" onclick="checkAnswer('FormAttriExercise5Done','formsattriquestion5', 'formsattriexer5_UserAnswer')">Submit</Button>
                     
                                                     </div>
                                 </div>
                             </div>
                                                 
                     </div>
+                    <!--END OF FORM_ATTRIBUTE | TAPOS NA-->
 
+                    
+                    <!------THIS IS FORM_ELEMENTS DIV-->
                     <div class="FORMSELEMENTS" id="FormsElemets-exercises">
                         <h1>FORM ELEMENTS</h1>
                         <p>
@@ -1172,11 +1414,11 @@
                             <div class="spacer">
                                 <div class="buttons">
                                     <ul id="buttonList">
-                                        <Button onclick="Test('FormsElemetsExercise1')">EXERCISE 1</Button></li>
-                                        <Button onclick="Test('FormsElemetsExercise2')">EXERCISE 2</Button></li>
-                                        <Button onclick="Test('FormsElemetsExercise3')">EXERCISE 3</Button></li>
-                                        <Button onclick="Test('FormsElemetsExercise4')">EXERCISE 4</Button></li>
-                                        <Button onclick="Test('FormsElemetsExercise5')">EXERCISE 5</Button></li>
+                                        <Button id = "FormElementExercise1Done" onclick="Test('FormsElemetsExercise1')">EXERCISE 1</Button></li>
+                                        <Button id = "FormElementExercise2Done" onclick="Test('FormsElemetsExercise2')">EXERCISE 2</Button></li>
+                                        <Button id = "FormElementExercise3Done" onclick="Test('FormsElemetsExercise3')">EXERCISE 3</Button></li>
+                                        <Button id = "FormElementExercise4Done" onclick="Test('FormsElemetsExercise4')">EXERCISE 4</Button></li>
+                                        <Button id = "FormElementExercise5Done" onclick="Test('FormsElemetsExercise5')">EXERCISE 5</Button></li>
                                     </ul>
                                 </div>
 
@@ -1185,7 +1427,7 @@
                                         <h1>Exercises 1</h1>
                                         <p id="question">Question: The <input type="text" name="formselemets_info" size="10" id="UserAnswer"> element is used to associate a text label with a form input field. </p>
                                         <Button class="showanswer" onclick="toggleAnswer('FormsElemetsExercise1')">Show Answer</Button>
-                                        <Button class="submit" onclick="submit('FormsElemetsExercise1')">Submit</Button>
+                                        <Button class="submit" onclick="submit('FormElementExercise1Done','FormsElemetsExercise1')">Submit</Button>
 
                                     </div>
                                     
@@ -1193,7 +1435,7 @@
                                         <h1>Exercises 2</h1>
                                         <p id="question">Question: The <input type="text" name="formselemets_info" size="10" id="UserAnswer"> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
                                         <Button class="showanswer" onclick="toggleAnswer('FormsElemetsExercise2')">Show Answer</Button>
-                                        <Button class="submit" onclick="submit('FormsElemetsExercise2')">Submit</Button>
+                                        <Button class="submit" onclick="submit('FormElementExercise2Done','FormsElemetsExercise2')">Submit</Button>
 
                                     </div>
 
@@ -1201,7 +1443,7 @@
                                         <h1>Exercises 3</h1>
                                         <p id="question">Question: The <input type="text" name="formselemets_info" size="10" id="UserAnswer"> tag is used to group related options in a select element (drop-down list).</p>
                                         <Button class="showanswer" onclick="toggleAnswer('FormsElemetsExercise3')">Show Answer</Button>
-                                        <Button class="submit" onclick="submit('FormsElemetsExercise3')">Submit</Button>
+                                        <Button class="submit" onclick="submit('FormElementExercise3Done','FormsElemetsExercise3')">Submit</Button>
 
                                     </div>
 
@@ -1209,7 +1451,7 @@
                                         <h1>Exercises 4</h1>
                                         <p id="question">Question: The <input type="text" name="formselemets_info" size="10" id="UserAnswer"> selector selects elements with a specific class attribute.</p>
                                         <Button class="showanswer" onclick="toggleAnswer('FormsElemetsExercise4')">Show Answer</Button>
-                                        <Button class="submit" onclick="submit('FormsElemetsExercise4')">Submit</Button>
+                                        <Button class="submit" onclick="submit('FormElementExercise4Done','FormsElemetsExercise4')">Submit</Button>
 
                                     </div>
 
@@ -1217,14 +1459,15 @@
                                         <h1>Exercises 5</h1>
                                         <p id="question">Question: Use CSS to set the font of the paragraph to "courier". <input type="text" name="formselemets_info" size="10" id="UserAnswer"></p>
                                         <Button class="showanswer" onclick="toggleAnswer('FormsElemetsExercise5')">Show Answer</Button>
-                                        <Button class="submit" onclick="submit('FormsElemetsExercise5')">Submit</Button>
+                                        <Button class="submit" onclick="submit('FormElementExercis5Done','FormsElemetsExercise5')">Submit</Button>
 
                                     </div>
                                 </div>
                             </div>
                     </div>
+                    <!--END OF FORM_ELEMENTS | HINDI PA TAPOS-->
 
-                     <!------THIS IS INPUTTYPES DIV THAT CONTAINS THE DATA OF INPUT TYPES-->
+                     <!------THIS IS INPUTTYPES DIV-->
                     <div class="INPUTTYPES" id="InputType-exercises">
                         <h1>INPUT TYPES</h1>
                         <p>
@@ -1237,11 +1480,11 @@
                             <div class="spacer">
                                 <div class="buttons">
                                     <ul id="buttonList">
-                                        <Button onclick="Test('InputTypesExercise1')">EXERCISE 1</Button></li>
-                                        <Button onclick="Test('InputTypesExercise2')">EXERCISE 2</Button></li>
-                                        <Button onclick="Test('InputTypesExercise3')">EXERCISE 3</Button></li>
-                                        <Button onclick="Test('InputTypesExercise4')">EXERCISE 4</Button></li>
-                                        <Button onclick="Test('InputTypesExercise5')">EXERCISE 5</Button></li>
+                                        <Button id ="InputTypeExercise1Done" onclick="Test('InputTypesExercise1')">EXERCISE 1</Button></li>
+                                        <Button id ="InputTypeExercise2Done" onclick="Test('InputTypesExercise2')">EXERCISE 2</Button></li>
+                                        <Button id ="InputTypeExercise3Done" onclick="Test('InputTypesExercise3')">EXERCISE 3</Button></li>
+                                        <Button id ="InputTypeExercise4Done" onclick="Test('InputTypesExercise4')">EXERCISE 4</Button></li>
+                                        <Button id ="InputTypeExercise5Done" onclick="Test('InputTypesExercise5')">EXERCISE 5</Button></li>
                                     </ul>
                                 </div>
 
@@ -1250,7 +1493,7 @@
                                         <h1>Exercises 1</h1>
                                         <p id="inputTypesQuestion1" ansValue="single-line">&lt;input type="text"&gt; defines a <input type="text" name="attribute_info" size="10" id="inputTypesExer1_UserAnswer"> input field:</p>
                                         <Button class="showanswer" id="inputTypesExer1_ToggleAnswer" onclick="toggleAnswer('inputTypesQuestion1', 'inputTypesExer1_ToggleAnswer', 'inputTypesExer1_submitAnswer')">Show Answer</Button>
-                                        <Button class="submit" id="inputTypesExer1_submitAnswer" onclick="checkAnswer('inputTypesQuestion1', 'inputTypesExer1_UserAnswer')">Submit</Button>
+                                        <Button class="submit" id="inputTypesExer1_submitAnswer" onclick="checkAnswer('InputTypeExercise1Done','inputTypesQuestion1', 'inputTypesExer1_UserAnswer')">Submit</Button>
 
                                     </div>
                                     
@@ -1259,7 +1502,7 @@
                                         <p id="inputTypesQuestion2" ansValue="password">Fill the blank with the appropriate value to define  a password field.<br>
                                             &lt;input type="<input type="text" name="attribute_info" size="10" id="inputTypesExer2_UserAnswer">"&gt;</p>
                                         <Button class="showanswer" id="inputTypesExer2_ToggleAnswer" onclick="toggleAnswer('inputTypesQuestion2', 'inputTypesExer2_ToggleAnswer', 'inputTypesExer2_submitAnswer')">Show Answer</Button>
-                                        <Button class="submit" id="inputTypesExer2_submitAnswer" onclick="checkAnswer('inputTypesQuestion2', 'inputTypesExer2_UserAnswer')">Submit</Button>
+                                        <Button class="submit" id="inputTypesExer2_submitAnswer" onclick="checkAnswer('InputTypeExercise2Done','inputTypesQuestion2', 'inputTypesExer2_UserAnswer')">Submit</Button>
 
                                     </div>
 
@@ -1267,7 +1510,7 @@
                                         <h1>Exercises 3</h1>
                                         <p id="inputTypesQuestion3" ansValue="text"><input type="text" name="attribute_info" size="10" id="inputTypesExer3_UserAnswer"> is the default value of type.</p>
                                         <Button class="showanswer" id="inputTypesExer3_ToggleAnswer" onclick="toggleAnswer('inputTypesQuestion3', 'inputTypesExer3_ToggleAnswer', 'inputTypesExer3_submitAnswer')">Show Answer</Button>
-                                        <Button class="submit" id="inputTypesExer3_submitAnswer" onclick="checkAnswer('inputTypesQuestion3', 'inputTypesExer3_UserAnswer')">Submit</Button>
+                                        <Button class="submit" id="inputTypesExer3_submitAnswer" onclick="checkAnswer('InputTypeExercise3Done','inputTypesQuestion3', 'inputTypesExer3_UserAnswer')">Submit</Button>
 
                                     </div>
 
@@ -1275,7 +1518,7 @@
                                         <h1>Exercises 4</h1>
                                         <p id="inputTypesQuestion4" ansValue="<form>">The input tag is used within<input type="text" name="attribute_info" size="10" id="inputTypesExer4_UserAnswer">element to declare input controls that allow users to input data.</p>
                                         <Button class="showanswer" id="inputTypesExer4_ToggleAnswer" onclick="toggleAnswer('inputTypesQuestion4', 'inputTypesExer4_ToggleAnswer', 'inputTypesExer4_submitAnswer')">Show Answer</Button>
-                                        <Button class="submit" id="inputTypesExer4_submitAnswer" onclick="checkAnswer('inputTypesQuestion4', 'inputTypesExer4_UserAnswer')">Submit</Button>
+                                        <Button class="submit" id="inputTypesExer4_submitAnswer" onclick="checkAnswer('InputTypeExercise4Done','inputTypesQuestion4', 'inputTypesExer4_UserAnswer')">Submit</Button>
 
                                     </div>
 
@@ -1283,14 +1526,15 @@
                                         <h1>Exercises 5</h1>
                                         <p id="inputTypesQuestion5" ansValue="radio button">&lt;input type="radio"> defines a <input type="text" name="attribute_info" size="10" id="inputTypesExer5_UserAnswer"></p>
                                         <Button class="showanswer" id="inputTypesExer5_ToggleAnswer" onclick="toggleAnswer('inputTypesQuestion5', 'inputTypesExer5_ToggleAnswer', 'inputTypesExer5_submitAnswer')">Show Answer</Button>
-                                        <Button class="submit" id="inputTypesExer5_submitAnswer" onclick="checkAnswer('inputTypesQuestion5', 'inputTypesExer5_UserAnswer')">Submit</Button>
+                                        <Button class="submit" id="inputTypesExer5_submitAnswer" onclick="checkAnswer('InputTypeExercise5Done','inputTypesQuestion5', 'inputTypesExer5_UserAnswer')">Submit</Button>
 
                                     </div>
                                 </div>
                             </div>
                     </div>
-                    <!--END OF COMMENTS DIV-->
+                    <!--END OF INPUTTYPES DIV | TAPOS NA-->
 
+                    <!--START OF THE INPUT ATTRIBUTES-->
                     <div class="INPUTATTRIBUTES" id="InputAtt-exercises">
                         <h1>INPUT ATTRIBUTES</h1>
                         <p>
@@ -1303,11 +1547,11 @@
                             <div class="spacer">
                                 <div class="buttons">
                                     <ul id="buttonList">
-                                        <Button onclick="Test('InputAttriExercise1')">EXERCISE 1</Button></li>
-                                        <Button onclick="Test('InputAttriExercise2')">EXERCISE 2</Button></li>
-                                        <Button onclick="Test('InputAttriExercise3')">EXERCISE 3</Button></li>
-                                        <Button onclick="Test('InputAttriExercise4')">EXERCISE 4</Button></li>
-                                        <Button onclick="Test('InputAttriExercise5')">EXERCISE 5</Button></li>
+                                        <Button id = "InputAttriExercise1Done" onclick="Test('InputAttriExercise1')">EXERCISE 1</Button></li>
+                                        <Button id = "InputAttriExercise2Done" onclick="Test('InputAttriExercise2')">EXERCISE 2</Button></li>
+                                        <Button id = "InputAttriExercise3Done" onclick="Test('InputAttriExercise3')">EXERCISE 3</Button></li>
+                                        <Button id = "InputAttriExercise4Done" onclick="Test('InputAttriExercise4')">EXERCISE 4</Button></li>
+                                        <Button id = "InputAttriExercise5Done" onclick="Test('InputAttriExercise5')">EXERCISE 5</Button></li>
                                     </ul>
                                 </div>
 
@@ -1316,7 +1560,7 @@
                                         <h1>Exercises 1</h1>
                                         <p id="Inputattriquestion1" ansValue="text">The<input type="text" name="attribute_info" size="10" id="inputattriexer1_UserAnswer"> " name="fname" placeholder="Your first name here"&lt; </p>
                                         <Button class="showanswer" id="inputattriexer1_ToggleAnswer" onclick="toggleAnswer('Inputattriquestion1', 'inputattriexer1_ToggleAnswer', 'inputattriexer1_submitAnswer')">Show Answer</Button>
-                                        <Button class="submit" id="inputattriexer1_submitAnswer" onclick="checkAnswer('Inputattriquestion1', 'inputattriexer1_UserAnswer')">Submit</Button>
+                                        <Button class="submit" id="inputattriexer1_submitAnswer" onclick="checkAnswer('InputAttriExercise1Done','Inputattriquestion1', 'inputattriexer1_UserAnswer')">Submit</Button>
 
                                     </div>
                                     
@@ -1324,7 +1568,7 @@
                                         <h1>Exercises 2</h1>
                                         <p id="Inputattriquestion2" ansValue="readonly">A <input type="text" name="attribute_info" size="10" id="inputattriexer2_UserAnswer"> input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).</p>
                                         <Button class="showanswer" id="inputattriexer2_ToggleAnswer" onclick="toggleAnswer('Inputattriquestion2', 'inputattriexer2_ToggleAnswer', 'inputattriexer2_submitAnswer')">Show Answer</Button>
-                                        <Button class="submit" id="inputattriexer2_submitAnswer" onclick="checkAnswer('Inputattriquestion2', 'inputattriexer2_UserAnswer')">Submit</Button>
+                                        <Button class="submit" id="inputattriexer2_submitAnswer" onclick="checkAnswer('InputAttriExercise2Done','Inputattriquestion2', 'inputattriexer2_UserAnswer')">Submit</Button>
 
                                     </div>
 
@@ -1332,7 +1576,7 @@
                                         <h1>Exercises 3</h1>
                                         <p id="Inputattriquestion3" ansValue="disable"> The <input type="text" name="attribute_info" size="10" id="inputattriexer3_UserAnswer"> attribute specifies that an input field should be disabled.</p>
                                         <Button class="showanswer" id="inputattriexer3_ToggleAnswer" onclick="toggleAnswer('Inputattriquestion3', 'inputattriexer3_ToggleAnswer', 'inputattriexer4_submitAnswer')">Show Answer</Button>
-                                        <Button class="submit" id="inputattriexer3_submitAnswer" onclick="checkAnswer('Inputattriquestion3', 'inputattriexer3_UserAnswer')">Submit</Button>
+                                        <Button class="submit" id="inputattriexer3_submitAnswer" onclick="checkAnswer('InputAttriExercise3Done','Inputattriquestion3', 'inputattriexer3_UserAnswer')">Submit</Button>
 
                                     </div>
 
@@ -1340,7 +1584,7 @@
                                         <h1>Exercises 4</h1>
                                         <p id="Inputattriquestion4" ansValue="placeholder">The <input type="text" name="attribute_info" size="10" id="inputattriexer4_UserAnswer"> attribute specifies a short hint that describes the expected value of an input field (a sample value or a short description of the expected format).</p>
                                         <Button class="showanswer" id="inputattriexer4_ToggleAnswer" onclick="toggleAnswer('Inputattriquestion4', 'inputattriexer4_ToggleAnswer', 'inputattriexer4_submitAnswer')">Show Answer</Button>
-                                        <Button class="submit" id="inputattriexer4_submitAnswer" onclick="checkAnswer('Inputattriquestion4', 'inputattriexer4_UserAnswer')">Submit</Button>
+                                        <Button class="submit" id="inputattriexer4_submitAnswer" onclick="checkAnswer('InputAttriExercise4Done','Inputattriquestion4', 'inputattriexer4_UserAnswer')">Submit</Button>
 
                                     </div>
 
@@ -1348,7 +1592,7 @@
                                         <h1>Exercises 5</h1>
                                         <p id="Inputattriquestion5" ansValue="pattern">The <input type="text" name="attribute_info" size="10" id="inputattriexer5_UserAnswer"> attribute specifies a regular expression that the input field's value is checked against, when the form is submitted.</p>
                                         <Button class="showanswer" id="inputattriexer5_ToggleAnswer" onclick="toggleAnswer('Inputattriquestion5', 'inputattriexer5_ToggleAnswer', 'inputattriexer5_submitAnswer')">Show Answer</Button>
-                                        <Button class="submit" id="inputattriexer5_submitAnswer" onclick="checkAnswer('Inputattriquestion5', 'inputattriexer5_UserAnswer')">Submit</Button>
+                                        <Button class="submit" id="inputattriexer5_submitAnswer" onclick="checkAnswer('InputAttriExercise5Done','Inputattriquestion5', 'inputattriexer5_UserAnswer')">Submit</Button>
 
                                     </div>
                                 </div>
@@ -1356,12 +1600,9 @@
 
 
                     </div>
+                    <!--END OF INPUTATTRI DIV | TAPOS NA-->
 
-
-
-
-                           <!-- Please continue this div for navigation button, dito natin lalagay sa each div yung mga exercises nila. connected to sa js/javascript may
-                    may comment din ako dun kung ano lalagay nyo.-->
+                <!--TAPOS NA LAHAT NG NAVIGATION BUTTON, LET'S PROCEED TO EACH EXERCISES-->
 
                 </div>
             </div>
