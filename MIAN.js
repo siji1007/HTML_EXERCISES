@@ -13,6 +13,12 @@ const exerciseContent = {
   'HeadingExercise4' : document.getElementById("HeadingExercise4").innerHTML,
   'HeadingExercise5' : document.getElementById("HeadingExercise5").innerHTML,
 
+  'ParagraphExercise1' : document.getElementById("ParagraphExercise1").innerHTML,
+  'ParagraphExercise2' : document.getElementById("ParagraphExercise2").innerHTML,
+  'ParagraphExercise3' : document.getElementById("ParagraphExercise3").innerHTML,
+  'ParagraphExercise4' : document.getElementById("ParagraphExercise4").innerHTML,
+  'ParagraphExercise5' : document.getElementById("ParagraphExercise5").innerHTML,
+
   'QuotationsExercise1' : document.getElementById("QuotationsExercise1").innerHTML,
   'QuotationsExercise2' : document.getElementById("QuotationsExercise2").innerHTML,
   'QuotationsExercise3' : document.getElementById("QuotationsExercise3").innerHTML,
