@@ -232,6 +232,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function Test(exercise) {
   var ExerciseArea = document.querySelector(".exercises-content");
   var HeadingExercise_contents = document.querySelector(".HeadingExercise_contents");
+  var ParagraphExercise_contents = document.querySelector(".ParagraphExercise_contents");
   var Styles_exercises_content = document.querySelector(".Styles_exercises_content");
   var CommentsExercise_contents = document.querySelector(".CommentsExercise_contents");
   var InputTypesExercise_contents = document.querySelector(".InputTypesExercise_contents");
