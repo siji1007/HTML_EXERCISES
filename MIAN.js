@@ -94,6 +94,13 @@ const exerciseContent = {
   'InputAttriExercise4' : document.getElementById("InputAttriExercise4").innerHTML,
   'InputAttriExercise5' : document.getElementById("InputAttriExercise5").innerHTML,
 
+  
+  'TablesExercise1' : document.getElementById("TablesExercise1").innerHTML,
+  'TablesExercise2' : document.getElementById("TablesExercise2").innerHTML,
+  'TablesExercise3' : document.getElementById("TablesExercise3").innerHTML,
+  'TablesExercise4' : document.getElementById("TablesExercise4").innerHTML,
+  'TablesExercise5' : document.getElementById("TablesExercise5").innerHTML,
+
 
 
 
@@ -160,6 +167,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var scriptsExercise_content = document.querySelector(".scriptsExercise-content");
   scriptsExercise_content.innerHTML="";
+
+  var tablesExercise_content = document.querySelector(".tablesExercise_content");
+  tablesExercise_content.innerHTML = " ";
+
+
 
   let list = document.querySelectorAll(".navigation li");
 
@@ -246,6 +258,8 @@ function Test(exercise) {
   
   var idExercise_content = document.querySelector(".idExercise_content");
   var scriptsExercise_content = document.querySelector(".scriptsExercise_content")
+
+  var tablesExercise_content = document.querySelector(".tablesExercise_content");
  
 
 
@@ -280,6 +294,10 @@ function Test(exercise) {
     }
     else if (scriptsExercise_content){
       scriptsExercise_content.innerHTML=exerciseContent[exercise];
+    }
+
+    else if (tablesExercise_content){
+      tablesExercise_content.innerHTML = exerciseContent[exercise];
     }
 
 
