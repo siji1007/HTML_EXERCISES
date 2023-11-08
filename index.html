@@ -376,7 +376,7 @@
                             <div class="ParagraphExercise_contents">
                                 <div class="PARAGRAPH-EXERCISE1" id="ParagraphExercise1">
                                     <h1>EXERCISE 1</h1>
-                                    <p id="paragraphQuestion1" AnswerKey_Paragraph1="&#60;p&#62;Merry Christmas!&#60;/p&#62;">
+                                    <p id="paragraphQuestion1" AnsKey_Paragraph1="&#60;p&#62;Merry Christmas!&#60;/p&#62;">
                                         Input the correct HTML tag to create a paragraph with the text "Merry Christmas!".</p>
                                         <pre>
                                             &#60;html&#62;
@@ -385,32 +385,26 @@
                                                 &#60;/body&#62;
                                             &#60;/html&#62;
                                         </pre>
-                                    <Button class="showanswer" id="paragraphExer1_ToggleAnswer" onclick="toggleAnswer('paragraphQuestion1', 'paragraphExer1_ToggleAnswer', 'paragraphExer1_submitAnswer')">Show Answer</Button>
-                                    <Button class="submit" id="paragraphExer1_submitAnswer" onclick="checkAnswer('paragraphQuestion1', 'paragraphExer1_UserAnswer')">Submit</Button>
                                 </div>
 
                                 <div class="PARAGRAPH-EXERCISE2" id="ParagraphExercise2">
                                     <h1>EXERCISE 2</h1>
-                                    <p id="paragraphQuestion2" ansValue="&#60;br&#62;">
+                                    <p id="paragraphQuestion2" AnsKey_Paragraph2="&#60;br&#62;">
                                         Insert a line break tag in the middle of the paragraph 
                                         <br><br>&#60;p&#62;Wishing you a Merry Christmas, <input type="text" name="attribute_info" size="10" id="paragraphExer2_UserAnswer"> and a Happy New Year!&#60;/p&#62;
                                     </p>
-                                    <Button class="showanswer" id="paragraphExer2_ToggleAnswer" onclick="toggleAnswer('paragraphQuestion2', 'paragraphExer2_ToggleAnswer', 'paragraphExer2_submitAnswer')">Show Answer</Button>
-                                    <Button class="submit" id="paragraphExer2_submitAnswer" onclick="checkAnswer('paragraphQuestion2', 'paragraphExer2_UserAnswer')">Submit</Button>
                                 </div>
                                 
                                 <div class="PARAGRAPH-EXERCISE3" id="ParagraphExercise3">
                                     <h1>EXERCISE 3</h1>
-                                    <p id="paragraphQuestion3" ansValue="margin">
+                                    <p id="paragraphQuestion3" AnsKey_Paragraph3="margin">
                                         By default, there is some <input type="text" name="attribute_info" size="10" id="paragraphExer3_UserAnswer"> space above and below a paragraph for visual separation.</p>
                                     </p>
-                                    <Button class="showanswer" id="paragraphExer3_ToggleAnswer" onclick="toggleAnswer('paragraphQuestion3', 'paragraphExer3_ToggleAnswer', 'paragraphExer3_submitAnswer')">Show Answer</Button>
-                                    <Button class="submit" id="paragraphExer3_submitAnswer" onclick="checkAnswer('paragraphQuestion3', 'paragraphExer3_UserAnswer')">Submit</Button>
                                 </div>
 
                                 <div class="PARAGRAPH-EXERCISE4" id="ParagraphExercise4">
                                     <h1>EXERCISE 4</h1>
-                                    <p id="paragraphQuestion3" ansValue="pre">
+                                    <p id="paragraphQuestion3" AnsKey_Paragraph4="pre">
                                         Input the correct HTML element that will display and preserve the both the spaces and line breaks of the following poem:<br>
                                         &#60;<input type="text" name="attribute_info" size="10" id="paragraphExer3_UserAnswer">/&#62;.<br>
                                         &nbsp;&nbsp;Beneath the twinkling Christmas lights so bright,<br>
@@ -419,8 +413,6 @@
                                         &nbsp;&nbsp;A season of joy, a heart's pure delight.<br>
                                         &#60;/<input type="text" name="attribute_info" size="10" id="paragraphExer4_UserAnswer">/&#62;.<br>
                                     </p>
-                                    <Button class="showanswer" id="paragraphExer4_ToggleAnswer" onclick="toggleAnswer('paragraphQuestion4', 'paragraphExer4_ToggleAnswer', 'paragraphExer4_submitAnswer')">Show Answer</Button>
-                                    <Button class="submit" id="paragraphExer4_submitAnswer" onclick="checkAnswer('paragraphQuestion4', 'paragraphExer4_UserAnswer')">Submit</Button>
                                 </div>
                             </div>
                         </div>
@@ -487,42 +479,56 @@
                             </div>
                     </div>
 
+                    <!--THIS IS THE START OF FORMATTING                                                  CJ -->
                     <div class="FORMATTING" id="Formatting-exercises">
                         <h1>FORMATTING</h1>
-                        <p>
-                            HTML formatting involves the use of HTML tags and attributes to structure and style the content of a web page. It helps define the layout, appearance, and organization of text and other elements. Here are some basic concepts of HTML formatting:
-                            <br><br><b>HTML tags</b> are used to define elements in a web page. Tags are enclosed in angle brackets, and they often come in pairs: an opening tag and a closing tag. For example, the '&#60;p&#62;' tag is used to create paragraphs, and it has an opening '&#60;p&#62;' tag and a closing '&#60;/p&#62;' tag.
-                            <br><br><b>Text Formatting Tags</b> allows you to change the appearance and style of text within your content.
-                                <br><b>'&#60;b&#62;'</b> for bold text
-                                <br><b>'&#60;i&#62;'</b> for italic text
-                                <br><b>'&#60;u&#62;'</b> for underlined text
-                                <br><b>'&#60;strong&#62;'</b> for strong emphasis
-                                <br><b>'&#60;em&#62;'</b> for emphasized text
-                                <br><b>'&#60;sub&#62;'</b> for subscript text
-                                <br><b>'&#60;sup&#62;'</b> for superscript text
-                                <br><b>'&#60;mark&#62;'</b> for marked text
-                                <br><b>'&#60;small&#62;'</b> for smaller text
-                                <br><b>'&#60;del&#62;'</b> for deleted text
-                                <br><b>'&#60;ins&#62;'</b> for inserted text
-                            <br><br><b>Heading Tags</b> from '&#60;h1&#62;' to '&#60;h6&#62;', are used to define headings and subheadings in a document. They represent different levels of importance and are styled differently by browsers.
-                            <br><br>HTML <b>Lists</b> allows you to create ordered lists (numbered) and unordered lists (bulleted) using the '&#60;ol&#62;' and '&#60;ul&#62;' elements, respectively. List items are defined with the '&#60;li&#62;' element.
-                            <br><br><b>Links</b> are created using the '&#60;a&#62;' (anchor) element. You can specify the destination URL using the 'href' attribute.
-                            <br><br><b>Images</b> are inserted using the '&@60;img&#62;' element. The 'src' attribute specfies the image source URL.
-                            <br><br><b>Division and Spans:</b> the '&#60;div&#62;' element is used for creating divisions or sections within a page, allowing you to apply styles or structure content. The '&#60;span&#62;' element is used to apply styles to inline elements or text within a larger block of content.
-                            <br><br><b>HTML Semantic:</b> Using semantic HTML elements like '&#60;header&#62;', '&#60;nav&#62;', '&#60;section&#62;', and '&#60;footer&#62;' can improve the structure and meaning of your content for both browsers and assistive technologies.
-                            <br><br>HTML formatting is an essential skill for web developers and designers, as it helps create well-structured, visually appealing, and accessible web pages.
-                        </p>
-                            <div class="spacer">
-                                <div class="buttons">
-                                    <ul id="buttonList">
-                                        <Button onclick="Test('FormattingExercise1')">EXERCISE 1</Button></li>
-                                        <Button onclick="Test('FormattingExercise2')">EXERCISE 2</Button></li>
-                                        <Button onclick="Test('FormattingExercise3')">EXERCISE 3</Button></li>
-                                        <Button onclick="Test('FormattingExercise4')">EXERCISE 4</Button></li>
-                                        <Button onclick="Test('FormattingExercise5')">EXERCISE 5</Button></li>
-                                    </ul>
+                        <p>HTML provides a variety of formatting elements and attributes that you can use to control the appearance of your web content. These formatting options help you control text styles, align elements, add lists, insert images, and more. By using HTML for formatting, you can ensure that your web pages are not only well-structured but also aesthetically pleasing.</p>
+                        <div class="spacer">
+                            <div class="buttons">
+                                <ul id="buttonList">
+                                    <Button onclick="Test('FormattingExercise1')">EXERCISE 1</Button></li>
+                                    <Button onclick="Test('FormattingExercise2')">EXERCISE 2</Button></li>
+                                    <Button onclick="Test('FormattingExercise3')">EXERCISE 3</Button></li>
+                                    <Button onclick="Test('FormattingExercise4')">EXERCISE 4</Button></li>
+                                    <Button onclick="Test('FormattingExercise5')">EXERCISE 5</Button></li>
+                                </ul>
+                            </div>
+                            <div class="Formatting-exercises-content">
+                                <div class="FORMATTING-EXERCISES1" id="FormattingExercise1">
+                                    <h1>Exercises 1</h1>
+                                    <p ansValue="Tags" id="question">Formatting is achieved with HTML <input text="type"></p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise1')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise1')">Submit</Button>
+                                </div>
+                                
+                                <div class="FORMATTING-EXERCISES2" id="FormattingExercise2">
+                                    <h1>Exercises 2</h1>
+                                    <p ansValue="strong" id="question">To make text bold in HTML, you can use the <<input type="text">> tag.</p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise2')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise2')">Submit</Button>
+                                </div>
+                                <div class="FORMATTING-EXERCISES3" id="FormattingExercise3">
+                                    <h1>Exercises 3</h1>
+                                    <p ansValue="ol" id="question">The <input type="text"> tag is used to create an ordered (numbered) list in HTML.</p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise3')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise3')">Submit</Button>
+                                </div>
+                                <div class="FORMATTING-EXERCISES4" id="FormattingExercise4">
+                                    <h1>Exercises 4</h1>
+                                    <p ansValue="br" id="question">Question: To create a line break in HTML text formatting, you can use the <input type="text"> tag.</p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise4')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise4')">Submit</Button>
+                                </div>
+                                <div class="FORMATTING-EXERCISES5" id="FormattingExercise5">
+                                    <h1>Exercises 5</h1>
+                                    <p ansValue="href" id="question">Question: In HTML, to create a hyperlink, you use the <a> tag and specify the link's destination using the <input type="text"> attribute.</p>
+                                    <Button class="showanswer" onclick="toggleAnswer('StylesExercise5')">Show Answer</Button>
+                                    <Button class="submit" onclick="submit('StylesExercise5')">Submit</Button>
                                 </div>
                             </div>
+                        </div>
+                </div>
+                    <!--END OF STRING FORMATTING | HINDI PA TAPOS (CJ CONTENT NEED TO SHOW THE ANSWER)-->
 
                     <div class="QUOTATIONS" id="Quotations-exercises">
                         <h1>QUOTATIONS</h1>
