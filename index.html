@@ -363,7 +363,7 @@
                     </div>
                     <!--END OF HEADINGS ATTRIBUTES | TAPOS NA-->
                     
-                    <!--START OF PARAGRAPH ATTRIBUTES-->
+                    <!--START OF PARAGRAPH ATTRIBUTES--> <!-- walang content pa-->
                     <div class="PARAGRAPH" id="Paragraph-exercises">
                         <h1>PARAGRAPH</h1>
                         <p>
@@ -433,58 +433,62 @@
                             <div class="spacer">
                                 <div class="buttons">
                                     <ul id="buttonList">
-                                        <Button onclick="Test('StylesExercise1')">EXERCISE 1</Button></li>
-                                        <Button onclick="Test('StylesExercise2')">EXERCISE 2</Button></li>
-                                        <Button onclick="Test('StylesExercise3')">EXERCISE 3</Button></li>
-                                        <Button onclick="Test('StylesExercise4')">EXERCISE 4</Button></li>
-                                        <Button onclick="Test('StylesExercise5')">EXERCISE 5</Button></li>
+                                        <Button id="StylesExercise1Done" onclick="Test('StylesExercise1')">EXERCISE 1</Button></li>
+                                        <Button id="StylesExercise2Done" onclick="Test('StylesExercise2')">EXERCISE 2</Button></li>
+                                        <Button id="StylesExercise3Done" onclick="Test('StylesExercise3')">EXERCISE 3</Button></li>
+                                        <Button id="StylesExercise4Done" onclick="Test('StylesExercise4')">EXERCISE 4</Button></li>
+                                        <Button id="StylesExercise5Done" onclick="Test('StylesExercise5')">EXERCISE 5</Button></li>
                                     </ul>
                                 </div>
 
                                 <div class="Styles-exercises-content">
                                     <div class="STYLES-EXERCISES1" id="StylesExercise1">
                                         <h1>Exercises 1</h1>
-                                        <p id="question">Question: In HTML <input type="text" name="styles_info" size="10" id="UserAnswer"> attribute is used to add styles to an element, such as color, font, size, and more.</p>
-                                        <Button class="showanswer" onclick="toggleAnswer('StylesExercise1')">Show Answer</Button>
-                                        <Button class="submit" onclick="submit('StylesExercise1')">Submit</Button>
+                                        <p id="stylesQuestion1" ansValue="style">Question: In HTML<input type="text" name="attribute_info" size="10" id="stylesExer1_UserAnswer"> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+                                        <Button class="showanswer" id="stylesExer1_ToggleAnswer" onclick="toggleAnswer('stylesQuestion1', 'stylesExer1_ToggleAnswer', 'stylesExer1_submitAnswer')">Show Answer</Button>
+                                        <Button class="submit" id="stylesExer1_submitAnswer" onclick="checkAnswer('StylesExercise1Done','stylesQuestion1', 'stylesExer1_UserAnswer')">Submit</Button>
 
                                     </div>
                                     
                                     <div class="STYLES-EXERCISES2" id="StylesExercise2">
                                         <h1>Exercises 2</h1>
-                                        <p id="question">Question: The CSS <input type="text" name="styles_info" size="10" id="UserAnswer"> property defines the horizontal text alignment for an HTML element.</p>
-                                        <Button class="showanswer" onclick="toggleAnswer('StylesExercise2')">Show Answer</Button>
-                                        <Button class="submit" onclick="submit('StylesExercise2')">Submit</Button>
+                                        <p id="stylesQuestion2" ansValue="text-align">Question: The CSS <input type="text" name="attribute_info" size="10" id="stylesExer2_UserAnswer"> property defines the horizontal text alignment for an HTML element.</p>
+                                        <Button class="showanswer" id="stylesExer2_ToggleAnswer" onclick="toggleAnswer('stylesQuestion2', 'stylesExer2_ToggleAnswer', 'stylesExer2_submitAnswer')">Show Answer</Button>
+                                        <Button class="submit" id="stylesExer2_submitAnswer" onclick="checkAnswer('StylesExercise2Done','stylesQuestion2', 'stylesExer2_UserAnswer')">Submit</Button>
+
 
                                     </div>
 
                                     <div class="STYLES-EXERCISES3" id="StylesExercise3">
                                         <h1>Exercises 3</h1>
-                                        <p id="question">Question: The <input type="text" name="styles_info" size="10" id="UserAnswer"> attribute is used to control the background of an HTML element, specifically page body and table backgrounds.</p>
-                                        <Button class="showanswer" onclick="toggleAnswer('StylesExercise3')">Show Answer</Button>
-                                        <Button class="submit" onclick="submit('StylesExercise3')">Submit</Button>
+                                        <p id="stylesQuestion3" ansValue="bgcolor">Question: The <input type="text" name="attribute_info" size="10" id="stylesExer3_UserAnswer"> attribute is used to control the background of an HTML element, specifically page body and table backgrounds.</p>
+                                        <Button class="showanswer" id="stylesExer3_ToggleAnswer" onclick="toggleAnswer('stylesQuestion3', 'stylesExer3_ToggleAnswer', 'stylesExer3_submitAnswer')">Show Answer</Button>
+                                        <Button class="submit" id="stylesExer3_submitAnswer" onclick="checkAnswer('StylesExercise3Done','stylesQuestion3', 'stylesExer3_UserAnswer')">Submit</Button>
+
 
                                     </div>
 
                                     <div class="STYLES-EXERCISES4" id="StylesExercise4">
                                         <h1>Exercises 4</h1>
-                                        <p id="question">Question: Use the correct HTML attribute, and CSS, to set the color of the paragraph to "blue". <input type="text" name="styles_info" size="10" id="UserAnswer"></p>
-                                        <Button class="showanswer" onclick="toggleAnswer('StylesExercise4')">Show Answer</Button>
-                                        <Button class="submit" onclick="submit('StylesExercise4')">Submit</Button>
+                                        <p id="stylesQuestion4" ansValue='<p style="color:blue;">This is a paragraph.</p>''>Question: Use the correct HTML attribute, and CSS, to set the color of the paragraph to "blue". <input type="text" name="attribute_info" size="10" id="stylesExer4_UserAnswer"> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+                                        <Button class="showanswer" id="stylesExer4_ToggleAnswer" onclick="toggleAnswer('stylesQuestion4', 'stylesExer4_ToggleAnswer', 'stylesExer4_submitAnswer')">Show Answer</Button>
+                                        <Button class="submit" id="stylesExer4_submitAnswer" onclick="checkAnswer('StylesExercise4Done','stylesQuestion4', 'stylesExer4_UserAnswer')">Submit</Button>
+
 
                                     </div>
 
                                     <div class="STYLES-EXERCISES5" id="StylesExercise5">
                                         <h1>Exercises 5</h1>
-                                        <p id="question">Question: Use CSS to set the font of the paragraph to "courier". <input type="text" name="styles_info" size="10" id="UserAnswer"></p>
-                                        <Button class="showanswer" onclick="toggleAnswer('StylesExercise5')">Show Answer</Button>
-                                        <Button class="submit" onclick="submit('StylesExercise5')">Submit</Button>
+                                        <p id="stylesQuestion5" ansValue='<p style="font-family:courier;">This is a paragraph</p>'>Question: Use CSS to set the font of the paragraph to "courier". <input type="text" name="attribute_info" size="10" id="stylesExer1_UserAnswer"> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+                                        <Button class="showanswer" id="stylesExer5_ToggleAnswer" onclick="toggleAnswer('stylesQuestion5', 'stylesExer5_ToggleAnswer', 'stylesExer5_submitAnswer')">Show Answer</Button>
+                                        <Button class="submit" id="stylesExer5_submitAnswer" onclick="checkAnswer('StylesExercise5Done','stylesQuestion5', 'stylesExer5_UserAnswer')">Submit</Button>
+
 
                                     </div>
                                 </div>
                             </div>
                     </div>
-                    <!--END OF STYLES ATTRIBUTES  | D PA TAPOS-->
+                    <!--END OF STYLES ATTRIBUTES-->
 
                     <!--THIS IS THE START OF FORMATTING                                                  CJ -->
                     <div class="FORMATTING" id="Formatting-exercises">
