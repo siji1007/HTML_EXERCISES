@@ -849,10 +849,68 @@
                     </div>
 
 
+                    <!--THIS IS THE TABLES DIV-->
                     <div class="TABLES" id="Tables-exercises">
                         <h1>TABLES</h1>
-                        <p>HTML tables are a fundamental element used for structuring and organizing tabular data in web documents. They consist of rows and columns, allowing you to display information in a structured, grid-like format. Tables are a critical tool for presenting data, and they provide a way to create structured layouts for various types of content.</p>
+
+                        <p>
+                            HTML tables are a fundamental element used for structuring and organizing tabular data in web documents. They consist of rows and columns, allowing you to display information in a structured, grid-like format. Tables are a critical tool for presenting data, and they provide a way to create structured layouts for various types of content.</p>
+
+                            <div class="spacer">
+                                <div class="buttons">
+                                    <ul id="buttonList">
+                                        <Button id="TableExercise1Done" onclick="Test('TablesExercise1')">EXERCISE 1</Button></li>
+                                        <Button id="TableExercise2Done" onclick="Test('TablesExercise2')">EXERCISE 2</Button></li>
+                                        <Button id="TableExercise3Done" onclick="Test('TablesExercise3')">EXERCISE 3</Button></li>
+                                        <Button id="TableExercise4Done" onclick="Test('TablesExercise4')">EXERCISE 4</Button></li>
+                                        <Button id="TableExercise5Done" onclick="Test('TablesExercise5')">EXERCISE 5</Button></li>
+                                    </ul>
+                                </div>
+
+                                <div class="tablesExercise_content">
+                                    <div class="TABLES-EXERCISES1" id="TablesExercise1">
+                                        <h1>Exercises 1</h1>
+                                        <p id="table1Question" ansValue="row">The &lt;tr&gt; element is used to define a <input type="text" name="attribute_info" size="4" id="tablesExer1_UserAnswer">in the table.</p>
+                                        <Button class="showanswer" id="tableExer1_ToggleAnswer" onclick="toggleAnswer('table1Question', 'tableExer1_ToggleAnswer', 'tableExer1_submitAnswer')">Show Answer</Button>
+                                        <Button class="submit" id="tableExer1_submitAnswer" onclick="checkAnswer('TableExercise1Done','table1Question', 'tablesExer1_UserAnswer')">Submit</Button>
+                                    </div>
+
+                                    <div class="TABLES-EXERCISES2" id="TablesExercise2">
+                                        <h1>Exercises 2</h1>
+                                        <p id="table2Question" ansValue="entire">The &lt;caption&gt; element is used to provide a title or caption for the <input type="text" name="attribute_info" size="7" id="tablesExer2_UserAnswer"> table.</p>
+                                        <Button class="showanswer" id="tableExer2_ToggleAnswer" onclick="toggleAnswer('table2Question', 'tableExer2_ToggleAnswer', 'tableExer2_submitAnswer')">Show Answer</Button>
+                                        <Button class="submit" id="tableExer2_submitAnswer" onclick="checkAnswer('TableExercise2Done','table2Question', 'tablesExer2_UserAnswer')">Submit</Button>
+                                    </div>
+
+                                    <div class="TABLES-EXERCISES3" id="TablesExercise3">
+                                        <h1>Exercises 3</h1>
+                                        <p ansValue="css" id="table3Question">You can control the styling and appearance of HTML tables, including borders, fonts, and spacing, by applying <input type="text" name="attribute_info" size="4" id="tablesExer3_UserAnswer"> to the table and its elements.</p>
+                                        <Button class="showanswer"id="tableExer3_ToggleAnswer"  onclick="toggleAnswer('table3Question', 'tableExer3_ToggleAnswer', 'tableExer3_submitAnswer')">Show Answer</Button>
+                                        <Button class="submit"id="tableExer3_submitAnswer" onclick="checkAnswer('TableExercise3Done','table3Question', 'tablesExer3_UserAnswer')">Submit</Button>
+
+                                    </div>
+
+                                    <div class="TABLES-EXERCISES4" id="TablesExercise4">
+                                        <h1>Exercises 4</h1>
+                                        <p ansValue="columns" id="table4Question">The &lt;th&gt; element is used to define header cells, which typically contain labels or titles for the <input type="text" name="attribute_info" size="8" id="tablesExer4_UserAnswer">or rows.</p>
+                                        <Button id="tableExer4_ToggleAnswer" class="showanswer" onclick="toggleAnswer('table4Question', 'tableExer4_ToggleAnswer', 'tableExer4_submitAnswer')">Show Answer</Button>
+                                        <Button class="submit"id="tableExer4_submitAnswer" onclick="checkAnswer('TableExercise4Done','table4Question', 'tablesExer4_UserAnswer')">Submit</Button>
+
+                                    </div>
+
+                                    <div class="TABLES-EXERCISES5" id="TablesExercise5">
+                                        <h1>Exercises 5</h1>
+                                        <p ansValue="cell" id="table5Question">The &lt;td&gt; element in an HTML table represents a <input type="text" name="attribute_info" size="5" id="tablesExer5_UserAnswer"> in the table that contains the actual data or content.</p>
+                                        <Button id="tableExer5_ToggleAnswer" class="showanswer" onclick="toggleAnswer('table5Question', 'tableExer5_ToggleAnswer', 'tableExer5_submitAnswer')">Show Answer</Button>
+                                        <Button class="submit"id="tableExer5_submitAnswer" onclick="checkAnswer('TableExercise5Done','table5Question', 'tablesExer5_UserAnswer')">Submit</Button>
+
+                                    </div>
+                                </div>
+                            </div>
+
                     </div>
+                    <!--END OF THE TABLES DIV -->
+
                     
                     <div class="LIST" id="List-exercises">
                         <h1>LIST</h1>
