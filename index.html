@@ -559,22 +559,21 @@
                                 <div class="spacer">
                                     <div class="buttons">
                                         <ul id="buttonList">
-                                            <Button onclick="Test('QuotationsExercise1')">EXERCISE 1</Button></li>
-                                            <Button onclick="Test('QuotationsExercise2')">EXERCISE 2</Button></li>
-                                            <Button onclick="Test('QuotationsExercise3')">EXERCISE 3</Button></li>
-                                            <Button onclick="Test('QuotationsExercise4')">EXERCISE 4</Button></li>
-                                            <Button onclick="Test('QuotationsExercise5')">EXERCISE 5</Button></li>
+                                            <Button id="QuotationExercise1Done" onclick="Test('QuotationsExercise1')">EXERCISE 1</Button></li>
+                                            <Button id="QuotationExercise2Done" onclick="Test('QuotationsExercise2')">EXERCISE 2</Button></li>
+                                            <Button id="QuotationExercise3Done" onclick="Test('QuotationsExercise3')">EXERCISE 3</Button></li>
+                                            <Button id="QuotationExercise4Done" onclick="Test('QuotationsExercise4')">EXERCISE 4</Button></li>
+                                            <Button id="QuotationExercise5Done" onclick="Test('QuotationsExercise5')">EXERCISE 5</Button></li>
                                         </ul>
                                     </div>
 
                                     <div class="quotationExercise-content">
-                                        <div class="QUOTATIONS-EXERCISES1" id="QuotationsExercise1">
+                                        <div class="QUOTATIONS" id="QuotationsExercise1">
                                             <h1>Exercises 1</h1>
-
-                                            <p id="quotationsQuestion1"><br>Transform the following text into a properly formatted quote using html element.</br>&lt;<input type="text" name="quotations_info" size="10" id="UserAnswer">&gt; If you want to shine like the sun, first burn like a star.&lt;<input type="text" name="quotations_info" size="10" id="UserAnswer">&gt;</p>
-                                            <Button class="showanswer" onclick="toggleAnswer('QuotationsExercise1')">Show Answer</Button>
-                                            <Button class="submit" onclick="submit('QuotationsExercise1', 'quotationsQuestion1')">Submit</Button>
-
+                                            <p id="quotationQuestion1" ansValue="q">Question: HTML attributes provide additional <input type="text" name="attribute_info" size="10" id="quotationExer1_UserAnswer"> about an element and are defined within the element's opening tag.</p>
+                                            <Button class="showanswer" id="quotationExer1_ToggleAnswer" onclick="toggleAnswer('quotationQuestion1', 'quotationExer1_ToggleAnswer', 'quotationExer1_submitAnswer')">Show Answer</Button>
+                                            <Button class="submit" id="quotationExer1_submitAnswer" onclick="checkAnswer('QuotationExercise1Done','quotationQuestion1', 'quotationExer1_UserAnswer')">Submit</Button>
+    
                                         </div>
 
                                         <div class="QUOTATIONS-EXERCISES2" id="QuotationsExercise2">
