@@ -171,8 +171,18 @@ body {
   background: url(bg.jpg);
   background-size: cover;
   overflow-y: auto; 
-  
 }
+
+#Particles:after{
+  content:"";
+  position: absolute;
+  top:-2000px;
+  width:2px;
+  height: 2px;
+  background:transparent ;
+  border-radius: 100%;
+}
+
 
 
 .main.active {
@@ -330,6 +340,19 @@ body {
   cursor: pointer;
   position: absolute; 
   left: 0; 
+}
+
+.Tutorial {
+  position: relative;
+  width: 50px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  position: absolute; 
+  right: 0; 
 }
 
 
@@ -500,6 +523,7 @@ body {
     margin: 0;
     max-height: 100vh; 
     overflow-y: auto; 
+    
   }
 
   .main.active {
@@ -517,14 +541,15 @@ body {
   }
 
   .main .content .buttons button {
-    width: 80%;
+    width: 30%;
     margin: 5px;
   }
 
   .showanswer {
     padding: 0.6em 1.2em;
-    font-size: 14px;
+    font-size: 100%px;
     margin-top: 5%;
+
   }
 
   .main .content .spacer {
@@ -534,14 +559,23 @@ body {
     background-color: transparent;
   }
 
+
+
   .submit {
-    padding: 0.6em 1.2em;
-    font-size: 14px;
+    padding: 2% 4%; /* Adjusted padding using percentages */
+    font-size: 1.5vw;
     margin-top: 5%;
+
   }
 
   h1 {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main .content .buttons button {
+      font-size: 14px; /* Decrease font size when screen width is 768px or less */
   }
 }
 
@@ -568,6 +602,7 @@ body {
     opacity: 1; /* Fade in with 100% opacity (fully visible) */
   }
 }
+
 
 
 
