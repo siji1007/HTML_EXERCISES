@@ -173,15 +173,6 @@ body {
   overflow-y: auto; 
 }
 
-#Particles:after{
-  content:"";
-  position: absolute;
-  top:-2000px;
-  width:2px;
-  height: 2px;
-  background:transparent ;
-  border-radius: 100%;
-}
 
 
 
@@ -563,7 +554,7 @@ body {
 
   .submit {
     padding: 2% 4%; /* Adjusted padding using percentages */
-    font-size: 1.5vw;
+    font-size: 100%px;
     margin-top: 5%;
 
   }
