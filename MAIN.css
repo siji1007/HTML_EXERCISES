@@ -124,6 +124,22 @@ body {
   white-space: nowrap;
 }
 
+.navigation ul li a .title1 {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+  font-weight: bold;
+  background-color: white;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border-width: 10%;
+  color:#1B4577;
+}
+
 .navigation ul li:hover a::before,
 .navigation ul li.hovered a::before {
   content: "";
@@ -171,8 +187,18 @@ body {
   background: url(bg.jpg);
   background-size: cover;
   overflow-y: auto; 
-  
 }
+
+#Particles:after{
+  content:"";
+  position: absolute;
+  top:-2000px;
+  width:2px;
+  height: 2px;
+  background:transparent ;
+  border-radius: 100%;
+}
+
 
 
 .main.active {
@@ -228,6 +254,14 @@ body {
   border-radius: 2px 10px;
   font-style: bold;
   
+}
+
+.main .content pre{
+  font-family: Monospace;
+
+  text-align: left;
+  margin: 0;
+  padding: 10px;
 }
 
 
@@ -330,6 +364,19 @@ body {
   cursor: pointer;
   position: absolute; 
   left: 0; 
+}
+
+.Tutorial {
+  position: relative;
+  width: 50px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  position: absolute; 
+  right: 0; 
 }
 
 
@@ -500,6 +547,7 @@ body {
     margin: 0;
     max-height: 100vh; 
     overflow-y: auto; 
+    
   }
 
   .main.active {
@@ -523,8 +571,9 @@ body {
 
   .showanswer {
     padding: 0.6em 1.2em;
-    font-size: 14px;
+    font-size: 100%px;
     margin-top: 5%;
+
   }
 
   .main .content .spacer {
@@ -534,10 +583,13 @@ body {
     background-color: transparent;
   }
 
+
+
   .submit {
-    padding: 0.6em 1.2em;
-    font-size: 14px;
+    padding: 2% 4%; /* Adjusted padding using percentages */
+    font-size: 100%px;
     margin-top: 5%;
+
   }
 
   h1 {
@@ -574,6 +626,7 @@ body {
     opacity: 1; /* Fade in with 100% opacity (fully visible) */
   }
 }
+
 
 
 
