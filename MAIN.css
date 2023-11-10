@@ -220,7 +220,7 @@ body {
 }
 
 .main .content h1 {
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -232,6 +232,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   font-weight: 600;
+  
 }
 
 
@@ -243,18 +244,18 @@ body {
   background: linear-gradient(to top, white, transparent);
   text-align: left;
   margin: 0;
-  padding: 10px;
+  padding: 2vw; /* Adjust the padding based on the viewport width */
   animation: slideDownToUpFadeIn 1s ease;
   border-top: none;
-  border-left: 2px solid transparent; /* Left border (initially transparent) */
-  border-right: 2px solid transparent; /* Right border (initially transparent) */
-  border-bottom: 2px solid #00A4BD; /* Bottom border */
-  border-image: linear-gradient(to right, transparent 50%, #1B4577 50%) 2; /* Create the desired border pattern */
-  border-image-slice: 1; /* Set the border image slice */
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid #00A4BD;
+  border-image: linear-gradient(to right, transparent 50%, #1B4577 50%) 2;
+  border-image-slice: 1;
   border-radius: 2px 10px;
   font-style: bold;
-  
 }
+
 
 .main .content pre{
   font-family: Monospace;
@@ -272,9 +273,6 @@ body {
   display: flex; /* Set the display to flex */
   flex-direction: row; /* Set the flex direction to row (horizontal) */
   justify-content: center;
- /* Align the buttons to the bottom */
-
-
 }
 
 .main .content .spacer {
@@ -321,6 +319,7 @@ body {
   transition: color var(--t,0.3s), background-size 0.3s;
   justify-content: center;
   align-items: center;
+  font-size: 1.5vw;
 
   
 }
