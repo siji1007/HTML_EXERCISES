@@ -13,6 +13,12 @@ const exerciseContent = {
   'HeadingExercise4' : document.getElementById("HeadingExercise4").innerHTML,
   'HeadingExercise5' : document.getElementById("HeadingExercise5").innerHTML,
 
+  'ParagraphExercise1':document.getElementById("ParagraphExercise1").innerHTML,
+  'ParagraphExercise2':document.getElementById("ParagraphExercise2").innerHTML,
+  'ParagraphExercise3':document.getElementById("ParagraphExercise3").innerHTML,
+  'ParagraphExercise4':document.getElementById("ParagraphExercise4").innerHTML,
+  'ParagraphExercise5':document.getElementById("ParagraphExercise5").innerHTML,
+
   'StylesExercise1' : document.getElementById("StylesExercise1").innerHTML,
   'StylesExercise2' : document.getElementById("StylesExercise2").innerHTML,
   'StylesExercise3' : document.getElementById("StylesExercise3").innerHTML,
@@ -131,6 +137,12 @@ const exerciseContent = {
   'IFframeExercise3' : document.getElementById("IFframeExercise3").innerHTML,
   'IFframeExercise4' : document.getElementById("IFframeExercise4").innerHTML,
   'IFframeExercise5' : document.getElementById("IFframeExercise5").innerHTML,
+
+  'TablesExercise1' : document.getElementById("TablesExercise1").innerHTML,
+  'TablesExercise2' : document.getElementById("TablesExercise2").innerHTML,
+  'TablesExercise3' : document.getElementById("TablesExercise3").innerHTML,
+  'TablesExercise4' : document.getElementById("TablesExercise4").innerHTML,
+  'TablesExercise5' : document.getElementById("TablesExercise5").innerHTML,
   
 
 
@@ -138,7 +150,10 @@ const exerciseContent = {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
+  var TutorialArea = document.querySelector(".tutorial-content");
+
   var ExerciseArea = document.querySelector(".exercises-content");  
+
   ExerciseArea.innerHTML = "";
 
   var HeadingExercise_contents = document.querySelector(".HeadingExercise_contents");
@@ -148,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
   CommentsExercise_contents.innerHTML = "";
 
   var ParagraphExercise_contents = document.querySelector(".ParagraphExercise_contents");
-  ParagraphExercise_contents.innerHTML = "";
+  ParagraphExercise_contents.innerHTML = " ";
 
   var Styles_exercises_content = document.querySelector(".Styles-exercises-content");
   Styles_exercises_content.innerHTML = " "
@@ -201,6 +216,11 @@ document.addEventListener("DOMContentLoaded", function () {
   var ComputerCode_exercises_content = document.querySelector(".ComputerCode-exercises-content");
   ComputerCode_exercises_content.innerHTML = " ";
 
+  var tablesExercise_content = document.querySelector(".tablesExercise_content");
+  tablesExercise_content.innerHTML=""
+
+  
+
 
 
   let list = document.querySelectorAll(".navigation li");
@@ -227,9 +247,11 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   const sidebarItems = document.querySelectorAll(".sidebar-container li");
   const contentArea = document.querySelector(".content");
+// FIX KO TO TULOG MUNA AKO!
 
 
   const attributeContent = {
+    TUTORIALS: TutorialArea.innerHTML,
     Attributes: document.getElementById("Attributes-exercises").innerHTML,
     Headings: document.getElementById("Headings-exercises").innerHTML,
     Paragraph: document.getElementById("Paragraph-exercises").innerHTML,
@@ -256,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
   };
 
-  contentArea.innerHTML = " ";
+  contentArea.innerHTML = TutorialArea.innerHTML; 
   sidebarItems.forEach((item) => {
     item.addEventListener("click", (event) => {
       event.preventDefault();
@@ -264,10 +286,8 @@ document.addEventListener("DOMContentLoaded", function () {
       navigation.classList.remove("active");
       main.classList.remove("active");
       contentArea.innerHTML = attributeContent[itemText];
-      
     });
   }); 
-
 });
 
 
@@ -292,6 +312,8 @@ function Test(exercise) {
   var idExercise_content = document.querySelector(".idExercise-content");
   var IFframeExercise_content = document.querySelector(".IFframeExercise_content");
   var scriptsExercise_content = document.querySelector(".scriptsExercise-content"); 
+  var ParagraphExercise_contents = document.querySelector(".ParagraphExercise_contents");
+  var tablesExercise_content = document.querySelector(".tablesExercise_content");
 
 
 
@@ -337,6 +359,10 @@ function Test(exercise) {
       IFframeExercise_content.innerHTML = exerciseContent[exercise];
     }else if (scriptsExercise_content){
       scriptsExercise_content.innerHTML = exerciseContent[exercise];
+    }else if(ParagraphExercise_contents){
+      ParagraphExercise_contents.innerHTML = exerciseContent[exercise];
+    }else if(tablesExercise_content){
+      tablesExercise_content.innerHTML = exerciseContent[exercise];
     }
 
 
@@ -361,7 +387,7 @@ function Test(exercise) {
       FormsExercises_content.innerHTML = '';
     }
     if (InputAttri_content){
-      InputAttri_content.innerHTML = '';
+      InputAttri_content.innerHTML = ''
     }
     if (FormsAttriExercises_content) {
       FormsAttriExercises_content.innerHTML = '';
@@ -375,6 +401,7 @@ function toggleAnswer(questionId, hideShowButtonId, submitButtonId) {
   var hideShowButton = document.getElementById(hideShowButtonId);
   var thisQuestionId = document.getElementById(questionId);
   var ans = thisQuestionId.getAttribute("ansValue");
+
   
   if (isHidden === true){
     hideShowButton.textContent = 'Hide Answer';
@@ -408,7 +435,7 @@ function checkAnswer(id,questionId, inputId){
   var thisQuestionId = document.getElementById(questionId);
   var ans = thisQuestionId.getAttribute("ansValue");
   var userAsnwer = document.getElementById(inputId).value;
-  
+
   
   // Checks if user input is not null or empty string
   if (userAsnwer === '' || userAsnwer === 'null'){
@@ -417,8 +444,10 @@ function checkAnswer(id,questionId, inputId){
     // Checks if user input is same with set correct answer
     if (!(ans === userAsnwer.toLowerCase())){
       element.style.backgroundColor = 'red'; 
+      console.log(userAsnwer+" mali");
     } else { 
-      element.style.backgroundColor = 'green';    
+      element.style.backgroundColor = 'green';  
+      console.log(userAsnwer+" tama");  
         if (!(exercisesId_array.includes(questionId))){
         progress(questionId);
       }
@@ -427,9 +456,13 @@ function checkAnswer(id,questionId, inputId){
 }
 
 var done_exercises = 0;
-function progress(exercisesId){
-  progressBar = document.getElementById("progressId");
+function progress(exercisesId) {
+  let progressBar = document.getElementById("progressId");
   done_exercises++;
   progressBar.textContent = "Finished exercises: " + done_exercises.toString() + "/110";
   exercisesId_array.push(exercisesId);
 }
+
+
+
+
