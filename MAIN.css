@@ -33,6 +33,41 @@ body {
 }
 
 
+iframe {
+  width: 100%;
+  height: 315px;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  margin-bottom: 5%;
+
+}
+
+section{
+  margin-bottom: 5%;
+  width: 100%;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -599,7 +634,9 @@ body {
 @media (max-width: 768px) {
   .main .content .buttons button {
       font-size: 14px; /* Decrease font size when screen width is 768px or less */
+
   }
+
 }
 
 
