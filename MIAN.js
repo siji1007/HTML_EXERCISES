@@ -274,7 +274,7 @@ document.addEventListener("DOMContentLoaded", function () {
     Forms_Elements: document.getElementById("FormsElemets-exercises").innerHTML,
     Input_Types: document.getElementById("InputType-exercises").innerHTML,
     Input_Attributes: document.getElementById("InputAtt-exercises").innerHTML,
-  
+
     
   };
 
@@ -459,10 +459,10 @@ var done_exercises = 0;
 function progress(exercisesId) {
   let progressBar = document.getElementById("progressId");
   done_exercises++;
-  progressBar.textContent = "Finished exercises: " + done_exercises.toString() + "/110";
+  progressBar.textContent = "CORRECT EXERCISES: " + done_exercises.toString() + "/110";
   exercisesId_array.push(exercisesId);
 }
 
 
 
-
+            
