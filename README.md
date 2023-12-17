@@ -1,3 +1,2 @@
 # HTML_EXERCISES
-This repository is for educational purposes.
-This website uses DOM manipulation using JavaScript.
+THIS IS THE HTML EXERCISES ACTIVITY USING HTML,CSS AND JS WITH DOM MANIPULATION
